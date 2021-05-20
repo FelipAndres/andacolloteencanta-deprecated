@@ -1,0 +1,258 @@
+/* Desktop */
+main{
+  /* main grid */
+  grid-template-rows: 18vh 81vh 0vh;
+}
+/* Grid Interna de sections */
+.grid--12-2{
+  grid-template-rows: 5% 40% 55%;
+}
+.position-2-1{
+  grid-column: 1/13;
+  /* grid-row: 2/-2; */
+}
+
+
+/* Interior */
+.carta__container{
+  grid-column: 1/10;
+  grid-row: 2/-2;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 18% 82%;
+}
+.carta__container div {
+  font-family: Raleway;
+}
+.carta--titulo{
+  grid-column: 6/11;
+  grid-row: 1/-3;
+  border-radius: 0px 0px 10px 10px;
+}
+.carta--titulo h3{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: .4em;
+}
+.carta--img{
+  margin: 3em 0 2em 1.9em;
+  border-radius: 10px;
+  grid-column: 1/5;
+  /* grid-row: 1/-1; */
+}
+.carta--content{
+  grid-column: 5/12;
+  grid-row: 2/-2;
+  display: grid;
+  grid-template-columns: repeat(2, fit-content);
+  grid-template-rows: 60% repeat(2, 15%);
+}
+
+.carta--descripcion {
+  padding: 1em;
+  grid-column: 1/5;
+  grid-row: 1/-3;
+  text-align: justify;
+}
+.info-contacto {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.info-contacto img {
+  /* margin-top: .1em; */
+  width: 1em;
+  height: auto;
+  margin: .5em;
+}
+.carta--nombre {
+  /* margin-left: 1em; */
+  grid-column: 1/4;
+  grid-row: 2/-2;
+}
+.carta--direccion {
+  /* margin-left: 1em; */
+  grid-column: 1/4;
+  grid-row: 3/-1;
+}
+.carta--telefono{
+  margin-left: 1.7em;
+  grid-column: 4/5;
+  grid-row: 2/-2;
+}
+.carta--telefono p {
+  margin-left: 1.7em;
+  flex-grow: 2;
+}
+.carta--correo{
+  margin-left: 1em;
+  grid-column: 4/5;
+  grid-row: 3/-1;
+  /* text-align: center; */
+}
+.rrss{
+  margin: .8em .2em;
+  grid-column: 12/13;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+  filter: invert(14%) sepia(77%) saturate(2932%) hue-rotate(211deg) brightness(91%) contrast(105%);
+}
+.icono--servicio{
+  grid-column: 1/4;
+  grid-row: 3/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.icono--servicio h2{
+  font-size: 3rem;
+  font-family: Boogaloo;
+  margin: 0px auto;
+  text-align:center;
+}
+.icono--servicio img{
+  height: 15em;
+  width: auto;
+  /* flex-shrink: 1;   */
+}
+.galeria--productos{
+  grid-column: 4/10;
+  grid-row: 3/-1;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 210px));
+  
+}
+.producto {
+  align-self: center;
+}
+.position-1 {
+  align-self: end;
+}
+.position-2 {
+  align-self: start;
+}
+.producto img{
+  border-radius: 10px;
+}
+
+.aside--right{
+  grid-column: 10/13;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside--right h1{
+  color: white;
+  font-family: Boogaloo;
+  font-size: 3.1rem;
+  text-align: center;
+  margin-top: .5em;
+}
+.aside--right img{
+  height: auto;
+  width: 12em;
+  margin: 2em 4em;
+}
+
+.donde-comer{
+  background-color: var(--dondecomer);
+  
+}
+.donde-comer-title{
+  color: var(--dondecomer);
+}
+.donde-dormir{
+  background-color: var(--dondedormir);
+}
+.donde-dormir-title{
+  color: var(--dondedormir);
+}
+.que-visitar{
+  background-color: var(--quevisitar);
+}
+.que-visitar-title{
+  color: var(--quevisitar);
+}
+.artesania{
+  background-color: var(--artesania);
+}
+.artesania-title{
+  color: var(--artesania);
+}
+.emprendedor{
+  background-color: var(--emprendedor);
+}
+.emprendedor-title{
+  color: var(--emprendedor);
+}
+.productor{
+  background-color: var(--productor);
+}
+.productor-title{
+  color: var(--productor);
+}
+
+
+
+/* MEDIA QUERIES CSS */
+@media screen and (max-width: 1366px) {
+  .carta__container{
+    grid-template-rows: 15% 85%;
+  }
+  .carta--content{
+    grid-template-rows: 62% repeat(2, 15%);
+  }
+  .carta--img {
+    margin: 1.2em 2em;
+    width: 240px;
+  }
+  .carta--titulo h3{
+    font-size: 1.1rem;
+    padding: .3em;
+  }
+  .carta--descripcion{
+    font-size: .9rem;
+  }
+  .info-contacto img{
+    width: .7em;
+  }
+  .info-contacto p{
+    font-size: .8rem;
+  }
+  .icono--servicio img{
+    height: 12em;
+    margin-left: 1.5em;
+  }
+  .icono--servicio h2{
+    margin-left: 1.7em;
+  }
+  .galeria--productos{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: .5em;
+    margin-top: .7em;
+  }
+  .producto img{
+    height: 8em;
+    width: auto;
+  }
+  .aside--right h1{
+    font-size: 2.5rem;
+    margin-top: .8em;
+  }
+  .aside--right img {
+    margin: 2em 3em;
+    width: 10em;
+  }
+  
+}

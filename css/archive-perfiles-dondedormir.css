@@ -1,0 +1,33 @@
+.position-3-1 {
+  grid-template-rows: 20% 30% 50%;
+}
+.position-3-1 h1{
+  color:var(--dondedormir);
+}
+.collage--servicios img{
+  border: 7px solid var(--dondedormir);
+  /* border: 5px solid var(--dondedormir); */
+}
+.aside--left, .aside--right--color{
+  background-color: var(--dondedormir);
+}
+/* CARTAS ARCHIVE */
+.cartas--servicios{
+ border: 1px solid #ED900F;
+}
+.texto__container h1{
+  background: var(--dondedormir);
+}
+.btn__servicios{
+  background: var(--dondedormir);
+}
+/* Fin Cartas */
+.aside--right h1{
+ color: var(--dondedormir);
+}
+
+.border-bottom{
+  grid-column: 4/10;
+  grid-row: 4/-1;
+  border-bottom: 2px solid var(--dondedormir);
+}
