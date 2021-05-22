@@ -46,7 +46,7 @@
       </aside>
     </section>
 
-    <section class="productos grid--12-2">
+    <section class="productos grid--12-2 grid--12-2-0">
       <h2>El arte de nuestros productos locales</h2>
       <div class="cartas__container--productos">
         <figure class="cartas">

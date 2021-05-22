@@ -6,20 +6,7 @@
       <div class="cartas__container--noticias">
         <?php get_template_part("includes/section", "indexblogposts"); ?>
       </div>
-      <div class="paginacion">
-      <?php if( get_previous_posts_link() ) {
-        ?>
-        <button class="btn-posts"><?php previous_posts_link(); ?> </button>
-      <?php
-      } 
-      ?>
-      <?php if( get_next_posts_link() ) {
-        ?>
-        <button class="btn-posts"><?php next_posts_link(); ?> </button>
-      <?php
-      } 
-      ?>
-    </div>
+      <?php if (function_exists('pagination')) pagination(); ?>
       <aside class="aside--noticias">
         <p>Conoce aquí las novedades que 
           ofrece nuestra comuna de Andacollo</p>

@@ -31,3 +31,20 @@
  color: var(--dondecomer);
 }
 
+
+@media screen and (max-width: 414px) {
+  .border-bottom {
+    display: none;
+  }
+  .cartas--servicios {
+    border-radius: 11px;
+  }
+  .texto__container h1 {
+    grid-column: 1/7;
+    border-radius:  10px 0px 0px 10px;
+  }
+  .aside--right {
+    background-color: var(--dondecomer);
+  }
+
+}

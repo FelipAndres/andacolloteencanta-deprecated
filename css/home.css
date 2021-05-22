@@ -47,6 +47,7 @@ main {
   height: auto;
   border-radius: 10px 0px 0px 10px;
   max-width: 255px;
+  object-fit: cover;
 }
 .texto__container {
   flex-grow: 2;
