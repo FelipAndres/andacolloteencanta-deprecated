@@ -1,19 +1,14 @@
 <?php
 // cargamos nuestro archivo css
-function load_css()
-{
-    // wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
-    // wp_enqueue_style('bootstrap');
+function load_css(){
     
     //cargamos nuestro principal. // HEADER FOOTER PAGE SINGLE ARCHVE
     wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), false, 'all');
     wp_enqueue_style('main');
     
-    wp_register_style('front-page', get_template_directory_uri() . '/css/main.css', array(), false, 'all');
-
     //cargamos nuestro propio estilo personalizado para páginas.
     if (is_page('front-page') ) {
-        wp_enqueue_style('page', get_template_directory_uri() . '/css/main.css');
+        wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
     } else{
         wp_enqueue_style('page', get_template_directory_uri() . '/css/page.css');
     }
@@ -61,6 +56,19 @@ function load_css()
     }
     
 }
+
+//Carga de JS
+function load_js(){
+    
+    wp_register_script('scrollnav', get_template_directory_uri() . '/js/scroll-nav.js', false);
+    wp_enqueue_script('scrollnav');
+
+    wp_register_script('slideshow', get_template_directory_uri() . '/js/slideshow.js', '', '', true);
+    wp_enqueue_script('slideshow');
+}
+add_action('wp_enqueue_scripts', 'load_js');
+
+
 function load_google_fonts(){
     $url ="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Bebas+Neue&family=Boogaloo&family=Raleway:wght@300;400;700&display=swap";
     wp_enqueue_style('load_google_fonts', $url);
@@ -68,19 +76,7 @@ function load_google_fonts(){
 add_action( "wp_enqueue_scripts", "load_google_fonts" );
 
 add_action('wp_enqueue_scripts', 'load_css');
-//Carga de JS
-function load_js()
-{
-    // wp_enqueue_script("jquery");
 
-    wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.bundle.min.js');
-    wp_enqueue_script('bootstrapjs');
-
-    wp_register_script('scrollnav', get_template_directory_uri() . '/js/scroll-nav.js', null, false);
-    wp_enqueue_script('scrollnav');
-
-}
-add_action('wp_enqueue_scripts', 'load_js');
 
 //añadir soporte para logo perosnalizado. https://developer.wordpress.org/themes/functionality/custom-logo/
 add_theme_support("custom-logo");
@@ -261,7 +257,9 @@ add_action( 'init', 'custom_bootstrap_slider' );
 
 function special_nav_class($classes, $item){
     if( in_array('current-menu-item', $classes) ){
-            $classes[] = 'active';
+            $classes[] = 'active-item';
+    }elseif (in_array('current-menu-parent', $classes) || in_array('current-menu-parent', $classes)) {
+        $classes[] = 'active-item';
     }
     return $classes;
 }add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);

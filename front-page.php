@@ -1,10 +1,33 @@
 <?php get_header(); ?>
-    <picture class="carousel">
-      <!-- <source srcset="https://dummyimage.com/414x675/000/fff.jpg" type="image/jpg" media="(max-width:414px)">
-      <source srcset="https://dummyimage.com/1920x792/000/fff.jpg"/> -->
-      <img src="<?php echo get_template_directory_uri('slide');  ?>/images/fiesta_andacollo792.jpg" alt="">
-      
-    </picture>
+    <section class="carousel">
+      <!-- <img src="<?php // echo get_template_directory_uri('slide');  ?>/images/fiesta_andacollo792.jpg" alt=""> -->
+      <div class="slideshow-container">
+        <?php $slider = get_posts(array('post_type' => 'slideshow', 'posts_per_page' => 3)); ?>
+        <?php $count = 0; ?>
+        <?php foreach ($slider as $slide) : ?>
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides <?php echo ($count == 0) ? 'active' : ''; ?> fade">
+            <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)) ?>"> 
+            <!-- <a class="titulo-slide" href=" <?php echo get_the_permalink($slide) ?>">
+              <h1><?php //echo get_the_title($slide) ?></h1>
+            </a> -->
+            <p><?php //echo get_the_post_thumbnail_caption($slide) ?></p>
+          </div>
+        <?php $count++; ?>
+        <?php endforeach; ?>  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>  -->
+    </section>
 
     <section class="servicios grid--12-2">
       <h2>Encuentra el servicio que más prefieras</h2>

@@ -69,7 +69,7 @@ nav{
     align-items: center;
     list-style-type: none;
     margin: 0;
-    padding: 1em;
+    /* padding: 1em; */
   }
   nav a{
     font-family: Raleway;
@@ -77,9 +77,12 @@ nav{
     text-decoration: none;
     color: white;
   }
-  .active{
-    color: #F4CE00;
+  .active-item{
+    background-color: #222C3E;
+    height: 3.4em;
+    padding-top: 1.2em;
   }
+
   nav a:hover{
     text-decoration: underline;
     color: #F4CE00;
@@ -98,6 +101,8 @@ nav{
     padding: .5em;
     border-radius: 1em;
     width: 14em;
+    z-index: 2;
+
   }
   nav li .sub-menu li {
     padding: .5em 0;
@@ -116,6 +121,8 @@ nav{
   nav .menu-item-has-children:hover .sub-menu{
     display: block;
   }
+  
+  
   /* nav a:visited{
     /* color: #F4CE00; */
   
@@ -154,15 +161,104 @@ nav{
 .carousel{
   grid-column: 1/13;
   grid-row: 2/-3;
+  padding: 0 1.875em 0 1.875em;
 }
-  .carousel img {
+  /* .carousel img {
     max-width: 100%;
     height: 100%;
     padding: 0 1.875em;
     object-fit: cover;
-  }
+  } */
+
+  /* Slideshow container */
+.slideshow-container {
+  /* max-width: 70vw; */
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img{
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Fin Slideshow */
 /* Flex Cartas Categorias */
 .cartas__container{
   grid-row: 2/-2;
@@ -498,8 +594,17 @@ footer h3{
     height: 40px;
   }
   nav ul{
-    padding: 0.6em;
+    /* padding: 0.6em; */
   }
+  .active-item {
+    height: 2.5em;
+    padding: .6em;
+  }
+  /* nav .menu-item-has-children {
+    background-color: #222C3E;
+    height: 2.5em;
+    padding-top: .6em;
+  } */
   .onscroll{
     height: 40px;
     width: 95vw;

@@ -56,7 +56,7 @@ main{
 .breadcrumb{
   grid-column: 1/8;
   grid-row: 1/2;
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   font-family: Raleway;
 }
 .copete__noticia{
