@@ -8,8 +8,9 @@
       </div>
       <?php if (function_exists('pagination')) pagination(); ?>
       <aside class="aside--noticias">
-        <p>Conoce aquí las novedades que 
+        <p class="aside-title">Conoce aquí las novedades que 
           ofrece nuestra comuna de Andacollo</p>
+          <p class="aside-title-mobile">Noticias</p>
         <figure>
           <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
         </figure>

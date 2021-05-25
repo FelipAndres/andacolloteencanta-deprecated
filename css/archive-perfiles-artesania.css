@@ -33,3 +33,28 @@
 .aside--right h1{
  color: var(--artesania);
 }
+
+@media (max-width: 414px) and (min-width: 320px) {
+  .border-bottom {
+    display: none;
+  }
+  .cartas--servicios {
+    border-radius: 11px;
+  }
+  .texto__container h1 {
+    grid-column: 1/7;
+    border-radius:  10px 0px 0px 10px;
+  }
+  .aside--right {
+    background-color: var(--artesania);
+  }
+  .btn__servicios {
+    background: white;
+  }
+  .btn__servicios label {
+    color: var(--artesania);
+  }
+  .position-3-1 {
+    grid-template-rows: 20% 60% 20%;
+  }
+}

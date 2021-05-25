@@ -56,7 +56,7 @@ function load_css(){
     }
     
 }
-
+add_action('wp_enqueue_scripts', 'load_css');
 //Carga de JS
 function load_js(){
     
@@ -75,12 +75,8 @@ function load_google_fonts(){
 }
 add_action( "wp_enqueue_scripts", "load_google_fonts" );
 
-add_action('wp_enqueue_scripts', 'load_css');
-
-
 //añadir soporte para logo perosnalizado. https://developer.wordpress.org/themes/functionality/custom-logo/
 add_theme_support("custom-logo");
-
 //añadir parametros al logo perosnalizado. 
 function temacustom_custom_logo_setup()
 {
@@ -103,7 +99,6 @@ function register_my_menu() {
         )
     );
 }
-
 add_action( 'init', 'register_my_menu' );
 
 // Habilitar backgrounds personalizados. https://developer.wordpress.org/themes/functionality/custom-backgrounds/
@@ -116,10 +111,8 @@ add_theme_support("custom-background", $args);
 
 // Soporte para imagenes
 add_theme_support( 'post-thumbnails' );
-// add_image_size('slides', 960, 400, true);
 
-//Custom Images Sizes
-
+// ----------------- Custom Images Sizes
 //Slideshow
 add_image_size('slide', 1920, 792, false); 
 add_image_size('post-img', 210, 160, true); 

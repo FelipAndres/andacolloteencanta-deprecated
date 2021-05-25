@@ -31,3 +31,28 @@
   grid-row: 4/-1;
   border-bottom: 2px solid var(--dondedormir);
 }
+
+@media (max-width: 414px) and (min-width: 320px) {
+  .border-bottom {
+    display: none;
+  }
+  .cartas--servicios {
+    border-radius: 11px;
+  }
+  .texto__container h1 {
+    grid-column: 1/7;
+    border-radius:  10px 0px 0px 10px;
+  }
+  .aside--right {
+    background-color: var(--dondedormir);
+  }
+  .btn__servicios {
+    background: white;
+  }
+  .btn__servicios label {
+    color: var(--dondedormir);
+  }
+  .position-3-1 {
+    grid-template-rows: 20% 60% 20%;
+  }
+}

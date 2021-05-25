@@ -58,12 +58,13 @@
         </figure>
       </div>
       <aside class="aside--servicios">
-        <p>¡Visita Andacollo!
+        <p class="aside-title-servicios">¡Visita Andacollo!
           <br>
           Diversos Servicios 
           que le permitirá
           una grata estadía en la Comuna</p>
-        <figure>
+          <p class="mobile-title-servicios">Servicios</p>
+          <figure>
           <img class="aside--s" src="<?php echo get_template_directory_uri();  ?>/images/S.svg" alt="">
         </figure>
       </aside>
@@ -98,7 +99,8 @@
         </figure>
       </div>
       <aside class="aside--productos">
-        <p>Aquí podrás adquirir productos con identidad local y el trabajo de los habitantes de Andacollo</p>
+        <p class="aside-title-productos">Aquí podrás adquirir productos con identidad local y el trabajo de los habitantes de Andacollo</p >
+        <p class="mobile-title-productos">Productos</p>
         <figure>
           <img class="aside--p" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
         </figure>
