@@ -77,35 +77,60 @@ nav{
     text-decoration: none;
     color: white;
   }
+  nav div ul li:hover {
+    background-color: rgb(250, 250, 250);
+    
+  }
+  nav div ul li a:hover{
+    color: black;
+    text-decoration: underline;
+  }
+  
   .active-item{
-    background-color: #F4CE00;
+    background-color: rgb(250, 250, 250);
     height: 3.4em;
     padding-top: 1.2em;
-  }
-
-  nav a:hover{
-    text-decoration: underline;
-    color: black;
     transition:all 200ms ease-in;
+    
   }
+  .active-item a{
+    color: black;
+    text-decoration: underline;
+  }
+  
   nav li {
     position: relative;
+    padding-top: 1.2em;
+    height: 3.4em;
+  }
+  .nav li:nth-of-type(2) {
+    margin: 0 1em;
+  }
+  .nav {
+    justify-content:center;
+    /* max-width: 50%; */
+    margin: auto;
   }
   nav li .sub-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background: linear-gradient(90.28deg, #082B7D 0%, #0465D6 100%);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
-    padding: .5em;
-    border-radius: 1em;
-    width: 14em;
+    background-color: var(--dondecomer);
+    /* background: linear-gradient(90.28deg, #082B7D 0%, #0465D6 100%); */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    /* padding: .5em; */
+    border-radius: .5em;
+    width: 15em;
     z-index: 2;
 
   }
+  .sub-menu li  {
+    padding: 0;
+  }
+  
   nav li .sub-menu li {
-    padding: .5em 0;
+    /* padding: .5em 0; */
     border-bottom: 1px solid gray;
     text-align: center;
   }
@@ -113,10 +138,10 @@ nav{
     border: none;
   }
   nav li .sub-menu a{
-    color: white;
-    text-align: center;
-    margin: 0 1em;
-    padding: 1.5em;
+    color: black;
+    text-align: left;
+    /* margin: 0 1em; */
+    /* padding: 1.5em; */
   }
   nav .menu-item-has-children:hover .sub-menu{
     display: block;
@@ -581,8 +606,19 @@ footer h3{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES CSS */
-@media screen and (max-width: 1366px) {
+@media (max-width: 1366px) and (min-width: 900px) {
   main{
     width: 87vw;
   }
@@ -594,6 +630,13 @@ footer h3{
   }
   nav{
     height: 40px;
+  }
+  .nav li {
+    margin-right: .4em;
+  }
+  nav li{
+    height: 2.4em;
+    padding: .6em;
   }
   .active-item {
     height: 2.5em;

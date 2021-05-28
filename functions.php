@@ -3,26 +3,55 @@
 function load_css(){
     
     //cargamos nuestro principal. // HEADER FOOTER PAGE SINGLE ARCHVE
-    wp_register_style('main', get_template_directory_uri() . '/css/main.css', '0.6','all');
-    wp_enqueue_style('main');
+    wp_enqueue_style(
+        'main', 
+        get_template_directory_uri() . '/css/main.css', 
+        array(), 
+        filemtime( get_stylesheet_directory()  . '/css/main.css' )
+    );
     
     //cargamos nuestro propio estilo personalizado para páginas.
     if (is_page('front-page') ) {
-        wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css', '0.6');
+        wp_enqueue_style(
+            'main', 
+            get_template_directory_uri() . '/css/main.css', 
+            array(), 
+            filemtime( get_stylesheet_directory()  . '/css/main.css' )
+        );
     } else{
-        wp_enqueue_style('page', get_template_directory_uri() . '/css/page.css', '0.5');
+        wp_enqueue_style(
+            'page', 
+            get_template_directory_uri() . '/css/page.css', 
+            array(), 
+            filemtime( get_stylesheet_directory()  . '/css/page.css' )
+        );
     }
     //cargamos nuestro propio estilo personalizado para páginas.
     if (is_home()) {
-        wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css', '0.5');
+        wp_enqueue_style(
+            'home', 
+            get_template_directory_uri() . '/css/home.css', 
+            array(), 
+            filemtime( get_stylesheet_directory()  . '/css/home.css' )
+        );
     }
     //cargamos nuestro propio estilo personalizado para páginas.
     if (is_single()) {
-        wp_enqueue_style('single', get_template_directory_uri() . '/css/single.css', '0.5');
+        wp_enqueue_style(
+            'single', 
+            get_template_directory_uri() . '/css/single.css', 
+            array(), 
+            filemtime( get_stylesheet_directory()  . '/css/single.css' )
+        );
     }
     //CSS for singular post from custom post type "perfil"
     if (is_singular('perfil')) {
-        wp_enqueue_style('perfil', get_template_directory_uri() . '/css/single-perfil.css', '0.6');
+        wp_enqueue_style(
+            'perfil', 
+            get_template_directory_uri() . '/css/single-perfil.css', 
+            array(), 
+            filemtime( get_stylesheet_directory()  . '/css/single-perfil.css' )
+        );
     }
     // //CSS for custom posty type archive "perfil"
     // if (is_post_type_archive("perfil")) {
@@ -30,29 +59,57 @@ function load_css(){
     // }
     //CSS for custom taxonomy "categorias-perfiles/artesania.."   
     if (is_tax("categorias-perfiles")) {
-        wp_enqueue_style('perfiles', get_template_directory_uri() . '/css/archive-perfiles.css', '0.5');
+        wp_enqueue_style(
+        'perfiles', 
+        get_template_directory_uri() . '/css/archive-perfiles.css',
+        array(),  
+        filemtime(get_stylesheet_directory() . '/css/archive-perfiles.css'));
     }
     if (is_tax( 'categorias-perfiles', 'donde-comer')) {
-        wp_enqueue_style('donde-comer', get_template_directory_uri() . '/css/archive-perfiles-dondecomer.css', '0.5');
+        wp_enqueue_style(
+        'donde-comer', 
+        get_template_directory_uri() . '/css/archive-perfiles-dondecomer.css', 
+        array(), 
+        filemtime(get_stylesheet_directory() . '/css/archive-perfiles-dondecomer.css'));
     }
     if (is_tax( 'categorias-perfiles', 'donde-dormir')) {
-        wp_enqueue_style('donde-dormir', get_template_directory_uri() . '/css/archive-perfiles-dondedormir.css', '0.5');
+        wp_enqueue_style(
+        'donde-dormir', 
+        get_template_directory_uri() . '/css/archive-perfiles-dondedormir.css',
+        array(),  
+        filemtime(get_stylesheet_directory() . '/css/archive-perfiles-dondedormir.css'));
     }
     
     if (is_tax( 'categorias-perfiles', 'que-visitar')) {
-        wp_enqueue_style('que-visitar', get_template_directory_uri() . '/css/archive-perfiles-quevisitar.css', '0.5');
+        wp_enqueue_style(
+        'que-visitar', 
+        get_template_directory_uri() . '/css/archive-perfiles-quevisitar.css', 
+        array(), 
+        filemtime(get_stylesheet_directory() . '/css/archive-perfiles-quevisitar.css'));
     }
     
     if (is_tax( 'categorias-perfiles', 'artesania')) {
-        wp_enqueue_style('artesania', get_template_directory_uri() . '/css/archive-perfiles-artesania.css', '0.5');
+        wp_enqueue_style(
+        'artesania', 
+        get_template_directory_uri() . '/css/archive-perfiles-artesania.css', 
+        array(), 
+        filemtime(get_stylesheet_directory() . '/css/archive-perfiles-artesania.css'));
     }
     
     if (is_tax( 'categorias-perfiles', 'emprendedor')) {
-        wp_enqueue_style('emprendedor', get_template_directory_uri() . '/css/archive-perfiles-emprendedor.css', '0.5');
+        wp_enqueue_style(
+        'emprendedor',
+         get_template_directory_uri() . '/css/archive-perfiles-emprendedor.css', 
+         array(), 
+        filemtime(get_stylesheet_directory() . '/css/archive-perfiles-emprendedor.css'));
     }
     
     if (is_tax( 'categorias-perfiles', 'productor')) {
-        wp_enqueue_style('productor', get_template_directory_uri() . '/css/archive-perfiles-productor.css', '0.5');
+        wp_enqueue_style(
+        'productor', 
+        get_template_directory_uri() . '/css/archive-perfiles-productor.css', 
+        array(), 
+        filemtime(get_stylesheet_directory() . '/css/archive-perfiles-productor.css'));
     }
     
 }
