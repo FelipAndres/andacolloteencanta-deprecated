@@ -78,31 +78,31 @@ nav{
     color: white;
   }
   nav div ul li:hover {
-    background-color: rgb(250, 250, 250);
+    /* background-color: rgb(250, 250, 250); */
     
   }
-  nav div ul li a:hover{
+  /* nav div ul li a:hover{
     color: black;
     text-decoration: underline;
-  }
+  } */
   
-  .active-item{
+  /* .active-item{
     background-color: rgb(250, 250, 250);
     height: 3.4em;
     padding-top: 1.2em;
     transition:all 200ms ease-in;
     
-  }
-  .active-item a{
+  } */
+  /* .active-item a{
     color: black;
     text-decoration: underline;
-  }
+  } */
   
-  nav li {
+  /* nav li {
     position: relative;
     padding-top: 1.2em;
     height: 3.4em;
-  }
+  } */
   .nav li:nth-of-type(2) {
     margin: 0 1em;
   }
@@ -359,6 +359,9 @@ nav{
 .servicios{
   grid-column: 1/13;
 }
+.mobile-title-servicios {
+  display: none;
+}
   .servicios h2 {
   font-family: Amaranth;
   font-size: 2rem;
@@ -402,6 +405,9 @@ nav{
 /* Section Productos */
 .productos{
   grid-column: 1/13;
+}
+.mobile-title-productos{
+  display: none;
 }
   .productos h2 {
     grid-column: 6/11;
@@ -448,7 +454,7 @@ footer{
    /* footer grid  */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 38vh 45vh 15vh;
+  grid-template-rows: 38vh 45vh 20vh;
   column-gap: 2em;
   height: 98vh;
   background-size: 400px;
@@ -462,6 +468,7 @@ footer{
   .footer__section{
     background-color: #222C3E;
     grid-column: 1/13;
+    padding-top: 3em;
      
   }
   .footer__content{
@@ -606,19 +613,19 @@ footer h3{
 
 
 
+/*
 
 
+MEDIA QUERYS
 
 
-
-
-
+*/
 
 
 
 
 /* MEDIA QUERIES CSS */
-@media (max-width: 1366px) and (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1366px){
   main{
     width: 87vw;
   }
@@ -653,6 +660,12 @@ footer h3{
   }
   .titulo__container p{
     font-size: 1.5rem;
+  }
+  .mobile-title-servicios {
+    display: none;
+  }
+  .mobile-title-productos{
+    display: none;
   }
   .servicios h2{
     grid-column: 3/8;
@@ -702,7 +715,7 @@ footer h3{
   .footer__text--sitios p{
     font-size: .5rem;
   }
-
+  
   }
 /* Tablet */
 @media screen and (max-width: 1024px) {
@@ -723,7 +736,7 @@ footer h3{
 }
 
 /* Mobile */
-@media (max-width: 480px) and (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px){
   /* MAIN */
   main{
     grid-template-columns: repeat(6, 1fr);
@@ -754,10 +767,14 @@ footer h3{
   nav {
     border-radius: 0;
     height: 40px;
+    padding: .5em;
   }
   nav a{
     margin:0 1em;
     font-size: .8rem;
+  }
+  .onscroll {
+    height: inherit;
   }
   .carousel img{
     width: 100%;
@@ -821,9 +838,9 @@ footer h3{
     padding: 0;
     /* margin: 2.5em 1em; */
     text-align: center;
-    margin-top: 0;
+    margin-top: .5em;
     flex-grow: 2;
-    align-self: center;
+    /* align-self: center; */
   }
   .aside-title-servicios {
     display: none;
@@ -857,6 +874,12 @@ footer h3{
   .aside-title-productos {
     display: none;
   }
+  .mobile-title-productos{
+    display: block;
+  }
+  .mobile-title-servicios{
+    display: block;
+  }
   .productos h2{
     grid-column: 1/7;
     grid-row: 1/2;
@@ -879,7 +902,7 @@ footer h3{
   footer{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 16vh 71vh 15vh;
+    grid-template-rows: 16vh 81vh 15vh;
     column-gap: 2em;
     height: 98vh;
     background-size: 400px;
@@ -887,9 +910,11 @@ footer h3{
   .footer__content {
     flex-direction: column;
     margin: 1em auto 0 auto;
+    padding: 0;
   }
   .footer__section {
     grid-column: 1/7;
+    padding: 0;
   }
   .footer__logo{
     height: 100%;
