@@ -182,7 +182,7 @@ add_image_size('img-carta-noticias', 255, 149, true);
 add_image_size('slide-img', 1440, 750, true);
 
 //Imagen de single entrada featured imagen
-add_image_size('featured-entrada', 1020, 504, true);
+add_image_size('featured-entrada', 1020, 516, true);
 
 //Imagen lead de entrada
 add_image_size('lead-entrada', 443, 675, true);

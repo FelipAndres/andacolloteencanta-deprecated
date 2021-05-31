@@ -95,10 +95,10 @@ nav{
     transition:all 200ms ease-in;
     
   } */
-  /* .active-item a{
-    color: black;
+  .active-item a{
+    /* color: black; */
     text-decoration: underline;
-  } */
+  }
   nav li a:hover {
     text-decoration: underline;
   }
@@ -120,7 +120,7 @@ nav{
     display: none;
     position: absolute;
     top: 100%;
-    left: 35px;
+    left: 17px;
     background-color: white;
     /* background: linear-gradient(90.28deg, #082B7D 0%, #0465D6 100%); */
     box-shadow: 5px 10px 8px rgba(0, 0, 0, .5);
@@ -149,9 +149,11 @@ nav{
   nav .menu-item-has-children:hover .sub-menu{
     display: block;
   }
+  .menu-item-has-children a{
+    color: white;
+  }
   .menu-item-has-children:hover {
-    color: black;
-    background-color: white;
+    text-decoration: underline;
   }
   
   /* nav a:visited{
@@ -487,6 +489,9 @@ nav{
     width: 12em;
     margin: 2em 4em;
   }
+  .aside-title-mobile {
+    display: none;
+  }
 /* End Productos */
 
 
@@ -668,6 +673,9 @@ MEDIA QUERYS
 
 /* MEDIA QUERIES CSS */
 @media (min-width: 900px) and (max-width: 1366px){
+  .aside-title-mobile {
+    display: none;
+  }
   main{
     width: 87vw;
   }
@@ -782,13 +790,13 @@ MEDIA QUERYS
   /* MAIN */
   main{
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 128px 77vh 83vh ;
+    grid-template-rows: 128px 73vh 77vh ;
     column-gap: 5px;
   }
   .grid--12-2{
     padding: 0;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 64vh 13vh;
+    grid-template-rows: 60vh 13vh;
   }
   .grid--12-2-0{
     padding: 0;
