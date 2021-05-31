@@ -71,7 +71,7 @@
     <div class="titulo__imagen--footer">
       
     </div> 
-    <figure class="img--noticias">
+    <figure class="img--noticias2">
       <?php echo wp_get_attachment_image($img_featured_footer,$img_size_featured_footer); ?>
       </figure>
   </section>

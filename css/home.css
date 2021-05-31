@@ -228,7 +228,7 @@ main {
 }
 
 /* Mobile */
-@media (max-width: 480px) and (min-width: 320px) { 
+@media (min-width: 320px) and (max-width: 480px){ 
   main{
     grid-template-rows: 20vh 76vh 1vh;
   }
@@ -245,7 +245,7 @@ main {
     grid-column: 1/7;
     grid-row: 1/2;
     width: 300px;
-    margin: 1em 2em;
+    margin: 1em auto;
     padding: 0;
   }
   .cartas--noticias {

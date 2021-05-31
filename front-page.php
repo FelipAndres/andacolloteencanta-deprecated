@@ -2,31 +2,53 @@
     <section class="carousel">
       <!-- <img src="<?php // echo get_template_directory_uri('slide');  ?>/images/fiesta_andacollo792.jpg" alt=""> -->
       <div class="slideshow-container">
-        <?php $slider = get_posts(array('post_type' => 'slideshow', 'posts_per_page' => 3)); ?>
+        <?php $args = array(
+          'post_type' => array('slideshow'),
+          // 'orderby'        => 'slideshow post',
+          'posts_per_page' => 4,
+          // 'offset' => 4,
+          ); ?>
+        
+        <?php $slider = get_posts($args); ?>
         <?php $count = 0; ?>
         <?php foreach ($slider as $slide) : ?>
           <!-- Full-width images with number and caption text -->
+          <?php 
+          // $datoslide = $slide;
+          // console_log($datoslide);
+          // $type_post = $slide->ID;
+          // console_log($type_post);
+
+          // $enlace_url = get_the_permalink($slide);
+          // $enlace_url = the_field('link');
+
+          $enlace_url = get_field('link', $slide->ID);
+            // console_log($enlace_url);
+          ?>
           <div class="mySlides <?php echo ($count == 0) ? 'active' : ''; ?> fade">
+          <a href="<?php echo $enlace_url; ?>">
             <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)) ?>"> 
-            <!-- <a class="titulo-slide" href=" <?php echo get_the_permalink($slide) ?>">
-              <h1><?php //echo get_the_title($slide) ?></h1>
-            </a> -->
-            <p><?php //echo get_the_post_thumbnail_caption($slide) ?></p>
+            <div class="content-slide">
+              <h1 class="title-slide"><?php echo get_the_title($slide)?></h1>
+              <p class="sub-slide"><?php echo get_the_post_thumbnail_caption($slide) ?></p>
+            </div>
+          </a>
           </div>
         <?php $count++; ?>
-        <?php endforeach; ?>  
+        <?php endforeach; ?>
+          <!-- The dots/circles -->
+       <div class="dots" >
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>    
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <!-- <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>  -->
+        
+      
     </section>
 
     <section class="servicios grid--12-2">

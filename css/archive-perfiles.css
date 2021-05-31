@@ -290,7 +290,7 @@ main{
 }
 
 
-@media screen and (max-width: 480px) and (min-width: 360px){
+@media (min-width: 320px) and (max-width: 480px){
   main {
     grid-template-rows: 20vh 77vh 80vh;
   }

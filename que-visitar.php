@@ -8,10 +8,10 @@ Template Post Type: perfil
 <section class="position-2-1 grid--12-2">
   <div class="carta__container">
     <img class="carta--img" src="<?php the_post_thumbnail_url('perfil-img'); ?>" alt="">
-    <div class="carta--titulo">
+    <div class="carta--titulo que-visitar">
       <h3><?php the_title(); ?></h3>
     </div>
-    <div class="carta--content que-visitar">
+    <div class="carta--content">
       <?php
         $informacion_contacto = get_field('info_contacto'); // parent group
         $nombre = $informacion_contacto['contacto']; 
