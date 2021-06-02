@@ -12,7 +12,9 @@
   --productor: hsl(259, 69%, 43%, 0.8);
   --backgroundcolor: hsla(0, 0%, 100%, 0.702);
 }
-*{
+*,
+::after,
+::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -774,6 +776,10 @@ MEDIA QUERYS
   }
   .header__image{
     object-fit: cover;
+  }
+    
+  .sub-slide {
+    width: 85%;
   }
   .onscroll {
     width: 100vw;

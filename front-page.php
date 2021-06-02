@@ -27,23 +27,16 @@
           ?>
           <div class="mySlides <?php echo ($count == 0) ? 'active' : ''; ?> fade">
           <a href="<?php echo $enlace_url; ?>">
-            <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)) ?>"> 
+            <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)); ?>"> 
             <div class="content-slide">
-              <h1 class="title-slide"><?php echo get_the_title($slide)?></h1>
-              <p class="sub-slide"><?php echo get_the_post_thumbnail_caption($slide) ?></p>
+              <h1 class="title-slide"><?php echo get_the_title($slide);?></h1>
+              <p class="sub-slide"><?php echo the_field('subtitulo_slide', $slide->ID); ?></p>
             </div>
           </a>
           </div>
         <?php $count++; ?>
         <?php endforeach; ?>
-          <!-- The dots/circles -->
-       <div class="dots" >
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>    
-        <!-- Next and previous buttons -->
+       <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
