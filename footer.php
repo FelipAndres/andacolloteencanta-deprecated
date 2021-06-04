@@ -28,8 +28,8 @@
          <p> ASOCIACIÓN DE ARTESANOS DE CHILE</p>
       </div>
       <div class="footer__logos">
-        <img class="footer__logos" src="<?php echo get_template_directory_uri();  ?>/images/logo_amarillo.png" alt="">
-        <img class="footer__logos" src="<?php echo get_template_directory_uri();  ?>/images/logo_municipalidad.png" alt="">
+        <img class="footer__logos" src="<?php echo get_template_directory_uri();  ?>/images/logos/logo_teencanta.svg" alt="">
+        <img class="footer__logos big--logo" src="<?php echo get_template_directory_uri();  ?>/images/logos/logo_municipalidad.svg" alt="">
       </div>
      </div>
     </div>

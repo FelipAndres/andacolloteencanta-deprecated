@@ -286,9 +286,9 @@ nav{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 4s;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
@@ -307,11 +307,12 @@ nav{
   font-family: Amaranth;
   font-size: 1.5rem;
   width: 80%;
-  
+  margin: 0 auto;
+  text-align: center;
 }
 .title-slide {
   background-color: rgba(243, 49, 49, 0.6);
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px;
   height: 80px;
   /* margin-left: 4em; */
   padding: .5em 2em;
@@ -323,10 +324,11 @@ nav{
   background: rgba(231, 155, 57, 0.6);
   height: 40px;
   width: 75%;
-  border-radius: 0px 0px 10px 0px;
+  border-radius: 10px;
   /* margin-left: 4em; */
   padding: .2em 3em;
   color: white;
+  margin: 0 auto;
 }
 
 /* Fin Slideshow */
@@ -349,9 +351,11 @@ nav{
   .cartas img{
     height: 100%;
     width: 100%;
+    border-radius: 1em;
   }
   .cartas:hover{
-    scale: 1.05;
+    -webkit-transform: scale(1.05, 1.05);
+    -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
     cursor: pointer;
   }
@@ -615,8 +619,11 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1em;
   }
-
+  .big--logo{
+    height: 7em;
+  }
   .footer {
     flex-direction: column;
     color: white;

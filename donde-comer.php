@@ -103,8 +103,16 @@ Template Post Type: perfil
     
   </div>
   <aside class="aside--right donde-comer">
-    <h1>Servicio de Alimentación</h1> 
-    <img src="<?php echo get_template_directory_uri();  ?>/images/R.svg" alt="">
+    <h1>Servicio de Alimentación</h1>
+    <div class="sellos">
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_calidad_turistica.svg" alt="sello turistico">
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_distinción_sustentabilidad.svg" alt="">
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_sigo_turismo.svg" alt="">
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_iso_9001.svg" alt="">
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_confianza.svg" alt="">
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/registro_turístico.svg" alt=""> 
+    </div>
+    <img src="<?php echo get_template_directory_uri();  ?>/images/r.svg" alt="">
   </aside>
 </section>
 </main> 
