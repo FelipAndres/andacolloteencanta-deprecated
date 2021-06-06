@@ -347,6 +347,23 @@ nav{
     align-self: center;
     width: 32%;
     height: 89%;
+   
+  }
+  @keyframes moveInRight {
+    0%{
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .moveInRight{
+      animation-name: moveInRight;
+      animation-duration: 3s;
+    }
   }
   .cartas img{
     height: 100%;
@@ -430,6 +447,23 @@ nav{
     flex-direction: column;
     justify-content: space-between;
   }
+  @keyframes toptobottom {
+    
+    0%{
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .aside-animation {
+      animation: toptobottom 4s;
+    }
+  }
+  
   .aside--servicios p {
     font-family: Raleway;
     color: white;
@@ -447,6 +481,8 @@ nav{
     height: auto;
     width: 12em;
     margin: 2em 4em;
+
+    
   }
 
 

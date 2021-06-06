@@ -117,8 +117,13 @@ add_action('wp_enqueue_scripts', 'load_css');
 //Carga de JS
 function load_js(){
     
-    wp_register_script('scrollnav', get_template_directory_uri() . '/js/scroll-nav.js', false);
+    wp_register_script('scrollnav',get_template_directory_uri() . '/js/scroll-nav.js', false);
     wp_enqueue_script('scrollnav');
+
+    // wp_register_script('animations',, true);
+    wp_enqueue_script('animations',
+    get_template_directory_uri() .'/js/animation.js',array(), 
+    filemtime(get_template_directory() . '/js/animation.js'), true);
 
     wp_register_script('slideshow', get_template_directory_uri() . '/js/slideshow.js', '', '', true);
     wp_enqueue_script('slideshow');
