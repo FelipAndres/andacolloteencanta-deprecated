@@ -150,16 +150,37 @@ main{
 .paginacion{
  grid-column: 5/9;
  grid-row: 3/-1;
- display: flex;
- gap: 2em;
+ display: inline-block;
+ /* gap: 2em; */
  padding: 2.3em;
-
+ margin: 0 auto;
+ font-family: Raleway;
 }
-.paginacion a{
+/* .paginacion a{
   font-family: Raleway;
   font-size: 1rem;
   text-decoration: none;
   color: black;
+  border: 1px solid black;
+} */
+.paginacion a, .paginacion span{
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+.paginacion a:hover:not(.current) {
+  background-color: #ddd;
+}
+.paginacion span:first-child, .paginacion a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.paginacion a:last-child ,.paginacion span:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .btn-posts{
   width: 12em;
@@ -260,6 +281,9 @@ main{
     height: 50%;
     font-size: .8rem;
   }
+  .cartas__container--servicios {
+    gap: 1.7em;
+  }
   .cartas-cat h1{
     font-size: .9rem;
     height: 20%;
@@ -287,6 +311,9 @@ main{
   }
   .collage--servicios img {
     width: 40em;
+  }
+  .paginacion{
+    padding: 1.2em;
   }
 }
 

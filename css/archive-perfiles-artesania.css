@@ -33,7 +33,11 @@
 .aside--right h1{
  color: var(--artesania);
 }
-
+.paginacion span.current {
+  background-color: var(--artesania);
+  color: white;
+  border: 1px solid var(--artesania);
+}
 @media (min-width: 320px) and (max-width: 480px){
   .border-bottom {
     display: none;

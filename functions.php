@@ -322,7 +322,7 @@ function special_nav_class($classes, $item){
 }add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 
-function pagination($pages = '', $range = 4)
+function pagination($pages = '', $range = 3)
 {
     $showitems = ($range * 2)+1;
  
@@ -341,9 +341,13 @@ function pagination($pages = '', $range = 4)
  
     if(1 != $pages)
     {   
-        echo "<div class=\"paginacion\"><span>Página ".$paged." de  ".$pages."  </span> ";
-        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
-        if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
+        echo "<div class=\"paginacion\">"; //<span>Página ".$paged." de  ".$pages."  </span> 
+        echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+        //echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
+        
+        //if($paged > 2 && $paged > $range+1 && $showitems < $pages){} 
+        //if($paged > 1 && $showitems < $pages) {}
+        
  
         for ($i=1; $i <= $pages; $i++)
         {
@@ -352,9 +356,11 @@ function pagination($pages = '', $range = 4)
                 echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
             }
         }
- 
-        if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";
-        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
+        echo "<a href=\"".get_pagenum_link($paged + 1)."\"> &rsaquo;</a>";
+        // if ($paged < $pages && $showitems < $pages) 
+        
+        // if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages){} 
+        // echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
         echo "</div>\n";
     }
 }

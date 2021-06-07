@@ -30,7 +30,11 @@
 .aside--right h1{
  color: var(--emprendedor);
 }
-
+.paginacion span.current {
+  background-color: var(--emprendedor);
+  color: white;
+  border: 1px solid var(--emprendedor);
+}
 @media (min-width: 320px) and (max-width: 480px){
   .border-bottom {
     display: none;

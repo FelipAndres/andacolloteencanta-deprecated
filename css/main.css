@@ -420,7 +420,22 @@ nav{
   gap: 1.5em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 }
-
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference){
+  .moveInLeft{
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+  }
+}
 
 /* Section Servicios */
 .servicios{
@@ -459,8 +474,8 @@ nav{
     }
   }
   @media (prefers-reduced-motion: no-preference) {
-    .aside-animation {
-      animation: toptobottom 4s;
+    .toptobottom {
+      animation: toptobottom 3s;
     }
   }
   
@@ -839,13 +854,13 @@ MEDIA QUERYS
   /* MAIN */
   main{
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 128px 73vh 77vh ;
+    grid-template-rows: 128px 80vh 77vh ;
     column-gap: 5px;
   }
   .grid--12-2{
     padding: 0;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 60vh 13vh;
+    grid-template-rows: 67vh 13vh;
   }
   .grid--12-2-0{
     padding: 0;

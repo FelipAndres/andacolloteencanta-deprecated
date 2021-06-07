@@ -17,7 +17,7 @@
     <div class="cartas__container--servicios">
       <?php get_template_part('includes/section', 'donde-dormir'); ?>
     </div>
-    <div class="paginacion">
+    <div class="paginacion2">
       <?php if( get_previous_posts_link() ) {
         ?>
         <button class="btn-posts"><?php previous_posts_link(); ?> </button>
@@ -32,6 +32,7 @@
       ?>
       
     </div>
+    <?php if (function_exists('pagination')) pagination(); ?>
     <aside class="aside--right">
         <h1>¿Donde Dormir?</h1>
         <img src="<?php echo get_template_directory_uri();  ?>/images/icono-dondedormir.svg" alt="">

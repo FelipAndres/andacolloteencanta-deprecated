@@ -30,7 +30,11 @@
 .aside--right h1{
  color: var(--dondecomer);
 }
-
+.paginacion span.current {
+  background-color: var(--dondecomer);
+  color: white;
+  border: 1px solid var(--dondecomer);
+}
 
 @media (min-width: 320px) and (max-width: 480px){
   .border-bottom {

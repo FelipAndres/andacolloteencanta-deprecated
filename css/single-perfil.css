@@ -269,7 +269,9 @@ main{
     margin: 2em 3em;
     width: 10em;
   }
-  
+  .sellos{
+    display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

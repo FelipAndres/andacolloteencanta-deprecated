@@ -31,7 +31,11 @@
   grid-row: 4/-1;
   border-bottom: 2px solid var(--dondedormir);
 }
-
+.paginacion span.current {
+  background-color: var(--dondedormir);
+  color: white;
+  border: 1px solid var(--dondedormir);
+}
 @media (min-width: 320px) and (max-width: 480px){
   .border-bottom {
     display: none;
