@@ -217,7 +217,18 @@ main{
   color: var(--productor);
 }
 
+@media (min-width: 1366px) and (max-width: 1600px){
+  .carta__container div {
+    font-size: 1em;
+  }
+  .carta--img{
+    margin: 1.4em 2em;
+  }
+  .aside--right img {
+    width: 10em;
+  }  
 
+}
 
 /* MEDIA QUERIES CSS */
 @media (min-width: 900px) and (max-width: 1366px) {

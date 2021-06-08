@@ -257,7 +257,46 @@ main{
 }
 
 
-
+@media (min-width: 1366px) and (max-width: 1600px){
+  main {
+    grid-template-rows: 20.5vh 81vh 80vh;
+  }
+  .cartas__container--servicios{
+    gap: 1.5em;
+  }
+  .cartas-cat h1{
+    font-size: 1rem;
+  }
+  .cartas-cat a{
+    font-size: 1rem;
+  }
+  .texto__container h1{
+    height: 75%;
+    /* padding: 0; */
+  }
+  .extracto__descripcion{
+    font-size: .9rem;
+    margin: 0 2em .5em 2em;
+  }
+  .aside--right h1{
+    font-size: 3.1rem;
+  }
+  .btn__servicios{
+    font-size: .9rem;
+    height: 1.6em;
+  }
+  .paginacion{
+    padding: 1em;
+    grid-column: 3/11;
+  }
+  .position-3-1 h1{
+    margin-top: 1.2em;
+    font-size: 1.9rem;
+  }
+  .collage--servicios img{
+    width: 655px;
+  }
+}
 
 @media screen and (max-width: 1366px) {
   /*Cartas de servicios  */

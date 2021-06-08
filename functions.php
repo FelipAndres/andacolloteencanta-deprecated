@@ -322,7 +322,7 @@ function special_nav_class($classes, $item){
 }add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 
-function pagination($pages = '', $range = 3)
+function pagination($pages = '', $range = 4)
 {
     $showitems = ($range * 2)+1;
  
