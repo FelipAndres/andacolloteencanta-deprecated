@@ -105,12 +105,36 @@ Template Post Type: perfil
   <aside class="aside--right donde-comer">
     <h1>Servicio de Alimentación</h1>
     <div class="sellos">
-      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_calidad_turistica.svg" alt="sello turistico">
+      <?php 
+        $sellos = get_field('sellos');
+        console_log($sellos);
+        if( $sellos && in_array('Sello 1', $sellos) ) {?>
+          <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_calidad_turistica.svg" alt="sello turistico">
+      <?php
+      }
+      if( $sellos && in_array('Sello 2', $sellos) ) {?>
       <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_distinción_sustentabilidad.svg" alt="">
+      <?php
+      }
+      if( $sellos && in_array('Sello 3', $sellos) ) {?>
       <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_sigo_turismo.svg" alt="">
+      <?php
+      }
+      if( $sellos && in_array('Sello 4', $sellos) ) {?>
       <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_iso_9001.svg" alt="">
+      <?php
+      }
+      if( $sellos && in_array('Sello 5', $sellos) ) {?>
       <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_confianza.svg" alt="">
+      <?php
+      }
+      if( $sellos && in_array('Sello 6', $sellos) ) {?>
       <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/registro_turístico.svg" alt=""> 
+      <?php
+      }
+      ?>
+
+      
     </div>
     <img src="<?php echo get_template_directory_uri();  ?>/images/r.svg" alt="">
   </aside>

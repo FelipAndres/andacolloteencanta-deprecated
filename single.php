@@ -64,7 +64,7 @@
     
   <section class="position-4-1 grid--12-3-1">
     <aside class="aside--noticias-2">
-      <figure>
+      <figure class="flex-center">
         <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
       </figure>
     </aside> 
