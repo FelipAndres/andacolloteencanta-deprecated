@@ -331,9 +331,9 @@
             {
                 "key": "field_605b2983d2551",
                 "label": "Enlaces de Difusión",
-                "name": "enlaces",
-                "type": "group",
-                "instructions": "",
+                "name": "link",
+                "type": "text",
+                "instructions": "Ingresa tu enlace aquí!\r\n(Youtube, Vimeo, Enlace Personalizado, Etc).",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -341,147 +341,11 @@
                     "class": "",
                     "id": ""
                 },
-                "layout": "block",
-                "sub_fields": [
-                    {
-                        "key": "field_605b29c4d2552",
-                        "label": "",
-                        "name": "Check_Youtube",
-                        "type": "checkbox",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "32.5",
-                            "class": "",
-                            "id": ""
-                        },
-                        "choices": {
-                            "Enlace Youtube": "Enlace Youtube"
-                        },
-                        "allow_custom": 0,
-                        "default_value": [],
-                        "layout": "horizontal",
-                        "toggle": 0,
-                        "return_format": "value",
-                        "save_custom": 0
-                    },
-                    {
-                        "key": "field_605b323eb0937",
-                        "label": "",
-                        "name": "Check_Vimeo",
-                        "type": "checkbox",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "32.5",
-                            "class": "",
-                            "id": ""
-                        },
-                        "choices": {
-                            "Enlace Vimeo": "Enlace Vimeo"
-                        },
-                        "allow_custom": 0,
-                        "default_value": [],
-                        "layout": "horizontal",
-                        "toggle": 0,
-                        "return_format": "value",
-                        "save_custom": 0
-                    },
-                    {
-                        "key": "field_605b3259b0938",
-                        "label": "",
-                        "name": "Check_link",
-                        "type": "checkbox",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "32.5",
-                            "class": "",
-                            "id": ""
-                        },
-                        "choices": {
-                            "Otro Enlace": "Otro Enlace"
-                        },
-                        "allow_custom": 0,
-                        "default_value": [],
-                        "layout": "horizontal",
-                        "toggle": 0,
-                        "return_format": "value",
-                        "save_custom": 0
-                    },
-                    {
-                        "key": "field_605b2a45d2553",
-                        "label": "URL Video Youtube",
-                        "name": "URL_YouTube",
-                        "type": "url",
-                        "instructions": "",
-                        "required": 1,
-                        "conditional_logic": [
-                            [
-                                {
-                                    "field": "field_605b29c4d2552",
-                                    "operator": "!=empty"
-                                }
-                            ]
-                        ],
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "Ingresa aquí la URL del video de YouTube"
-                    },
-                    {
-                        "key": "field_605b2b35d2555",
-                        "label": "URL Video Vimeo",
-                        "name": "URL_vimeo",
-                        "type": "url",
-                        "instructions": "",
-                        "required": 1,
-                        "conditional_logic": [
-                            [
-                                {
-                                    "field": "field_605b323eb0937",
-                                    "operator": "!=empty"
-                                }
-                            ]
-                        ],
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "Ingresa aquí la URL del video de Vimeo"
-                    },
-                    {
-                        "key": "field_605b2c6ab8f20",
-                        "label": "Otro URL",
-                        "name": "URL_link",
-                        "type": "url",
-                        "instructions": "",
-                        "required": 1,
-                        "conditional_logic": [
-                            [
-                                {
-                                    "field": "field_605b3259b0938",
-                                    "operator": "!=empty"
-                                }
-                            ]
-                        ],
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "Ingresa aquí la URL del enlace"
-                    }
-                ]
+                "default_value": "www.google.com",
+                "placeholder": "https:\/\/www.ejemplo.com",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             }
         ],
         "location": [
@@ -786,6 +650,34 @@
                         "return_format": "url"
                     }
                 ]
+            },
+            {
+                "key": "field_60c168cf76007",
+                "label": "Sellos",
+                "name": "sellos",
+                "type": "checkbox",
+                "instructions": "Selecciona uno o varios sellos según corresponda.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Sello 1": "Calidad Turística",
+                    "Sello 2": "Distinción Turística",
+                    "Sello 3": "SIGO Turismo",
+                    "Sello 4": "Confianza",
+                    "Sello 5": "Registro Turístico",
+                    "Sello 6": "ISO 9001"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
             },
             {
                 "key": "field_605a3333d644c",
