@@ -3,14 +3,9 @@
   <section class="position-2-2 grid--12-2 ">
     <aside class="aside--left">
     <div class="cartas-cat">
-      <h1>Categorías</h1>
-      <a href="<?php get_site_url(); ?>/categorias-perfiles/donde-comer">¿Dónde Comer?</a>
-      <a href="<?php get_site_url(); ?>/categorias-perfiles/que-visitar">¿Que visitar?</a>
-      <a href="<?php get_site_url(); ?>/categorias-perfiles/artesania">Artesanías</a>
-      <a href="<?php get_site_url(); ?>/categorias-perfiles/emprendedor">Emprendedores</a>
-      <a href="<?php get_site_url(); ?>/categorias-perfiles/productor">Productores</a>
-      </div>
-        <img src="<?php echo get_template_directory_uri();  ?>/images/H.svg" alt="">
+      <?php get_template_part('includes/section', 'menu-categorias'); ?>
+    </div>
+      <img src="<?php echo get_template_directory_uri();  ?>/images/H.svg" alt="">
     </aside>
    
 
@@ -41,11 +36,12 @@
   </section>
   <section class="position-3-1 grid--12-2 ">
   <h1>Disfute su Estadía en Nuestra Comuna</h1>
-  <p>Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta Descripción e invitación a realizar la Ruta </p>
+  <p>Andacollo cuenta con alojamiento de gran nivel, dispone de distintas categorías de servicios entre hoteles, cabañas, hostales, camping, casas familiares y residenciales, que cuentan con una gran variedad de servicios para brindar una cálida atención al cliente. Ubicados en los diferentes sectores de la comuna, puedes elegir un servicio cerca de los atractivos principales o alrededor de ellos, servicios de primer nivel, con cómodas habitaciones, atención personalizada y al mejor precio.</p>
   <figure class="collage--servicios">
     <img src="<?php echo get_template_directory_uri();  ?>/images/collage-dormir.png" alt="">
   </figure>
   <aside class="aside--right--color">
+  <?php get_template_part('includes/section', 'map'); ?>
   <img src="<?php echo get_template_directory_uri();  ?>/images/H.svg" alt="">
   </aside>
   </section>

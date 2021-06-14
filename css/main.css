@@ -35,7 +35,7 @@ main{
   column-gap: 1.5em;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 17vh 81vh repeat(2, 92vh);
+  grid-template-rows: 18vh 81vh repeat(2, 92vh);
   background-color: var(--backgroundcolor) ;
 }
 
@@ -45,7 +45,7 @@ main{
   display: grid;
   column-gap: 1.5em;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 12% 85%;
+  grid-template-rows: 12% 88%;
 }
 
 

@@ -26,6 +26,11 @@
 .btn__servicios{
   background: var(--emprendedor);
 }
+.btn__servicios:hover{
+  background: white;
+  border: 1px solid hsl(29, 100%, 63%);
+  color: hsl(29, 100%, 63%);
+}
 /* Fin Cartas */
 .aside--right h1{
  color: var(--emprendedor);

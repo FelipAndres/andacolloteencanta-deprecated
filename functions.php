@@ -243,11 +243,43 @@ function categorias_perfiles()
         ),
         'public' => true,
         'hierarchical' => true,
+        'show_admin_column' => true,
+        'show_in_menu' => true,
     );
     register_taxonomy('categorias-perfiles', array('perfil'), $args);
 }
 add_action('init', 'categorias_perfiles');
 
+//Filtrar en Perfiles
+function filtro_personalizado_taxonomia() {
+    global $typenow;
+ 
+    // En el siguiente array añadimos la taxonomía que queremos mostrar.
+    // Hay que poner el slug de la taxonomía
+    $taxonomias = array('categorias-perfiles');
+
+    // Debemos seleccionar el tipo de post sobre el que se va a mostrar
+    if( $typenow == 'perfil' )
+    {
+        foreach ($taxonomias as $slug_taxonomia)
+        {
+            $taxonomia = get_taxonomy($slug_taxonomia);
+            $nombre_taxonomia = $taxonomia->labels->name;
+            $terms = get_terms($slug_taxonomia);
+            if(count($terms) > 0)
+            {
+                echo "<select name='$slug_taxonomia' id='$slug_taxonomia' class='postform'>";
+                echo "<option value=''>Mostrar todos $nombre_taxonomia</option>";
+                foreach ($terms as $term)
+                { 
+                    echo '<option value='. $term->slug, $_GET[$slug_taxonomia] == $term->slug ? ' selected="selected"' : '','>' . $term->name .' (' . $term->count .')</option>'; 
+                }
+                echo "</select>";
+            }
+        }
+    }
+}
+add_action( 'restrict_manage_posts', 'filtro_personalizado_taxonomia' );
 
 //Largo del excerpt
 function my_excerpt_length($length)

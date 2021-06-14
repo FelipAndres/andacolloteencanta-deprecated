@@ -1,5 +1,5 @@
 .position-3-1 {
-  grid-template-rows: 20% 30% 50%;
+  grid-template-rows: 17% 35% 47%;
 }
 .position-3-1 h1{
   color:var(--dondecomer);
@@ -26,6 +26,13 @@
 .btn__servicios{
   background: var(--dondecomer);
 }
+
+.btn__servicios:hover{
+  background: white;
+  border: 1px solid hsl(339, 100%, 63%);
+  color: hsl(339, 100%, 63%);
+  cursor: pointer;
+}
 /* Fin Cartas */
 .aside--right h1{
  color: var(--dondecomer);
@@ -35,7 +42,9 @@
   color: white;
   border: 1px solid var(--dondecomer);
 }
-
+/* .btn__servicios:hover{
+  background-color: hsl(339, 100%, 63%);
+} */
 @media (min-width: 320px) and (max-width: 480px){
   .border-bottom {
     display: none;

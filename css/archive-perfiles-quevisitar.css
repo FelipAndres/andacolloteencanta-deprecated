@@ -26,6 +26,11 @@
 .btn__servicios{
   background: var(--quevisitar);
 }
+.btn__servicios:hover{
+  background: white;
+  border: 1px solid hsl(222, 100%, 73%);
+  color: hsl(222, 100%, 73%);
+}
 /* Fin Cartas */
 .aside--right h1{
  color: var(--quevisitar);

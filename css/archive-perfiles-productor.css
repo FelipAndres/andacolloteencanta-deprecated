@@ -1,5 +1,5 @@
 .position-3-1 {
-  grid-template-rows: 20% 30% 50%;
+  grid-template-rows: 17% 35% 47%;
 }
 .position-3-1 h1{
   color:var(--productor);
@@ -28,6 +28,11 @@
 }
 .btn__servicios{
   background: var(--productor);
+}
+.btn__servicios:hover{
+  background: white;
+  border: 1px solid hsl(259, 100%, 70%);
+  color: hsl(259, 100%, 70%);
 }
 /* Fin Cartas */
 .aside--right h1{

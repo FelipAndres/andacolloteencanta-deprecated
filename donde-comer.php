@@ -107,7 +107,6 @@ Template Post Type: perfil
     <div class="sellos">
       <?php 
         $sellos = get_field('sellos');
-        console_log($sellos);
         if( $sellos && in_array('Sello 1', $sellos) ) {?>
           <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_calidad_turistica.svg" alt="sello turistico">
       <?php

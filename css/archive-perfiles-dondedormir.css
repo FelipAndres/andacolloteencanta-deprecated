@@ -21,6 +21,11 @@
 .btn__servicios{
   background: var(--dondedormir);
 }
+.btn__servicios:hover{
+  background: white;
+  border: 1px solid hsl(43, 100%, 63%);
+  color: hsl(43, 100%, 63%);
+}
 /* Fin Cartas */
 .aside--right h1{
  color: var(--dondedormir);
