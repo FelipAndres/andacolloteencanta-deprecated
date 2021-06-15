@@ -3,7 +3,7 @@ LO QUE VA FALTANDO
 -revisar sellos
 -revisar noticia y perfiles indi en 1600px y 1300px
 -barra de navegacion submen
--cambiar tamaño imagen background en mosaico
+
 -tamaño de los svg de los iciones de las categorias
 -titulo y descripcion de los productos
 -agregar enlace en fotos complementarias

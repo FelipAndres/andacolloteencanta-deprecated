@@ -170,7 +170,7 @@ nav{
     position: sticky;
     top:0;
     z-index: 3;
-    width: 99.1vw;
+    width: 95vw;
     height: 55px;
     align-items: center;
     background-color: #082B7D;
@@ -994,9 +994,9 @@ MEDIA QUERYS
     padding: 0;
     /* margin: 2.5em 1em; */
     text-align: center;
-    margin-top: .5em;
+    margin-top: 0;
     flex-grow: 2;
-    /* align-self: center; */
+    align-self: center;
   }
   .aside-title-servicios {
     display: none;
@@ -1024,8 +1024,8 @@ MEDIA QUERYS
     align-self: center;
   }
   .aside--p {
-    width: 11vw;
-    margin: 1.2em 1em;
+    width: 12vw;
+    margin: .8em 1em;
   }
   .aside-title-productos {
     display: none;
@@ -1053,7 +1053,9 @@ MEDIA QUERYS
     justify-content: space-evenly;
   }
   
-
+  nav li .sub-menu{
+    width: 9em;
+  }
 
   footer{
     display: grid;

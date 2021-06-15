@@ -12,19 +12,7 @@
       <?php get_template_part('includes/section', 'que-visitar'); ?>
     </div>
     <div class="paginacion2">
-      <?php if( get_previous_posts_link() ) {
-        ?>
-        <button class="btn-posts"><?php previous_posts_link(); ?> </button>
-      <?php
-      } 
-      ?>
-      <?php if( get_next_posts_link() ) {
-        ?>
-        <button class="btn-posts"><?php next_posts_link(); ?> </button>
-      <?php
-      } 
-      ?>
-      
+      <?php get_template_part('includes/section', 'paginacion'); ?>
     </div>
     <?php if (function_exists('pagination')) pagination(); ?>
     <aside class="aside--right">

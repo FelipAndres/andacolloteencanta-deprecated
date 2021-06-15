@@ -167,7 +167,7 @@ add_action( 'init', 'register_my_menu' );
 add_theme_support("custom_background");
 // configuraciones para nuestro backgorund personalizado
 $args = array(
-    "default-image" => get_template_directory_uri() . "/images/Trama70.jpg",
+    "default-image" => get_template_directory_uri() . "/images/trama270.jpg",
 );
 add_theme_support("custom-background", $args);
 

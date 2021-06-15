@@ -66,7 +66,6 @@
     color: var(--dondecomer);
   }
   .position-3-1 {
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 7% 43% 50%;
   }
-
 }
