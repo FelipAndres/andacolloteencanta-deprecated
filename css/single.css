@@ -25,7 +25,7 @@ main{
   display: grid;
   column-gap: 1.5em;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10% 78% 9%;
+  grid-template-rows: 8% 78% 9%;
 }
 .grid--12-3-1{
   padding: 0 1.875em 0 1.875em;
@@ -43,6 +43,9 @@ main{
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
+}
+.aside--noticias figure{
+  margin: 0 auto;
 }
 .aside--noticias h1{
   font-family: Amaranth;
@@ -63,7 +66,7 @@ main{
 .breadcrumb{
   grid-column: 1/8;
   grid-row: 1/2;
-  padding: 1em 2em;
+  padding: 1em 0;
   font-family: Raleway;
 }
 .copete__noticia{
@@ -85,7 +88,7 @@ main{
   font-family: Raleway;
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 1.8em 0 0 0;
+  padding: .5em 0 0 0;
   color: #1D2D7C;
 }
 .content__noticia{
@@ -109,13 +112,13 @@ main{
 }
 .img2__noticia img{
   border-radius: 10px 10px 0 0 ;
-  margin: 1.5em 0;
+  margin: 0;
 }
 .flex-center{
   align-self: center;
 }
 .aside-n{
-  width: 77px;
+  width: 4.5em;
   
 }
 .content__footer{
@@ -174,7 +177,60 @@ main{
   padding: 2em;
 }
 
-
+@media (min-width: 1367px) and (max-width: 1600px){
+  main{
+    grid-template-rows: 21vh 80vh 93vh 55vh;
+  }
+  .grid--12-3-0{
+    grid-template-rows: 6% 78% 9%;
+  }
+  .breadcrumb{
+    padding: .7em 0;
+  }
+  .aside--noticias figure {
+    margin:  0 auto;
+  }
+  .img--noticias img {
+    width: 53em;
+    height: 25em;
+    object-fit: cover;
+  }
+  .copete__noticia h1 {
+    font-size: 1rem;
+  }
+  .titulo__noticia {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .content__noticia {
+    font-size: .85rem;
+  }
+  .img2__noticia img {
+    width: 22.8em;
+    height: 32.5em;
+    margin: 0;
+    object-fit: cover;
+  }
+  .img--noticias2 img{
+    width: 53em;
+    height: 25em;
+    object-fit: cover;
+  }
+  .aside-n{
+    width: 3em;
+  }
+  .footer__datos{
+    margin-right: .5em;
+  }
+  .footer__categoria li{
+    font-size: 1.2rem;
+    padding: .3em .3em 0em .3em;
+  }
+  .footer__fecha p{
+    font-size: 1rem;
+  }
+  
+}
 @media (min-width: 900px) and (max-width: 1366px) {
   .aside--noticias{
     padding: 1em;
