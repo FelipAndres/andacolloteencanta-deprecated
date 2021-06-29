@@ -531,4 +531,7 @@ main{
   #map{
     width: 19.5em;
   }
+  .texto__container h1 {
+    margin-left: 0;
+  }
 }

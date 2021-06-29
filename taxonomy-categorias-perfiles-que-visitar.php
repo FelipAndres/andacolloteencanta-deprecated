@@ -13,6 +13,7 @@
     </div>
     <div class="paginacion2">
       <?php get_template_part('includes/section', 'paginacion'); ?>
+      <p class="mobile-title-servicios">¿Qué Visitar?</p>
     </div>
     <?php if (function_exists('pagination')) pagination(); ?>
     <aside class="aside--right">

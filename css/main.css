@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 body {
-  background-image: url(../images/trama70.jpg);  
+  background-image: url(../images/trama270.jpg);  
 }
 
 
@@ -47,7 +47,6 @@ main{
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 12% 88%;
 }
-
 
 /* Header with navbar */
 header{

@@ -1,4 +1,3 @@
-<p class="mobile-title-servicios">Servicios</p>
 <?php if( get_previous_posts_link() ) {
   ?>
   <button class="btn-posts"><?php previous_posts_link('Anterior'); ?> </button>

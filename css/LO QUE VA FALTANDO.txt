@@ -2,9 +2,9 @@ LO QUE VA FALTANDO
 
 -barra de navegacion submen
 -tamaño de los svg de los iciones de las categorias
--subir json con cambios en noticias
+- NUEVO FORMATO SINGLE NOTICIA - CON JSON NUEVO
 -revisar mobile.
 -- CAMBIAR PERMISOS
--- ARREGLAR SELLOS
--- PONER ENALCES A IMAGENS SINGLE NOTICIA
--- CAMBIAR TEXTOS SINGLE NOTICIA
+
+- AARREGLAR PAGE CSS - MOBILE
+-- AÑADIR TEXTO DE PRODUCTOS

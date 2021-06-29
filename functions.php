@@ -111,7 +111,15 @@ function load_css(){
         array(), 
         filemtime(get_stylesheet_directory() . '/css/archive-perfiles-productor.css'));
     }
-    
+    //cargamos nuestro propio estilo personalizado para páginas.
+    if (is_404()) {
+        wp_enqueue_style(
+            '404', 
+            get_template_directory_uri() . '/css/404.css', 
+            array(), 
+            filemtime( get_stylesheet_directory()  . '/css/404.css' )
+        );
+    }
 }
 add_action('wp_enqueue_scripts', 'load_css');
 //Carga de JS
@@ -187,10 +195,10 @@ add_image_size('img-carta-noticias', 255, 149, true);
 add_image_size('slide-img', 1440, 750, true);
 
 //Imagen de single entrada featured imagen
-add_image_size('featured-entrada', 1020, 516, true);
+add_image_size('featured-entrada', 1380, 516, true);
 
 //Imagen lead de entrada
-add_image_size('lead-entrada', 443, 675, true);
+add_image_size('lead-entrada', 461, 818, true);
 // //Imagen de single entrada featured imagen
 // add_image_size('featured-entrada-2', 1020, 504, true);
 
