@@ -117,7 +117,7 @@ main {
   display: none;
 }
 .paginacion{
-  grid-column: 2/9;
+  grid-column: 3/9;
   display: inline-block;
   /* gap: 2em; */
   /* padding: 2.3em; */
@@ -215,6 +215,21 @@ main {
     justify-self: self-end;
     /* margin-left: 1em; */
   }
+  .paginacion a, .paginacion span{
+    padding: 5px 13px;
+  }
+  .aside--noticias{
+    padding: 0;
+  }
+  .extracto__noticias {
+    font-size: .85rem;
+  }
+  .autor__noticias{
+    font-size: .9rem;
+  }
+  .aside--n{
+    margin: 0;
+  }
 }
 
  /* MEDIA QUERIES CSS */
@@ -258,9 +273,12 @@ main {
     font-size: 0.8rem;
     margin-top: 2em;
   }
+  .aside--noticias{
+    padding: 0;
+  }
   .aside--n{
     width: 10em;
-    margin: 0em 2em .7em 3em;
+    margin: 0;
   }
   .btn-posts{
     width: 6em;
@@ -269,6 +287,10 @@ main {
   .btn-posts a {
     font-size: .8rem;
   }
+  .paginacion a, .paginacion span{
+    padding: 3px 10px;
+  }
+
 }
 
 /* Mobile */
@@ -277,7 +299,7 @@ main {
     grid-template-rows: 20vh 76vh 1vh;
   }
   .grid--12-2 {
-    grid-template-rows: 67vh 10vh;
+    grid-template-rows: 63vh 10vh;
   }
   .position-2-2 {
     grid-column: 1/7;
@@ -288,31 +310,38 @@ main {
   .cartas__container--noticias {
     grid-column: 1/7;
     grid-row: 1/2;
-    width: 300px;
+    width: max-content;
     margin: 1em auto;
     padding: 0;
+    gap: 1.4em;
   }
   .cartas--noticias {
-    min-width: 317px;
-    /* min-width: 38vw; */
+    width: 44.5vw;
+    min-width: 77vw;
     border-radius: 10px;
-    max-width: 50vh;
-    max-height: 20vh;
+    /* max-width: 44.5vw; */
+    max-height: 16.1vh;
   }
   .texto__container h1{
     grid-column: 1/5;
+    grid-row: 1/4;
     height: 100%;
     border-radius: 0 9px 0 0;
+    background: rgba(29, 45, 124, 1);
   }
   .extracto__noticias {
     display: none;
   }
+  .autor__noticias {
+    display: none;
+  };
   .autor__noticias {
     grid-column: 1/7;
     grid-row: 2/3;
     margin: 0 1em;
     text-align: center;
     padding-top: 1em;
+    color: white;
   }
   .texto__container a {
     grid-column: 2/5;
@@ -328,8 +357,11 @@ main {
   }
   .aside--noticias {
     grid-column: 1/7;
-    grid-row: 2/-1;
+    grid-row: 2/3;
     flex-direction: row;
+    background: rgba(29, 45, 124, 1);
+    height: 4em;
+    z-index: 0;
   }
   .aside--n {
     width: 14vw;
@@ -382,6 +414,10 @@ main {
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* margin-top: 4em; */
+  }
+  .btn__noticias {
+    height: 1.5em;
+    /* width: 10px; */
   }
 }
 

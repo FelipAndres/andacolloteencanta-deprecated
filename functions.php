@@ -10,6 +10,8 @@ function load_css(){
         filemtime( get_stylesheet_directory()  . '/css/main.css' )
     );
     
+    //cargamos nuestro principal. // HEADER FOOTER PAGE SINGLE ARCHVE
+    wp_enqueue_style('unicons','https://unicons.iconscout.com/release/v4.0.0/css/line.css', array(), null);    
     //cargamos nuestro propio estilo personalizado para páginas.
     if (is_page('front-page') ) {
         wp_enqueue_style(

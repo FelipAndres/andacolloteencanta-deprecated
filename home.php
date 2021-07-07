@@ -3,7 +3,7 @@
   <section class="position-2-2 grid--12-2">
 
     <div class="title--noticias">
-      <h2>Descubre las novedades de andacollo</h2>
+      <h2>Descubre las novedades de Andacollo</h2>
     </div>
 
     <div class="cartas__container--noticias">

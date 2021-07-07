@@ -154,8 +154,8 @@ main{
   cursor: pointer;
 }
 .btn__servicios{
-  height: 2em;
-  width: 7em;
+  height: 1.5em;
+  width: 6em;
   font-family: Boogaloo;
   font-size: 1rem;
   border-radius: 5px;
@@ -225,6 +225,9 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.aside--right img{
+  height: 15em;
 }
 .aside--right h1{
  font-family: Boogaloo;
@@ -336,6 +339,9 @@ main{
     margin: 1.4em auto;
     width: 14em;
   }
+  .aside--right img {
+    height: 12em;
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -354,7 +360,7 @@ main{
   .btn__servicios {
     font-size: .8rem;
     height: 1.5rem;
-    margin: 0px 1rem 1rem 0px;
+    margin: 0em 1em 1em 0px;
   }
   .cartas-cat{
     height: max-content;
@@ -397,6 +403,12 @@ main{
   #map{
     margin: 1.4em auto;
     width: 13.5em;
+  }
+  .aside--right h1 {
+    font-size: 3rem;
+  }
+  .aside--right img {
+    height: 12em;
   }
 }
 
@@ -448,8 +460,8 @@ main{
     max-width: 115px;
   }
   .cartas--servicios {
-    max-width: 50vh;
-    max-height: 17vh;
+    max-width: 44.5vh;
+    max-height: 16.1vh;
   }
   .extracto__descripcion {
     display: none;
@@ -486,6 +498,7 @@ main{
   }
   .texto__container a {
     grid-column: 2/5;
+    /* margin: 1em; */
   }
 
   .position-3-1 {

@@ -20,6 +20,8 @@
       $imagen_link = get_field('foto_cabecera_paginas');
       $pie_de_foto_1 = get_field('Pie_cabecera_paginas');
       $autor_de_foto_1 = get_field('creditos_foto_cabecera');
+      $pie_de_foto_2 = get_field('titulo_fotocomplementaria_paginas');
+      $autor_de_foto_2 = get_field('creditos_foto_complementaria');
 
 
       $img_featured_footer = get_field('imagen_complementaria_paginas');
@@ -48,7 +50,7 @@
     <figure class="content__footer">
       <img class="aside-n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
       <div class="footer__datos">
-        <div class="footer__categoria"><?php the_category(); ?></div>
+        <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
           <p><strong><?php echo get_the_date("j F, Y"); ?></strong><br> por
             <?php the_author_meta('display_name', $post->post_author ); ?>
@@ -71,7 +73,7 @@
     <figure class="flex">
       <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
       <div class="footer__datos">
-        <div class="footer__categoria"><?php the_category(); ?></div>
+        <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
           <p><strong><?php echo get_the_date("j F, Y"); ?></strong><br> por
           <?php the_author_meta('display_name', $post->post_author ); ?>
@@ -86,6 +88,10 @@
   <figure class="img--noticias2">
     <?php echo wp_get_attachment_image($img_featured_footer,$img_size_featured_footer); ?>
   </figure>
+  <div class="pie_de_foto-2">
+    <p><?php echo $pie_de_foto_2 ?></p>
+    <p>Autor: <?php echo $autor_de_foto_2 ?></p>
+  </div>
 </section>
 </main>
 <?php get_footer(); ?>

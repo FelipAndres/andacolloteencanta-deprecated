@@ -10,7 +10,7 @@
         <h4>CASA DEL ENCUENTRO CIUDADANO</h4>
           <p>URMENETA #599 - ANDACOLLO</p>
         <h4>FONO: +56 512 33 7900</h4>
-          <p>info@andacolloteencanta.cl</p>
+          <p>INFO@ANDACOLLOTEENCATA.CL</p>
         </div>
       </div>
       <div class="btn__container">
@@ -35,9 +35,11 @@
     </div>
     <div class="footer__section">
       <div class="footer__content footer">
-        <h2>DEPARTAMENTO DE CULTURA Y TURISMO ©</h2>
-        <p>MUNICIPALIDAD DE ANDACOLLO</p>
-        <p>SITIO WEB DESARROLLADO POR FAO SYSTEMS & VGC PRODUCCIONES - ANDACOLLO 2021</p>
+        <h2>DEPARTAMENTO DE CULTURA Y TURISMO</h2>
+        <p>MUNICIPALIDAD DE ANDACOLLO © 2021</p>
+        <br>
+        <p>DESARROLLADO POR</p>
+        <p>404Dev & VGC PRODUCCIONES</p>
       </div>
     </div>
   </footer>
