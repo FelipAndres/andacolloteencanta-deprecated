@@ -31,6 +31,18 @@
 
   <div class="copete__noticia">
     <h1><?php echo $bajada_noticia; ?></h1>
+    <div class="footer__datos-2">
+      <img class="aside--n-2" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <div class="flex-end">
+        <div class="footer__categoria"><?php the_category(' - '); ?></div>
+        <div class="footer__fecha">
+          <p><strong><?php echo get_the_date("j F, Y"); ?></strong><br> por
+            <?php the_author_meta('display_name', $post->post_author ); ?>
+          </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </section>

@@ -160,7 +160,7 @@ Template Post Type: perfil
 
 
     </div>
-    <img src="<?php echo get_template_directory_uri();  ?>/images/R.svg" alt="">
+    <img class="aside-r-img"  src="<?php echo get_template_directory_uri();  ?>/images/R.svg" alt="">
   </aside>
 </section>
 </main>

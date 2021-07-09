@@ -14,26 +14,45 @@ window.addEventListener("scroll",function() {
   }
 });
 
-//Menu
-
-  var nav_text = document.getElementById("nav__mobile");
-  var down_arrow = document.getElementById("down-arrow");
-  var up_arrow = document.getElementById("up-arrow");
+function myFunction(){
+  const nav_text = document.getElementById("nav__mobile");
+  const down_arrow = document.getElementById("down-arrow");
+  const up_arrow = document.getElementById("up-arrow");
   
-  function menumobile(){
-  
-    if (nav_text.style.display === "block") {
-      nav_text.style.display = "none";
-      up_arrow.style.display = "none";
-      down_arrow.style.display = "block";
-    } else {
-      nav_text.style.display = "block";
-      up_arrow.style.display = "block";
-      down_arrow.style.display = "none";
-    }
+  if (nav_text.style.display === "block") {
+    nav_text.style.display = "none";
+    up_arrow.style.display = "none";
+    down_arrow.style.display = "block";
+  } else {
+    nav_text.style.display = "block";
+    up_arrow.style.display = "block";
+    down_arrow.style.display = "none";
   }
-  // nav_text.addEventListener('click', menumobile());
-  down_arrow.addEventListener.addEventListener('click', menumobile());
-  up_arrow.addEventListener.addEventListener('click', menumobile());
-  
+
+}
+    
+
+//Menu
+// const parent = document.querySelector("nav-mobile");
+
+// parent.addEventListener('click', function(e){
+//   const child = e.target.matches(".uil-angle-double-down, .uil uil-angle-double-up *");
+
+//   if (child) { 
+
+//     const nav_text = document.getElementById("nav__mobile");
+//     const down_arrow = document.getElementById("down-arrow");
+//     const up_arrow = document.getElementById("up-arrow");
+    
+//     if (nav_text.style.display === "block") {
+//       nav_text.style.display = "none";
+//       up_arrow.style.display = "none";
+//       down_arrow.style.display = "block";
+//     } else {
+//       nav_text.style.display = "block";
+//       up_arrow.style.display = "block";
+//       down_arrow.style.display = "none";
+//     }
+//   }});// If child is click
+    
 

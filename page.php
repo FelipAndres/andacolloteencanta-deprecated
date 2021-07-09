@@ -7,7 +7,7 @@
   <aside class="aside--noticias">
     <h1><?php the_title(); ?></h1>
     <figure>
-      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
     </figure>
   </aside>
   <figure class="img--noticias">
@@ -31,6 +31,18 @@
 
   <div class="copete__noticia">
     <h1><?php echo $texto_cabecera; ?></h1>
+    <div class="footer__datos-2">
+      <img class="aside--n-2" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
+      <div class="flex-end">
+        <div class="footer__categoria"><?php the_category(' - '); ?></div>
+        <div class="footer__fecha">
+          <p><strong><?php echo get_the_date("j F, Y"); ?></strong><br> por
+            <?php the_author_meta('display_name', $post->post_author ); ?>
+          </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </section>
@@ -40,7 +52,7 @@
     <h1><?php the_title(); ?></h1>
   </div>
   <div class="content__noticia">
-    <p><?php the_field('info_paginas'); ?></p>
+    <p><?php the_field('cuerpo_noticia'); ?></p>
   </div>
   <figure class="img2__noticia">
     <?php echo wp_get_attachment_image($imagen_link, $img_size); ?>
@@ -48,7 +60,7 @@
 
   <div class="footer__noticia">
     <figure class="content__footer">
-      <img class="aside-n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside-n" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
       <div class="footer__datos">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
@@ -69,22 +81,20 @@
 
 <section class="position-4-1 grid--12-3-1">
   <aside class="aside--noticias-2">
-    <p class="texto-infografia"><?php the_field('infografia_paginas'); ?></p>
+    <p class="texto-infografia"><?php the_field('infografia_noticia'); ?></p>
     <figure class="flex">
-      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
       <div class="footer__datos">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
           <p><strong><?php echo get_the_date("j F, Y"); ?></strong><br> por
-          <?php the_author_meta('display_name', $post->post_author ); ?>
-        </p>
+            <?php the_author_meta('display_name', $post->post_author ); ?>
+          </p>
+        </div>
       </div>
-    </div>
     </figure>
-    
+
   </aside>
-  <div class="titulo__imagen--footer">
-  </div>
   <figure class="img--noticias2">
     <?php echo wp_get_attachment_image($img_featured_footer,$img_size_featured_footer); ?>
   </figure>

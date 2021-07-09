@@ -18,7 +18,7 @@
     </nav>
 
     <nav class="nav-mobile">
-      <a href="javascript:void(0);" class="icon-onscroll" ">
+      <a href="javascript:void(0);" class="icon-onscroll">
         <i class="uil uil-angle-double-down"></i>
       </a>
       <?php wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav__mobile')); ?>
@@ -41,7 +41,7 @@
       </nav>
 
       <nav class="nav-mobile">
-        <a href="javascript:void(0);" class="icon" >
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i id="down-arrow" class="uil uil-angle-double-down"></i>
           <i id="up-arrow" class="uil uil-angle-double-up"></i>
         </a>
