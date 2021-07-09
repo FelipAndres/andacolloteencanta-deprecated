@@ -126,6 +126,7 @@ main{
 .content__footer{
   display: flex;
   /* justify-content: space-between; */
+  gap: 1em;
 }
 .pie_de_foto{
   font-size: .8rem;
@@ -166,6 +167,7 @@ main{
   margin-right: auto;
   /* padding: 1.5em 0 0em 1em; */
   color: white;
+  align-self: center;
 }
 .footer__categoria{
   font-family: Raleway;
@@ -204,6 +206,7 @@ main{
 }
 .flex{
   display: flex;
+  gap: 1em;
 }
 
 .texto-infografia{

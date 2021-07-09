@@ -156,10 +156,19 @@ nav{
   .menu-item-has-children:hover {
     text-decoration: underline;
   }
-  
+
+  .rrss-icons{
+    display: flex;
+    align-self: center;
+  }
+  .rrss-icons a img {
+    width: 1.5em;
+    /* background-color: white; */
+  }
   /* nav a:visited{
     /* color: #F4CE00; */
-  
+  /* .rrss-icons{display: none;} */
+
 .nav-mobile {
   display: none;
 }
@@ -1068,7 +1077,7 @@ MEDIA QUERYS
   footer{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 16vh 76vh 16vh;
+    grid-template-rows: 16vh 81vh 16vh;
     column-gap: 2em;
     height: 98vh;
     background-size: 400px;
