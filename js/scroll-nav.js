@@ -16,6 +16,7 @@ window.addEventListener("scroll",function() {
 
 function myFunction(){
   const nav_text = document.getElementById("nav__mobile");
+  const nav_text_onscroll = document.getElementById("nav__mobile-onscroll");
   const down_arrow = document.getElementById("down-arrow");
   const up_arrow = document.getElementById("up-arrow");
   

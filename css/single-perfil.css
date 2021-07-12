@@ -372,8 +372,10 @@ main{
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  
+  /* //130vh  */
   main{
-    grid-template-rows: 21vh 130vh 218vh;
+    grid-template-rows: 21vh 97vh 218vh; 
   }
   .grid--12-2{
     grid-template-rows: 77% 13% max-content;
@@ -414,7 +416,8 @@ main{
     grid-column: 1/7;
     grid-row: 3/4;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 51% repeat(4, 12%);
+    /* 51% */
+    grid-template-rows: max-content  repeat(4, 13%);
     margin: 0 auto;
 
   }
@@ -513,8 +516,8 @@ main{
     font-size: 2rem;
   }
   .aside--right img {
-    /* display: none; */
-    width: 2.2em;
+    display: none;
+    /* width: 2.2em; */
   }
   .aside-r-img{
     display: none;

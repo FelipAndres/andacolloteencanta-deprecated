@@ -17,12 +17,12 @@
       <?php wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav__secondary')); ?>
     </nav>
 
-    <nav class="nav-mobile">
+    <!-- <nav class="nav-mobile">
       <a href="javascript:void(0);" class="icon-onscroll" onclick="myFunction()">
         <i class="uil uil-angle-double-down"></i>
       </a>
-      <?php wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav__mobile')); ?>
-    </nav>
+      <?php //wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav__mobile')); ?>
+    </nav> -->
 
   </div>
 

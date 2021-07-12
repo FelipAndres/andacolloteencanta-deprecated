@@ -263,21 +263,18 @@ main{
     object-fit: cover;
   }
   .aside-n{
-    width: 4em;
-  
+    width: 5.6em;
   }
   .footer__datos{
     margin-right: auto;
     padding: .8em;
     height: max-content;
-    align-self: auto;
   }
   .footer__fecha p{
     font-size: 1rem;
   }
   .pie_de_foto {
     margin-right: 2em;
-    padding: .5em;
   }
 
   .texto-infografia {
@@ -322,7 +319,7 @@ main{
     line-height: 1.3em;
   }
   .aside-n{
-    width: 3.5em;
+    width: 5em;
   }
   .footer__categoria li{
     font-size: 1rem;
@@ -337,15 +334,11 @@ main{
   .footer__datos {
     padding: .4em 0 0em 1em;
     height: max-content;
-    align-self: flex-start;
   }
   .pie_de_foto {
     padding-top: .5em;
     margin-right: 3em;
     font-size: .7rem;
-  }
-  .pie_de_foto p {
-    margin-bottom: .5em;
   }
   .pie_de_foto-2{
     font-size: .7rem;
@@ -372,7 +365,7 @@ main{
 
 @media (min-width: 320px) and (max-width: 480px){
   main {
-    grid-template-rows: 128px 80vh 177vh max-content;
+    grid-template-rows: 128px 80vh 101vh max-content;
   }
   .position-2-3 {
     grid-column: 1/7;
@@ -456,7 +449,7 @@ main{
     font-size: .9rem;
     white-space: pre-line;
     line-height: 1.4em;
-    margin: 9em 1.5em;
+    margin: 8em 1.5em 0 1.5em;
 
   }
   .content__noticia > p{
@@ -510,7 +503,7 @@ main{
   }
   .img--noticias2 img  {
     height: 100%;
-    width: 22.5em;
+    width: 26.5em;
     object-fit: cover;
     margin-bottom: 5em;
   }

@@ -159,10 +159,13 @@ nav{
 
   .rrss-icons{
     display: flex;
+    flex-direction: column;
+    gap: 1em;
     align-self: center;
   }
   .rrss-icons a img {
-    width: 1.5em;
+    width: 1.6em;
+    height: auto;
     /* background-color: white; */
   }
   /* nav a:visited{
@@ -778,6 +781,11 @@ MEDIA QUERYS
   .footer__content{
     padding: 4em 0 0 0;
   }
+  .rrss-icons a img {
+    width: 1.4em;
+    height: auto;
+    /* background-color: white; */
+  }
 }
 @media (min-width: 900px) and (max-width: 1366px){
   .aside-title-mobile {
@@ -875,7 +883,11 @@ MEDIA QUERYS
   .footer__text--sitios p{
     font-size: .5rem;
   }
-  
+  .rrss-icons a img {
+    width: 1.3em;
+    height: auto;
+    /* background-color: white; */
+  }
   }
 /* Tablet */
 @media screen and (max-width: 1024px) {
@@ -922,7 +934,7 @@ MEDIA QUERYS
     display: none;
   }
   header {
-    grid-template-rows: 70%;
+    grid-template-rows: 77%;
     grid-column: 1/7;
   }
   .header__image{
@@ -1077,7 +1089,7 @@ MEDIA QUERYS
   footer{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 16vh 81vh 16vh;
+    grid-template-rows: 16vh 66vh 16vh;
     column-gap: 2em;
     height: 98vh;
     background-size: 400px;
@@ -1141,6 +1153,7 @@ MEDIA QUERYS
     /* background-position: -396px; */
     background-size: contain;
     background-position: bottom;
+    margin-bottom: -10px;
   }
 
 
@@ -1159,7 +1172,7 @@ MEDIA QUERYS
   .nav__mobile {
     display: none;
     border-radius: 0px 0px 10px 10px;
-    height: 80vh;
+    height: 59vh;
     background: linear-gradient(90.28deg, #082B7D 0%, #0465D6 100%);
     padding-top: 1.8em;
   }
@@ -1179,8 +1192,9 @@ MEDIA QUERYS
   .icon{
     display: block;
     position: absolute;
-    top: 2.8em;
-    left: 4.2em;
+    /* top: 2.8em;
+    top: 4em; */
+    left: 5em;
     font-size: 2rem;
   }
   .icon-onscroll{
@@ -1192,6 +1206,21 @@ MEDIA QUERYS
   }
   #up-arrow {
     display: none;
+  }
+  .rrss-icons{
+    flex-direction: row;
+    margin-bottom: .8em;
+  }
+  .rrss-icons a img {
+    width: 1.2em;
+    height: auto;
+    /* background-color: white; */
+  }
+  .menu-item-514{
+    margin-bottom: 4em;
+  }
+  .menu-item-557 {
+    margin-bottom: 12em;
   }
   }
 

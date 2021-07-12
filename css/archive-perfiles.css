@@ -453,7 +453,7 @@ main{
     justify-content: center;
     /* max-height: 64vh; */
     max-width: 350px;
-    height: max-content;
+    height: auto;
   }
   .img--servicios {
     object-fit: cover;

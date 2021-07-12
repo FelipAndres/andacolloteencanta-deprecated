@@ -5,9 +5,9 @@
       <img class="footer__logo" src="<?php echo get_template_directory_uri();  ?>/images/logo white andacollo.png"
         alt="">
       <div class="rrss-icons">
-        <a href=""><img src="<?php echo get_template_directory_uri();  ?>/images/facebook-brands.svg" alt=""></a>
-        <a href=""><img src="<?php echo get_template_directory_uri();  ?>/images/instagram-brands.svg" alt=""></a>
-        <a href=""><img src="<?php echo get_template_directory_uri();  ?>/images/user-alt-solid.svg" alt=""></a>
+        <a href="https://andacolloteencanta.cl/wp-login.php"><img src="<?php echo get_template_directory_uri();  ?>/images/user-alt-solid-w.svg" alt=""></a>
+        <a href="https://www.facebook.com/Andacolloteencanta"><img src="<?php echo get_template_directory_uri();  ?>/images/facebook-brands-w.svg" alt=""></a>
+        <a href="/#"><img src="<?php echo get_template_directory_uri();  ?>/images/instagram-brands-w.svg" alt=""></a>
       </div>
       <div class="footer__texto">
         <div class="footer__text">

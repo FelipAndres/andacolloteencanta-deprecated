@@ -365,7 +365,7 @@ main{
 
 @media (min-width: 320px) and (max-width: 480px){
   main {
-    grid-template-rows: 128px 80vh 177vh max-content;
+    grid-template-rows: 128px 80vh 101vh max-content;
   }
   .position-2-3 {
     grid-column: 1/7;
@@ -449,7 +449,7 @@ main{
     font-size: .9rem;
     white-space: pre-line;
     line-height: 1.4em;
-    margin: 9em 1.5em;
+    margin: 8em 1.5em 0 1.5em;
 
   }
   .content__noticia > p{
@@ -503,7 +503,7 @@ main{
   }
   .img--noticias2 img  {
     height: 100%;
-    width: 22.5em;
+    width: 26.5em;
     object-fit: cover;
     margin-bottom: 5em;
   }
