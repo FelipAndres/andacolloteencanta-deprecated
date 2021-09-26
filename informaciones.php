@@ -1,3 +1,4 @@
+<?php /* Template Name: Informaciones */ ?>
 <?php get_header(); ?>
 <section class="position-2-3 grid--12-3">
   <div class="breadcrumb">
@@ -7,7 +8,7 @@
   <aside class="aside--noticias">
     <h1><?php the_title(); ?></h1>
     <figure>
-      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
     </figure>
   </aside>
   <figure class="img--noticias">
@@ -16,23 +17,23 @@
 
   <?php 
       // $datos__array = get_field('grupo__desarollo');
-      $bajada_noticia = get_field('bajada_noticia');
-      $link_imagen = get_field('link_noticia');
-      $imagen_link = get_field('imagen_link');
-      $pie_de_foto_1 = get_field('Pie_link_complementario');
-      $autor_de_foto_1 = get_field('creditos_link');
-      $pie_de_foto_2 = get_field('Titulo_imagen_complemento');
+      $texto_cabecera = get_field('cabecera_paginas');
+      $imagen_link = get_field('foto_cabecera_paginas');
+      $pie_de_foto_1 = get_field('Pie_cabecera_paginas');
+      $autor_de_foto_1 = get_field('creditos_foto_cabecera');
+      $pie_de_foto_2 = get_field('titulo_fotocomplementaria_paginas');
       $autor_de_foto_2 = get_field('creditos_foto_complementaria');
 
-      $img_featured_footer = get_field('imagen_noticia_3');
+
+      $img_featured_footer = get_field('imagen_complementaria_paginas');
       $img_size = 'lead-entrada';
       $img_size_featured_footer = 'featured-entrada';
       ?>
 
   <div class="copete__noticia">
-    <h1><?php echo $bajada_noticia; ?></h1>
+    <h1><?php echo $texto_cabecera; ?></h1>
     <div class="footer__datos-2">
-      <img class="aside--n-2" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n-2" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
       <div class="flex-end">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
@@ -52,7 +53,7 @@
     <h1><?php the_title(); ?></h1>
   </div>
   <div class="content__noticia">
-    <p><?php the_field('cuerpo_noticia'); ?></p>
+    <p><?php the_field('info_paginas'); ?></p>
   </div>
   <figure class="img2__noticia">
     <?php echo wp_get_attachment_image($imagen_link, $img_size); ?>
@@ -60,7 +61,7 @@
 
   <div class="footer__noticia">
     <figure class="content__footer">
-      <img class="aside-n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside-n" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
       <div class="footer__datos">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
@@ -81,9 +82,9 @@
 
 <section class="position-4-1 grid--12-3-1">
   <aside class="aside--noticias-2">
-    <p class="texto-infografia"><?php the_field('infografia_noticia'); ?></p>
+    <p class="texto-infografia"><?php the_field('infografia_paginas'); ?></p>
     <figure class="flex">
-      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
       <div class="footer__datos">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">

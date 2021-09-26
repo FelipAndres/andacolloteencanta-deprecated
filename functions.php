@@ -20,7 +20,15 @@ function load_css(){
             array(), 
             filemtime( get_stylesheet_directory()  . '/css/main.css' )
         );
-    } else{
+    } elseif (is_page_template( 'informaciones.php' ) ){
+        wp_enqueue_style(
+            'page-informaciones', 
+            get_template_directory_uri() . '/css/informaciones.css', 
+            array(), 
+            filemtime( get_stylesheet_directory()  . '/css/informaciones.css' )
+        );
+
+    }else{
         wp_enqueue_style(
             'page', 
             get_template_directory_uri() . '/css/page.css', 
@@ -28,6 +36,7 @@ function load_css(){
             filemtime( get_stylesheet_directory()  . '/css/page.css' )
         );
     }
+
     //cargamos nuestro propio estilo personalizado para páginas.
     if (is_home()) {
         wp_enqueue_style(
