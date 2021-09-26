@@ -52,7 +52,7 @@
     <h1><?php the_title(); ?></h1>
   </div>
   <div class="content__noticia">
-    <p><?php the_field('cuerpo_noticia'); ?></p>
+    <p><?php the_field('info_paginas'); ?></p>
   </div>
   <figure class="img2__noticia">
     <?php echo wp_get_attachment_image($imagen_link, $img_size); ?>
@@ -81,7 +81,7 @@
 
 <section class="position-4-1 grid--12-3-1">
   <aside class="aside--noticias-2">
-    <p class="texto-infografia"><?php the_field('infografia_noticia'); ?></p>
+    <p class="texto-infografia"><?php the_field('infografia_paginas'); ?></p>
     <figure class="flex">
       <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
       <div class="footer__datos">

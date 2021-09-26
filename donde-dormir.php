@@ -104,13 +104,12 @@ Template Post Type: perfil
   </div>
   <aside class="aside--right donde-dormir">
     <h1>Hospedaje Local</h1> 
-    <img src="<?php echo get_template_directory_uri();  ?>/images/H.svg" alt="">
     <div class="sellos">
       <?php
        $grupo_sellos = get_field('certificaciones');// parent group
         // $sello
         $sellos = $grupo_sellos["sellos"];
-        console_log($sellos);
+        // console_log($sellos);
         if( $sellos && in_array('Sello 1', $sellos) ) {?>
       <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/registro_turístico.svg"
         alt="sello registro turistico">
@@ -142,9 +141,8 @@ Template Post Type: perfil
       <?php
       }
       ?>
-
-
     </div>
+    <img src="<?php echo get_template_directory_uri();  ?>/images/H.svg" alt="">
   </aside>
 </section>
 </main> 

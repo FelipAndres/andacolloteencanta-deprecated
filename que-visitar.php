@@ -21,27 +21,43 @@ Template Post Type: perfil
         $descripcion_larga = $informacion_contacto['descripcion_larga']; // 'descripcion' is your child field
       ?>
       <div class="carta--descripcion"><?php echo $descripcion_larga;?></div>
-      <div class="info-contacto carta--nombre"><img src="<?php echo get_template_directory_uri();  ?>/images/user-alt-solid.svg" alt=""> <p><?php echo $nombre;?></p></div>
-      <div class="info-contacto carta--direccion"><img src="<?php echo get_template_directory_uri();  ?>/images/location-arrow-solid.svg" alt=""> <p><?php echo $direccion;?></p></div>
-      <div class="info-contacto carta--telefono"><img src="<?php echo get_template_directory_uri();  ?>/images/phone-alt-solid.svg" alt=""> <p><?php echo "+569 " . $numero;?></p></div>
-      <div class="info-contacto carta--correo"><img src="<?php echo get_template_directory_uri();  ?>/images/envelope-solid.svg" alt=""><p><?php echo $email;?></p></div>
+      <div class="info-contacto carta--nombre"><img
+          src="<?php echo get_template_directory_uri();  ?>/images/user-alt-solid.svg" alt="">
+        <p><?php echo $nombre;?></p>
+      </div>
+      <div class="info-contacto carta--direccion"><img
+          src="<?php echo get_template_directory_uri();  ?>/images/location-arrow-solid.svg" alt="">
+        <p><?php echo $direccion;?></p>
+      </div>
+      <div class="info-contacto carta--telefono"><img
+          src="<?php echo get_template_directory_uri();  ?>/images/phone-alt-solid.svg" alt="">
+        <p><?php echo "+569 " . $numero;?></p>
+      </div>
+      <div class="info-contacto carta--correo"><img
+          src="<?php echo get_template_directory_uri();  ?>/images/envelope-solid.svg" alt="">
+        <p><?php echo $email;?></p>
+      </div>
     </div>
     <div class="rrss">
-    <?php
+      <?php
       $rrss_contacto = get_field('rrss'); // parent group
       $facebook = $rrss_contacto['link_facebook']; 
       $instagram = $rrss_contacto['link_instagram']; 
       $email = $rrss_contacto['link_email'];
       $whatsapp = $rrss_contacto['link_whatsapp'];
     ?>
-      <a href="<?php echo $facebook; ?>"><img src="<?php echo get_template_directory_uri();  ?>/images/facebook-brands.svg" alt="" ></a>
-      <a href="<?php echo $instagram; ?>"><img src="<?php echo get_template_directory_uri();  ?>/images/instagram-brands.svg" alt=""></a>
-      <a href="<?php echo $email; ?>"><img src="<?php echo get_template_directory_uri();  ?>/images/envelope-solid.svg" alt="" target="_blank"></a>
-      <a href="<?php echo $whatsapp; ?>"><img src="<?php echo get_template_directory_uri();  ?>/images/whatsapp-brands.svg" alt=""></a>
+      <a href="<?php echo $facebook; ?>"><img
+          src="<?php echo get_template_directory_uri();  ?>/images/facebook-brands.svg" alt=""></a>
+      <a href="<?php echo $instagram; ?>"><img
+          src="<?php echo get_template_directory_uri();  ?>/images/instagram-brands.svg" alt=""></a>
+      <a href="<?php echo $email; ?>"><img src="<?php echo get_template_directory_uri();  ?>/images/envelope-solid.svg"
+          alt="" target="_blank"></a>
+      <a href="<?php echo $whatsapp; ?>"><img
+          src="<?php echo get_template_directory_uri();  ?>/images/whatsapp-brands.svg" alt=""></a>
     </div>
   </div>
   <div class="icono--servicio">
-    
+
     <img src="<?php echo get_template_directory_uri();  ?>/images/icono-quevisitar.svg" alt="">
     <h2 class="que-visitar-title">Servicios</h2>
   </div>
@@ -100,17 +116,16 @@ Template Post Type: perfil
       } 
       ?>
     </div>
-    
+
   </div>
   <aside class="aside--right que-visitar">
-    <h1>Sitios de Interés</h1> 
-    <img src="<?php echo get_template_directory_uri();  ?>/images/S.svg" alt="">
+    <h1>Sitios de Interés</h1>
     <div class="sellos">
       <?php
        $grupo_sellos = get_field('certificaciones');// parent group
         // $sello
         $sellos = $grupo_sellos["sellos"];
-        console_log($sellos);
+        // console_log($sellos);
         if( $sellos && in_array('Sello 1', $sellos) ) {?>
       <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/registro_turístico.svg"
         alt="sello registro turistico">
@@ -142,11 +157,9 @@ Template Post Type: perfil
       <?php
       }
       ?>
-
-
     </div>
+    <img src="<?php echo get_template_directory_uri();  ?>/images/S.svg" alt="">
   </aside>
 </section>
-</main> 
+</main>
 <?php get_footer(); ?>
-

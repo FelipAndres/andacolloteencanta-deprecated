@@ -60,14 +60,17 @@ main{
 }
 .info-contacto {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-around;
 }
 .info-contacto img {
   /* margin-top: .1em; */
-  width: 1em;
-  height: auto;
-  margin: .5em;
+  width: 1.1em;
+  /* height: auto; */
+  /* margin: .5em; */
+}
+.info-contacto p {
+  margin: 0 1em 0 auto;
 }
 .carta--nombre {
   /* margin-left: 1em; */
@@ -371,11 +374,10 @@ main{
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
+@media (min-width: 320px) and (max-width: 399px) {
   /* //130vh  */
   main{
-    grid-template-rows: 21vh 97vh 218vh; 
+    grid-template-rows: 21vh 130vh 218vh; 
   }
   .grid--12-2{
     grid-template-rows: 77% 13% max-content;
@@ -501,6 +503,171 @@ main{
   .producto img {
     height: 14.5em;
     width: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    object-fit: cover;
+  }
+  .icono--servicio{
+    display: none;
+  }
+  .aside--right {
+    grid-column: 1/7 ;
+    grid-row: 2/3;
+  }
+  .aside--right h1 {
+    margin: .3em auto;
+    font-size: 2rem;
+  }
+  .aside--right img {
+    display: none;
+    /* width: 2.2em; */
+  }
+  .aside-r-img{
+    display: none;
+  }
+  .sellos {
+    /* margin: 0; */
+  }
+  .aside--right {
+    justify-content: space-around;
+    gap: 0em;
+    /* margin: 1]em 0; */
+
+  }
+  .aside--right h1{
+    margin: 0;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+  
+  /* //130vh  */
+  main{
+    grid-template-rows: 21vh 97vh 162vh; 
+  }
+  .grid--12-2{
+    grid-template-rows: 77% 13% max-content;
+  }
+  .position-2-1{
+    grid-column: 1/7;
+  }
+  .carta__container{
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1/7;
+    grid-row: 1/2;
+    grid-template-rows: 15% 28% 47% 10%;
+    height: 630px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .carta--titulo{
+    grid-column: 1/7;
+    grid-row: 1/2;
+    /* padding: 1.5em 2em; */
+    display: flex;
+    justify-content: center;
+  }
+  .carta--titulo h3{
+    padding: 0;
+    font-size: 1.4rem;
+    align-self: center;
+  }
+  .carta--img{
+    grid-column: 1/7;
+    grid-row: 2/3;
+    margin: .5em auto 0 auto;
+    width: 18em;
+    height: 10.5em;
+    object-fit: cover;
+  }
+  .carta--content{
+    grid-column: 1/7;
+    grid-row: 3/4;
+    grid-template-columns: repeat(6, 1fr);
+    /* 51% */
+    grid-template-rows: max-content  repeat(4, 13%);
+    margin: 0 auto;
+
+  }
+  .carta--descripcion{
+    grid-column: 1/7;
+    grid-row: 1/2;
+    margin: 1em 1.5em;
+    padding: 0;
+    text-align: justify;
+    font-size: .85rem;
+  }
+  .info-contacto {
+    justify-content: center;
+    align-items: center;
+    font-size: .85rem;
+    width: 21.5em;
+    margin: 0 auto;
+  }
+  .info-contacto img{
+    width: .95em;
+    margin-left: 1.5em;
+  }
+  .info-contacto p{
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-left: 1.7em;
+  }
+  .carta--nombre{
+    grid-column: 1/7;
+    grid-row: 2/3;
+  }
+  .carta--direccion {
+    grid-column: 1/7;
+    grid-row: 3/4;
+  }
+  .carta--telefono{
+    grid-column: 1/7;
+    grid-row: 4/5;
+  }
+  .carta--correo{
+    grid-column: 1/7;
+    grid-row: 5/6;
+    
+    
+  }
+  /* .info-contacto p {
+    flex-grow: 2;
+    margin-left: 1.7em;
+  } */
+
+  .rrss {
+    display: flex;
+    grid-column: 2/6;
+    grid-row: 4/5;
+    width: 100%;
+    flex-direction: row;
+    margin: 0 auto .7em;
+    align-items: end;
+    
+  }
+  .rrss img {
+    width: 2em;
+    
+  }
+  .galeria--productos{
+    grid-column: 1/7;
+    grid-row: 3/4;
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: .5em;
+    margin-top: .3em;
+  }
+  .position-1{
+    align-self:  center;
+    /* margin-top: 1em; */
+  }
+  .position-2 {
+    align-self: center;
+  }
+  .producto img {
+    height: 14.5em;
+    width: 23em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
     object-fit: cover;
   }
