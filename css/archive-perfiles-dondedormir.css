@@ -21,6 +21,11 @@
 .btn__servicios{
   background: var(--dondedormir);
 }
+.btn__servicios:hover{
+  background: white;
+  border: 1px solid hsl(43, 100%, 63%);
+  color: hsl(43, 100%, 63%);
+}
 /* Fin Cartas */
 .aside--right h1{
  color: var(--dondedormir);
@@ -30,4 +35,33 @@
   grid-column: 4/10;
   grid-row: 4/-1;
   border-bottom: 2px solid var(--dondedormir);
+}
+.paginacion span.current {
+  background-color: var(--dondedormir);
+  color: white;
+  border: 1px solid var(--dondedormir);
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .border-bottom {
+    display: none;
+  }
+  .cartas--servicios {
+    border-radius: 11px;
+  }
+  .texto__container h1 {
+    grid-column: 1/7;
+    border-radius:  10px 0px 0px 10px;
+  }
+  .aside--right {
+    background-color: var(--dondedormir);
+  }
+  .btn__servicios {
+    background: white;
+  }
+  .btn__servicios label {
+    color: var(--dondedormir);
+  }
+  .position-3-1 {
+    grid-template-rows: 7% 32% 61%;
+  }
 }

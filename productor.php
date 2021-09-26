@@ -105,6 +105,46 @@ Template Post Type: perfil
   <aside class="aside--right productor">
     <h1>Productor Local</h1> 
     <img src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
+    <div class="sellos">
+      <?php
+       $grupo_sellos = get_field('certificaciones');// parent group
+        // $sello
+        $sellos = $grupo_sellos["sellos"];
+        console_log($sellos);
+        if( $sellos && in_array('Sello 1', $sellos) ) {?>
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/registro_turístico.svg"
+        alt="sello registro turistico">
+      <?php
+      }
+      if( $sellos && in_array('Sello 2', $sellos) ) {?>
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_calidad_turistica.svg"
+        alt="sello calidad turistica">
+      <?php
+      }
+      if( $sellos && in_array('Sello 3', $sellos) ) {?>
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_distinción_sustentabilidad.svg"
+        alt="sello distincion de sustentabilidad">
+      <?php
+      }
+      if( $sellos && in_array('Sello 4', $sellos) ) {?>
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_confianza.svg"
+        alt="sello de confianza">
+      <?php
+      }
+      if( $sellos && in_array('Sello 5', $sellos) ) {?>
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_sigo_turismo.svg"
+        alt="Sello Sistema de Gestion Organizacional">
+      <?php
+      }
+      if( $sellos && in_array('Sello 6', $sellos) ) {?>
+      <img src="<?php echo get_template_directory_uri();  ?>/images/sellos/sello_iso_9001.svg"
+        alt="Sello Calidad Internacional ISO 9001">
+      <?php
+      }
+      ?>
+
+
+    </div>
   </aside>
 </section>
 </main> 

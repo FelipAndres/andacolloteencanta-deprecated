@@ -1,5 +1,5 @@
 .position-3-1 {
-  grid-template-rows: 20% 30% 50%;
+  grid-template-rows: 17% 35% 47%;
 }
 .position-3-1 h1{
   color:var(--artesania);
@@ -29,7 +29,42 @@
 .btn__servicios{
   background: var(--artesania);
 }
+.btn__servicios:hover{
+  background: white;
+  border: 1px solid hsl(4, 100%, 62%);
+  color: hsl(4, 100%, 62%);
+}
 /* Fin Cartas */
 .aside--right h1{
  color: var(--artesania);
+}
+.paginacion span.current {
+  background-color: var(--artesania);
+  color: white;
+  border: 1px solid var(--artesania);
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .border-bottom {
+    display: none;
+  }
+  .cartas--servicios {
+    border-radius: 11px;
+  }
+  .texto__container h1 {
+    grid-column: 1/7;
+    border-radius:  10px 0px 0px 10px;
+  }
+  .aside--right {
+    background-color: var(--artesania);
+  }
+  .btn__servicios {
+    background: white;
+  }
+  .btn__servicios label {
+    color: var(--artesania);
+  }
+  .position-3-1 {
+    grid-template-rows: 7% 45% 50%;
+  }
+
 }

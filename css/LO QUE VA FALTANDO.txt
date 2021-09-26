@@ -1,0 +1,10 @@
+LO QUE VA FALTANDO
+
+-barra de navegacion submen
+-tamaño de los svg de los iciones de las categorias
+- NUEVO FORMATO SINGLE NOTICIA - CON JSON NUEVO
+-revisar mobile.
+-- CAMBIAR PERMISOS
+
+- AARREGLAR PAGE CSS - MOBILE
+-- AÑADIR TEXTO DE PRODUCTOS
