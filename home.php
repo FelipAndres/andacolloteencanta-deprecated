@@ -7,10 +7,10 @@
     </div>
 
     <div class="cartas__container--noticias">
-      <?php get_template_part("includes/section", "indexblogposts"); ?>
+      <?php get_template_part("template-parts/section", "indexblogposts"); ?>
     </div>
     <div class="paginacion2">
-      <?php get_template_part('includes/section', 'paginacion-noticias'); ?>
+      <?php get_template_part('template-parts/section', 'paginacion-noticias'); ?>
     </div>
     <?php if (function_exists('pagination')) pagination(); ?>
 
@@ -19,7 +19,7 @@
         ofrece nuestra comuna de Andacollo</p>
         <p class="aside-title-mobile">Noticias</p>
       <figure>
-        <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+        <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt="">
       </figure>
     </aside>
 

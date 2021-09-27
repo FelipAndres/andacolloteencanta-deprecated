@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <section class="carousel">
-      <!-- <img src="<?php // echo get_template_directory_uri('slide');  ?>/images/fiesta_andacollo792.jpg" alt=""> -->
+      <!-- <img src="<?php // echo get_template_directory_uri('slide');  ?>/assets/images/fiesta_andacollo792.jpg" alt=""> -->
       <div class="slideshow-container">
         <?php $args = array(
           'post_type' => array('slideshow'),
@@ -47,7 +47,7 @@
       <div class="cartas__container">
         <figure class="cartas">
           <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-comer">
-            <img src="<?php echo get_template_directory_uri();  ?>/images/categorias/Cartilla_Donde-Comer-2.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Comer-2.jpg" alt="">
             <div class="titulo__container">
               <p class="titulo--dondecomer">¿Dónde Comer?</p>
             </div>
@@ -55,7 +55,7 @@
         </figure>
         <figure class="cartas">
           <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-dormir">
-            <img src="<?php echo get_template_directory_uri();  ?>/images/categorias/Cartilla_Donde-Dormir-2.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg" alt="">
             <div class="titulo__container">
               <p class="titulo--donderdormir">¿Dónde Dormir?</p>
             </div>
@@ -63,7 +63,7 @@
         </figure>
         <figure class="cartas">
           <a href="<?php get_site_url();  ?>/categorias-perfiles/que-visitar">
-            <img src="<?php echo get_template_directory_uri();  ?>/images/categorias/Cartilla_Que-Visitar-3.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg" alt="">
             <div class="titulo__container">
               <p class="titulo--quevisitar">¿Qué Visitar?</p>
             </div>
@@ -78,7 +78,7 @@
           una grata estadía en la Comuna</p>
           <p class="mobile-title-servicios">Servicios</p>
           <figure>
-          <img class="aside--s" src="<?php echo get_template_directory_uri();  ?>/images/S.svg" alt="">
+          <img class="aside--s" src="<?php echo get_template_directory_uri();  ?>/assets/images/S.svg" alt="">
         </figure>
       </aside>
     </section>
@@ -88,7 +88,7 @@
       <div class="cartas__container--productos">
         <figure class="cartas">
           <a href="<?php get_site_url();  ?>/categorias-perfiles/artesania">
-            <img src="<?php echo get_template_directory_uri();  ?>/images/categorias/Cartilla_Artesanos-2.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg" alt="">
             <div class="titulo__container">
               <p class="titulo--artesanias">Artesanias</p>
             </div>
@@ -96,7 +96,7 @@
         </figure>
         <figure class="cartas">
           <a href="<?php get_site_url();  ?>/categorias-perfiles/emprendedor">
-            <img src="<?php echo get_template_directory_uri();  ?>/images/categorias/Cartilla_Emprendedor.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg" alt="">
             <div class="titulo__container">
               <p class="titulo--emprendedores">Emprendedores</p>
             </div>
@@ -104,7 +104,7 @@
         </figure>
         <figure class="cartas">
           <a href="<?php get_site_url();  ?>/categorias-perfiles/productor">
-            <img src="<?php echo get_template_directory_uri();  ?>/images/categorias/Cartilla_Productores-2.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg" alt="">
             <div class="titulo__container">
               <p class="titulo--productores">Productores</p>
             </div>
@@ -115,7 +115,7 @@
         <p class="aside-title-productos">Aquí podrás adquirir productos con identidad local y el trabajo de los habitantes de Andacollo</p >
         <p class="mobile-title-productos">Productos</p>
         <figure>
-          <img class="aside--p" src="<?php echo get_template_directory_uri();  ?>/images/P.svg" alt="">
+          <img class="aside--p" src="<?php echo get_template_directory_uri();  ?>/assets/images/P.svg" alt="">
         </figure>
       </aside>
     </section>

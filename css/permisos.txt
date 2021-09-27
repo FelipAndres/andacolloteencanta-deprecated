@@ -1,9 +1,0 @@
-Suscriptor: son aquellos que quieran recibir informacion constante del sitio. Se mantiene el nombre con los privilegios que tiene.
-
-Colaborador: estará destinado a los perfiles de la vitrina virtual. Mantiene el nombre y cambia las funciones wp. solo acceso a perfiles y  datos de personalizacion de usuario.
-
-Autor: se usará para aquellos creadores de contenidos que quieran apoyar al desarrollo del sitio web. mantiene el nombre y funciones cambian. Acceso solo a galerías y biblioteca multimedia
-
-Editor: se usará para las noticias. Cambiar nombre a Periodista y funciones, acceso solo a area noticias
-
-En todos se debe dejar la personalizacion de la interfaz de usuario.

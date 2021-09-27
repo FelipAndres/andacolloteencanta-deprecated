@@ -2,12 +2,12 @@
   <div class="footer--img"></div>
   <div class="footer__section">
     <div class="footer__content">
-      <img class="footer__logo" src="<?php echo get_template_directory_uri();  ?>/images/logo white andacollo.png"
+      <img class="footer__logo" src="<?php echo get_template_directory_uri();  ?>/assets/images/logo white andacollo.png"
         alt="">
       <div class="rrss-icons">
-        <a href="https://andacolloteencanta.cl/wp-login.php"><img src="<?php echo get_template_directory_uri();  ?>/images/user-alt-solid-w.svg" alt=""></a>
-        <a href="https://www.facebook.com/Andacolloteencanta"><img src="<?php echo get_template_directory_uri();  ?>/images/facebook-brands-w.svg" alt=""></a>
-        <a href="/#"><img src="<?php echo get_template_directory_uri();  ?>/images/instagram-brands-w.svg" alt=""></a>
+        <a href="https://andacolloteencanta.cl/wp-login.php"><img src="<?php echo get_template_directory_uri();  ?>/assets/images/user-alt-solid-w.svg" alt=""></a>
+        <a href="https://www.facebook.com/Andacolloteencanta"><img src="<?php echo get_template_directory_uri();  ?>/assets/images/facebook-brands-w.svg" alt=""></a>
+        <a href="/#"><img src="<?php echo get_template_directory_uri();  ?>/assets/images/instagram-brands-w.svg" alt=""></a>
       </div>
       <div class="footer__texto">
         <div class="footer__text">
@@ -40,10 +40,10 @@
         <p> ASOCIACIÓN DE ARTESANOS DE CHILE</p>
       </div>
       <div class="footer__logos">
-        <img class="footer__logos" src="<?php echo get_template_directory_uri();  ?>/images/logos/logo_teencanta.svg"
+        <img class="footer__logos" src="<?php echo get_template_directory_uri();  ?>/assets/images/logos/logo_teencanta.svg"
           alt="">
         <img class="footer__logos big--logo"
-          src="<?php echo get_template_directory_uri();  ?>/images/logos/logo_municipalidad.svg" alt="">
+          src="<?php echo get_template_directory_uri();  ?>/assets/images/logos/logo_municipalidad.svg" alt="">
       </div>
     </div>
   </div>

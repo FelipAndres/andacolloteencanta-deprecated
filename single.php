@@ -7,7 +7,7 @@
   <aside class="aside--noticias">
     <h1><?php the_title(); ?></h1>
     <figure>
-      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt="">
     </figure>
   </aside>
   <figure class="img--noticias">
@@ -32,7 +32,7 @@
   <div class="copete__noticia">
     <h1><?php echo $bajada_noticia; ?></h1>
     <div class="footer__datos-2">
-      <img class="aside--n-2" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n-2" src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt="">
       <div class="flex-end">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
@@ -60,7 +60,7 @@
 
   <div class="footer__noticia">
     <figure class="content__footer">
-      <img class="aside-n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside-n" src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt="">
       <div class="footer__datos">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">
@@ -83,7 +83,7 @@
   <aside class="aside--noticias-2">
     <p class="texto-infografia"><?php the_field('infografia_noticia'); ?></p>
     <figure class="flex">
-      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/images/N.svg" alt="">
+      <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt="">
       <div class="footer__datos">
         <div class="footer__categoria"><?php the_category(' - '); ?></div>
         <div class="footer__fecha">

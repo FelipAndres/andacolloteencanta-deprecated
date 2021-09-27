@@ -1,0 +1,24 @@
+Custom Post Type
+  - se llama perfil
+  - Usa un Custom Page Template unico segun su categoria.
+
+  - Custom Taxonomy
+    - Usa categorias personalizadas para los perfiles llamadas categorias-perfiles
+
+Single Custom Post Type
+  - single-perfil-donde-comer.php
+
+Taxonomy Archive
+  - Usa un index del Custom Post Type segun caterogia llamado taxonomy-categorias-perfiles-artesania
+
+Custom Page Template
+  - Custom Page Template llamdo informaciones que es global.
+  - Usa tambien el Default Template para page.php
+
+
+
+Archive del Blog(Noticias)
+  -Usa el index de blog post llamado home.php
+
+Single Noticia
+  - single.php
