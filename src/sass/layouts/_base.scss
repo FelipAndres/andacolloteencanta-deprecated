@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
+:root{
+  --color-dondecomer: hsla(339, 100%, 37%, 0.8);
+  --color-dondedormir: hsl(35, 88%, 49%, 0.8);
+  --color-quevisitar: hsl(221, 60%, 52%, 0.8);
+  --color-artesania: hsl(0, 100%, 41%, 0.8);
+  --color-emprendedor: hsl(29, 100%, 37%, 0.8);
+  --color-productor: hsl(259, 69%, 43%, 0.8);
+  --color-backgroundcolor: hsla(0, 0%, 100%, 0.702);
+}
+
+main{
+    display: none;
+}
+footer{
+    display: none;
+}
+
+@media screen and (min-width: 512px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}

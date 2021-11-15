@@ -1,4 +1,17 @@
 <?php
+/**
+ * andacolloteencanta functions and definitions.
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package andacolloteencanta
+ */
+
+/**
+ * Get all the include files for the theme.
+ *
+ * @author 4040dev
+ */
 // cargamos nuestro archivo css
 function load_css(){
     
@@ -8,6 +21,13 @@ function load_css(){
         get_template_directory_uri() . '/assets/css/main.css', 
         array(), 
         filemtime( get_stylesheet_directory()  . '/assets/css/main.css' )
+    );
+    //cargamos nuestro principal. // HEADER FOOTER PAGE SINGLE ARCHVE
+    wp_enqueue_style(
+        'main-scss', 
+        get_template_directory_uri() . '/dist/css/style.css', 
+        array(), 
+        filemtime( get_stylesheet_directory()  . '/dist/css/style.css' )
     );
     
     //cargamos nuestro principal. // HEADER FOOTER PAGE SINGLE ARCHVE
@@ -137,16 +157,16 @@ add_action('wp_enqueue_scripts', 'load_css');
 //Carga de JS
 function load_js(){
     
-    wp_register_script('scrollnav',get_template_directory_uri() . 'assets/js/scroll-nav.js', false);
+    wp_register_script('scrollnav',get_template_directory_uri() . '/dist/prod.bundle.js', true);
     wp_enqueue_script('scrollnav');
 
-    // wp_register_script('animations',, true);
-    wp_enqueue_script('animations',
-    get_template_directory_uri() .'/assets/js/animation.js',array(), 
-    filemtime(get_template_directory() . '/assets/js/animation.js'), true);
+    // // wp_register_script('animations',, true);
+    // wp_enqueue_script('animations',
+    // get_template_directory_uri() .'/assets/js/animation.js',array(), 
+    // filemtime(get_template_directory() . '/assets/js/animation.js'), true);
 
-    wp_register_script('slideshow', get_template_directory_uri() . '/assets/js/slideshow.js', '', '', true);
-    wp_enqueue_script('slideshow');
+    // wp_register_script('slideshow', get_template_directory_uri() . '/assets/js/slideshow.js', '', '', true);
+    // wp_enqueue_script('slideshow');
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
