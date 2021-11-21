@@ -7,7 +7,7 @@ module.exports = {
 
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname,"dist"),
+        path: path.resolve(__dirname,"build"),
         filename: "dev.bundle.js",
     },
     module: {
@@ -21,13 +21,9 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader,'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif|ico|webp)$/,
-                loader: 'file-loader',
-                options:{
-                    name: '[name].[ext]',
-                    publicPath: '../images',
-                    outputPath: '/img'
-                }
+                type:'asset',
+                test: /\.(png|jpg|svg|jpeg|gif|ico|webp)$/
+                
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,

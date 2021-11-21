@@ -1,57 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="<?php echo get_template_directory_uri();  ?>/assets/images/favicon.png" type="png" sizes="32x32">
-  <title>Andacollo te encanta</title>
-  <?php wp_head(); ?>
+
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel="icon" href="<?php echo get_template_directory_uri();  ?>/assets/images/favicon.png" type="png"
+        sizes="32x32">
+    <title>Andacollo te encanta</title>
+
+    <?php wp_head(); ?>
+
 </head>
 
-<body class="background container">
-  <div id="nav--onscroll" class="nav--onscroll">
+<body <?php body_class('container'); ?>>
 
-    <nav id="nav-secondary">
-      <?php wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav__secondary')); ?>
-    </nav>
+    <?php wp_body_open(); ?>
 
-    <!-- <nav class="nav-mobile">
-      <a href="javascript:void(0);" class="icon-onscroll" onclick="myFunction()">
-        <i class="uil uil-angle-double-down"></i>
-      </a>
-      <?php //wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav__mobile')); ?>
-    </nav> -->
+    <a class="skip-link screen-reader-text"
+        href="#main"><?php esc_html_e('Continua al contenido', 'andacolloteencanta'); ?></a>
 
-  </div>
 
-  <header class="custom-header">
-  <a href="<?php echo home_url();?>">
-        <picture>
-          <source media="(max-width: 1200px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
-          <source media="(max-width: 900px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-medium.webp">
-          <source media="(max-width: 780px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
-          <source media="(max-width: 512px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
-          <img src="<?php echo get_template_directory_uri();  ?>/assets/images/Banner-web.jpg" alt="">
-          <!-- <img class="header__image" src="https://dummyimage.com/1920x150/000/fff" alt=""> -->
-        </picture>
-      </a>
-
-      <!-- Fixed Navbar -->
-      <nav id="nav-fixed">
-        <?php wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav')); ?>
-      </nav>
-
-      <nav class="nav-mobile">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i id="down-arrow" class="uil uil-angle-double-down"></i>
-          <i id="up-arrow" class="uil uil-angle-double-up"></i>
+    <header class="custom-header">
+        <a href="<?php echo home_url();?>">
+            <picture>
+                <source media="(min-width: 1280px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
+                <source media="(min-width: 1024px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
+                <source media="(min-width: 786px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-medium.webp">
+                <source media="(min-width: 640px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
+                <source media="(min-width: 512px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
+                <source media="(min-width: 320px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
+                <img class="header-logo"
+                    src="<?php echo get_template_directory_uri();  ?>/assets/images/Banner-webp.webp"
+                    alt="Logo de andacollo te encanta">
+            </picture>
         </a>
-        <?php wp_nav_menu(array('theme_location' => 'top-menu', 'menu_class' => 'nav__mobile', 'menu_id' => 'nav__mobile')); ?>
-      </nav>
+
+        <!-- Fixed Navbar -->
+        <nav class="nav">
+            <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"><span
+                    class="sr-only">Menu</span></button>
+            <?php wp_nav_menu(
+                array(
+                    'theme_location' => 'top-menu', 
+                    'menu_id'        => 'primary-nav',
+                    'container'      => 'false',
+                    'items_wrap '    => 'data-visible:false')
+            );?>
+        </nav>
 
     </header>
 
-  <main>
-    
+    <main>
