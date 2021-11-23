@@ -1,0 +1,3 @@
+# navbar 
+estilar mas el menu mobile y desktop
+arreglar sombra

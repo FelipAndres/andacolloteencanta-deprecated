@@ -46,17 +46,20 @@
 
         <!-- Fixed Navbar -->
         <nav class="nav">
-            <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"><span
-                    class="sr-only">Menu</span></button>
+            <button class="mobile-nav-toggle" 
+                aria-controls="primary-nav" 
+                aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
             <?php wp_nav_menu(
                 array(
                     'theme_location' => 'top-menu', 
                     'menu_id'        => 'primary-nav',
                     'container'      => 'false',
-                    'items_wrap '    => 'data-visible:false')
+                    'items_wrap'    => '<ul id="primary-nav" class="menu" data-visible="false">%3$s</ul>')
             );?>
         </nav>
 
     </header>
 
-    <main>
+    <main class="content">

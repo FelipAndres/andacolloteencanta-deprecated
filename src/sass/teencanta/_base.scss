@@ -13,7 +13,14 @@
   --color-backgroundcolor: hsla(0, 0%, 100%, 0.702);
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width:640px) {
+  .container {
+    max-width: calc(100vw - 10vw);
+    margin: 0 auto;
+    overflow-x:hidden;
+  }
+}
+@media screen and (min-width:1600px) {
   .container {
     max-width: calc(100vw - 20vw);
     margin: 0 auto;
@@ -24,3 +31,7 @@
   display: none;
 }
 
+.content{
+  background-color: var(--color-backgroundcolor);
+  padding: 0 1rem;
+}

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<section class="carousel">
-    <!-- <img src="<?php // echo get_template_directory_uri('slide');  ?>/assets/images/fiesta_andacollo792.jpg" alt=""> -->
+<!-- Carousel Section -->
+<section>
     <div class="slideshow-container">
         <?php $args = array(
           'post_type' => array('slideshow'),
@@ -26,13 +26,13 @@
             // console_log($enlace_url);
             ?>
         <div class="mySlides <?php echo ($count == 0) ? 'active' : ''; ?> fade">
-            <a href="<?php echo $enlace_url; ?>">
-                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)); ?>">
-                <div class="content-slide">
-                    <h1 class="title-slide"><?php echo get_the_title($slide);?></h1>
-                    <p class="sub-slide"><?php echo the_field('subtitulo_slide', $slide->ID); ?></p>
-                </div>
-            </a>
+            <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)); ?>">
+            <div class="slide-content">
+                <a href="<?php echo $enlace_url; ?>">
+                    <h1 class="slide-title"><?php echo get_the_title($slide);?></h1>
+                    <p class="slide-subtitle"><?php echo the_field('subtitulo_slide', $slide->ID); ?></p>
+                </a>
+            </div>
         </div>
         <?php $count++; ?>
         <?php endforeach; ?>

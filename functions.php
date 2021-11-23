@@ -14,24 +14,22 @@
  */
 
 //  Setup Styles and Scripts
- function setup_styles_scripts() {
+function setup_styles_scripts()
+{
 
     wp_enqueue_style(
         'main', 
         get_template_directory_uri() . '/build/css/style.css', 
         array(), 
-        filemtime( get_stylesheet_directory()  . '/build/css/style.css' )
+        filemtime(get_stylesheet_directory()  . '/build/css/style.css')
     );
 
     wp_enqueue_script( 
-        'script', 
-        get_template_directory_uri() 
-        . '/build/dev.bundle.js', 
-        array(),
-        false);
- }
+        'app', 
+        get_template_directory_uri() . '/build/dev.bundle.js', '', '', true
+    );
+}
 add_action('wp_enqueue_scripts', 'setup_styles_scripts');
-
 
 
 

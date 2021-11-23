@@ -8,7 +8,6 @@ Header Styles
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
   row-gap: 0;
   .header-logo {
     object-fit: fill;
@@ -19,13 +18,15 @@ Barra de navegación
 */
 .nav {
   background: linear-gradient(90.28deg, #082b7d 0%, #0465d6 100%);
-  border-radius: 0 0 10px 10px;
-  height: Min(45px, max-content);
-
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.7);
+  height: auto;
+  @media screen and (min-width: 640px){
+    border-radius: 0 0 10px 10px;
+  }
   .menu {
     padding: 0;
-    margin: 2rem;
-    
+    margin: 1rem 2rem;
+    display: none;
   }
   .menu,
   .sub-menu {
@@ -41,13 +42,17 @@ Barra de navegación
     background-color: transparent;
     background-image: url("/src/images/icons/bars-solid.svg");
     background-repeat: no-repeat;
-    width: 0.5rem;
+    height: 1.5rem;
     border: 0;
-    aspect-ratio: 1;
-    top: .45rem;
-    left: .8rem;
+    margin: 0.5rem;
   }
-
+  .menu[data-visible="true"] {
+    display: block;
+    transition: 2s;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("/src/images/icons/times-solid.svg");
+  }
   @media screen and (min-width: 768px) {
     .menu {
       display: flex;
