@@ -11,6 +11,43 @@
   --color-emprendedor: hsl(29, 100%, 37%, 0.8);
   --color-productor: hsl(259, 69%, 43%, 0.8);
   --color-backgroundcolor: hsla(0, 0%, 100%, 0.702);
+
+
+  --fuente-amaranth: Amaranth;
+}
+//Section Titulos
+.servicios {
+  color: rgba(208, 0, 0, 0.8);
+}
+.productos {
+  color: rgba(146, 96, 55, 0.8);
+}
+//Clase de background
+.donde-comer{
+  background-color: var(--color-dondecomer);
+}
+.donde-dormir{
+  background-color: var(--color-dondedormir);
+}
+.que-visitar{
+  background-color: var(--color-quevisitar);
+}
+.artesania{
+  background-color: var(--color-artesania);
+}
+.emprendedor{
+  background-color: var(--color-emprendedor);
+}
+.productor{
+  background-color: var(--color-productor);
+}
+//Asides Colores
+.aside--servicios {
+  background-color: rgba(208, 0, 0, 0.8);
+}
+.aside--productos {
+  grid-row: 1/2;
+  background-color: rgba(146, 96, 55, 0.8);
 }
 
 @media screen and (min-width:640px) {

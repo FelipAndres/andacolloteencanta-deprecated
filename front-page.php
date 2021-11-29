@@ -27,12 +27,12 @@
             ?>
         <div class="mySlides <?php echo ($count == 0) ? 'active' : ''; ?> fade">
             <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)); ?>">
-            <div class="slide-content">
+            <span class="slide-content">
                 <a href="<?php echo $enlace_url; ?>">
                     <h1 class="slide-title"><?php echo get_the_title($slide);?></h1>
                     <p class="slide-subtitle"><?php echo the_field('subtitulo_slide', $slide->ID); ?></p>
                 </a>
-            </div>
+            </span>
         </div>
         <?php $count++; ?>
         <?php endforeach; ?>
@@ -42,90 +42,126 @@
     </div>
 </section>
 
-<section class="servicios grid--12-2">
-    <h2>Encuentra el servicio que más prefieras</h2>
-    <div class="cartas__container">
-        <figure class="cartas">
+<section class="pd-1">
+
+    <div class="grid--card">
+        <h2 class="title-section servicios">Encuentra el servicio que más prefieras</h2>
+        <picture class="card card-1">
+            <source media="(min-width: 786px )"
+                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Comer-2.jpg">
+            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+            <img class="card-img"
+                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Comer-2.jpg"
+                alt="">
             <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-comer">
-                <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Comer-2.jpg"
-                    alt="">
-                <div class="titulo__container">
-                    <p class="titulo--dondecomer">¿Dónde Comer?</p>
-                </div>
             </a>
-        </figure>
-        <figure class="cartas">
+            <div class="card-title donde-comer">
+                <p class="title-card">¿Dónde Comer?</p>
+            </div>
+
+        </picture>
+        <picture class="card card-2">
+
+            <source media="(min-width: 786px )"
+                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg">
+            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+            <img class="card-img"
+                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg"
+                alt="">
+            <div class="card-title donde-dormir">
+                <p class="title-card">¿Dónde Dormir?</p>
+            </div>
             <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-dormir">
-                <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg"
-                    alt="">
-                <div class="titulo__container">
-                    <p class="titulo--donderdormir">¿Dónde Dormir?</p>
-                </div>
             </a>
-        </figure>
-        <figure class="cartas">
+        </picture>
+        <picture class="card card-3">
+            <source media="(min-width: 786px )"
+                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg">
+            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+            <img class="card-img"
+                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg"
+                alt="">
+            <div class="card-title que-visitar">
+                <p class="title-card">¿Qué Visitar?</p>
+            </div>
             <a href="<?php get_site_url();  ?>/categorias-perfiles/que-visitar">
-                <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg"
-                    alt="">
-                <div class="titulo__container">
-                    <p class="titulo--quevisitar">¿Qué Visitar?</p>
-                </div>
             </a>
-        </figure>
+        </picture>
+        <aside class="aside aside--servicios">
+            <p class="aside-title-servicios">¡Visita Andacollo!
+                <br>
+                Diversos Servicios
+                que le permitirá
+                una grata estadía en la Comuna
+            </p>
+            <span><img class="aside-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/S.svg"
+                    alt=""></span>
+        </aside>
     </div>
-    <aside class="aside--servicios">
-        <p class="aside-title-servicios">¡Visita Andacollo!
-            <br>
-            Diversos Servicios
-            que le permitirá
-            una grata estadía en la Comuna
-        </p>
-        <p class="mobile-title-servicios">Servicios</p>
-        <figure>
-            <img class="aside--s" src="<?php echo get_template_directory_uri();  ?>/assets/images/S.svg" alt="">
-        </figure>
-    </aside>
 </section>
 
-<section class="productos grid--12-2 grid--12-2-0">
-    <h2>El arte de nuestros productos locales</h2>
-    <div class="cartas__container--productos">
-        <figure class="cartas">
+<section class="">
+    <div class="grid--card">
+        <h2 class="title-section productos">El arte de nuestros productos locales</h2>
+        <picture class="card card-4">
+            <source media="(min-width: 786px )"
+                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg">
+            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+            <img class="card-img"
+                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg"
+                alt="">
+            <div class="card-title artesania">
+                <p class="title-card">Artesanias</p>
+            </div>
             <a href="<?php get_site_url();  ?>/categorias-perfiles/artesania">
-                <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg"
-                    alt="">
-                <div class="titulo__container">
-                    <p class="titulo--artesanias">Artesanias</p>
-                </div>
             </a>
-        </figure>
-        <figure class="cartas">
-            <a href="<?php get_site_url();  ?>/categorias-perfiles/emprendedor">
-                <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg"
-                    alt="">
-                <div class="titulo__container">
-                    <p class="titulo--emprendedores">Emprendedores</p>
-                </div>
-            </a>
-        </figure>
-        <figure class="cartas">
+        </picture>
+        <picture class="card card-5">
+            <source media="(min-width: 786px )"
+                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg">
+            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+            <img class="card-img"
+                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg"
+                alt="">
+            <div class="card-title emprendedor">
+                <p class="title-card">Emprendedores</p>
+            </div>
+            <a href="<?php get_site_url();  ?>/categorias-perfiles/emprendedor"></a>
+        </picture>
+        <picture class="card card-6">
+            <source media="(min-width: 786px )"
+                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg">
+            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+            <img class="card-img"
+                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg"
+                alt="">
+            <div class="card-title productor">
+                <p class="title-card">Productores</p>
+            </div>
             <a href="<?php get_site_url();  ?>/categorias-perfiles/productor">
-                <img src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg"
-                    alt="">
-                <div class="titulo__container">
-                    <p class="titulo--productores">Productores</p>
-                </div>
             </a>
-        </figure>
+        </picture>
+        <aside class="aside aside--productos">
+            <p class="aside-title-productos">
+                Aquí podrás adquirir productos con identidad local y el trabajo de los
+                habitantes de Andacollo</p>
+            <picture>
+                <img class="aside-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/P.svg" alt="">
+            </picture>
+        </aside>
     </div>
-    <aside class="aside--productos">
-        <p class="aside-title-productos">Aquí podrás adquirir productos con identidad local y el trabajo de los
-            habitantes de Andacollo</p>
-        <p class="mobile-title-productos">Productos</p>
-        <figure>
-            <img class="aside--p" src="<?php echo get_template_directory_uri();  ?>/assets/images/P.svg" alt="">
-        </figure>
-    </aside>
 </section>
 </main>
 <?php get_footer(); ?>
