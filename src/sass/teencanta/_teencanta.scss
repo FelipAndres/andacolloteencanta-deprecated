@@ -1,0 +1,101 @@
+// @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bebas Neue&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
+
+// @font-face {
+//   font-family: "Boogaloo";
+//   src: url(./src/fonts/Boogaloo/Boogaloo-Regular.ttf) format("truetype");
+// }
+// @font-face {
+//   font-family: "Raleway";
+//   src: url(./src/fonts/Raleway/Raleway-VariableFont_wght.ttf) format("truetype"),
+//     url(./src/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf)
+//       format("truetype");
+// }
+// @font-face {
+//   font-family: "Bebas Neue";
+//   src: url(./src/fonts/Bebas_Neue/BebasNeue-Regular.ttf) format("truetype");
+// }
+// @font-face {
+//   font-family: "Amaranth";
+//   src: url(./src/fonts/Amaranth/Amaranth-Regular.ttf) format("truetype"),
+//     url(./src/fonts/Amaranth/Amaranth-Italic.ttf) format("truetype"),
+//     url(./src/fonts/Amaranth/Amaranth-Bold.ttf) format("truetype"),
+//     url(./src/fonts/Amaranth/Amaranth-BoldItalic.ttf) format("truetype");
+// }
+
+:root {
+  --color-dondecomer: hsla(339, 100%, 37%, 0.8);
+  --color-dondedormir: hsla(35, 88%, 49%, 0.8);
+  --color-quevisitar: hsla(221, 60%, 52%, 0.8);
+  --color-artesania: hsla(0, 100%, 41%, 0.8);
+  --color-emprendedor: hsla(29, 100%, 37%, 0.8);
+  --color-productor: hsla(259, 69%, 43%, 0.8);
+  --color-backgroundcolor: hsla(0, 0%, 100%, 0.702);
+  --color-servicios: rgba(208, 0, 0, 0.8);
+  --color-productos: rgba(146, 96, 55, 0.8);
+
+  --ffuente-amaranth: "Amaranth";
+  --ffuente-Raleway: "Raleway";
+  --ffuente-BebasNeue: "Bebas Beue";
+  --ffuente-Boogaloo: "Boogaloo";
+
+  --tablet-screen: 640px;
+  --big-tablet-screen: 860px;
+
+  --desktop-screen: 1024px;
+  --medium-desktop-screen: 1280px;
+  --big-desktop-screen: 1580px;
+}
+
+// Clase de background
+.donde-comer {
+  background-color: var(--color-dondecomer);
+}
+.donde-dormir {
+  background-color: var(--color-dondedormir);
+}
+.que-visitar {
+  background-color: var(--color-quevisitar);
+}
+.artesania {
+  background-color: var(--color-artesania);
+}
+.emprendedor {
+  background-color: var(--color-emprendedor);
+}
+.productor {
+  background-color: var(--color-productor);
+}
+//Asides Colores de background
+.aside--productos {
+  grid-row: 1/2;
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: calc(100vw - 10vw);
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 1580px) {
+  .container {
+    max-width: calc(100vw - 20vw);
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+.sr-only {
+  display: none;
+}
+
+.content {
+  background-color: var(--color-backgroundcolor);
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+img{
+  display: block;
+}
