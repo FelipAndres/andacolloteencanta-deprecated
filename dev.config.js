@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.(css|sass|scss)$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader,"css-loader","resolve-url-loader", "sass-loader"],
       },
       {
         type: "asset",
@@ -36,7 +36,7 @@ module.exports = {
     ],
   },
   devtool: "inline-source-map",
-  plugins: [
+    plugins: [
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
       // ./public directory is being served

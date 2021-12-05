@@ -3,11 +3,18 @@
 }
 // Titulos Sections
 .title-section {
-  font-family: var(--fuente-amaranth);
+  font-family: var(--ffuente-amaranth);
   margin: 0rem 0 0 0;
   text-align: center;
 }
-
+.title-section--servicios {
+  color: var(--color-servicios);
+  margin-top: 1rem;
+}
+.title-section--productos {
+  color: var(--color-productos);
+  margin-top: 1.3rem;
+}
 // Cards
 .grid--card {
   display: grid;
@@ -36,7 +43,7 @@
 }
 
 .title-card {
-  font-family: var(--fuente-amaranth);
+  font-family: var(--ffuente-amaranth);
   text-align: center;
   color: #fff;
   margin: 0;
@@ -46,15 +53,24 @@
 // Asides
 .aside {
   display: flex;
+  justify-content: flex-start;
+}
+.aside > p {
+  display: none;
 }
 .aside-img {
   height: 5rem;
   padding: 1rem;
 }
-.aside > p {
-  display: none;
+
+.aside--productos {
+  background-color: var(--color-productos);
+  justify-content: flex-end;
 }
-@media screen and (min-width: 640px) {
+.aside--servicios {
+  background-color: var(--color-servicios);
+}
+@media screen and (min-width: var(--tablet-screen)) {
   .grid--card {
     grid-template-columns: repeat(1, minmax(240px, 1fr));
     //(grid-template-rows: repeat(4, minmax(170px, 1fr));

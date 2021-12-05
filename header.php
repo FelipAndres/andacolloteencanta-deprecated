@@ -15,12 +15,14 @@
 
 </head>
 
-<body <?php body_class('container'); ?>>
+<body <?php body_class(''); ?>>
 
     <?php wp_body_open(); ?>
 
     <a class="skip-link screen-reader-text"
         href="#main"><?php esc_html_e('Continua al contenido', 'andacolloteencanta'); ?></a>
+
+<div class="container">
 
 
     <header class="custom-header">

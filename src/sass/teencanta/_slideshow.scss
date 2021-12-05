@@ -48,7 +48,7 @@
     display: block;
     position: relative;
     top: -15rem;
-    font-family: Amaranth;
+    font-family: var(--ffuente-amaranth);
     width: max-content;
     margin: 0 auto;
     text-align: center;
@@ -57,13 +57,13 @@
     border-radius: 10px;
   }
   .slide-title {
-    background-color: rgba(243, 49, 49, 0.8);
+    background-color: var(--color-servicios);
     padding: 0.5rem 1rem;
     color: white;
   }
 
   .slide-subtitle {
-    background-color: rgba(231, 155, 57, 0.9);
+    background-color: var(--color-productos);
     height: max-content;
     width: max-content;
     padding: 0.2rem 1rem;

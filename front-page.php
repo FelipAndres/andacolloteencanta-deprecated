@@ -45,7 +45,7 @@
 <section class="pd-1">
 
     <div class="grid--card">
-        <h2 class="title-section servicios">Encuentra el servicio que más prefieras</h2>
+        <h2 class="title-section title-section--servicios">Encuentra el servicio que más prefieras</h2>
         <picture class="card card-1">
             <source media="(min-width: 786px )"
                 srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Comer-2.jpg">
@@ -108,7 +108,7 @@
 
 <section class="">
     <div class="grid--card">
-        <h2 class="title-section productos">El arte de nuestros productos locales</h2>
+        <h2 class="title-section title-section--productos">El arte de nuestros productos locales</h2>
         <picture class="card card-4">
             <source media="(min-width: 786px )"
                 srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg">
