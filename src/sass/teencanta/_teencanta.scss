@@ -1,29 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Bebas Neue&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
-
-// @font-face {
-//   font-family: "Boogaloo";
-//   src: url(./src/fonts/Boogaloo/Boogaloo-Regular.ttf) format("truetype");
-// }
-// @font-face {
-//   font-family: "Raleway";
-//   src: url(./src/fonts/Raleway/Raleway-VariableFont_wght.ttf) format("truetype"),
-//     url(./src/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf)
-//       format("truetype");
-// }
-// @font-face {
-//   font-family: "Bebas Neue";
-//   src: url(./src/fonts/Bebas_Neue/BebasNeue-Regular.ttf) format("truetype");
-// }
-// @font-face {
-//   font-family: "Amaranth";
-//   src: url(./src/fonts/Amaranth/Amaranth-Regular.ttf) format("truetype"),
-//     url(./src/fonts/Amaranth/Amaranth-Italic.ttf) format("truetype"),
-//     url(./src/fonts/Amaranth/Amaranth-Bold.ttf) format("truetype"),
-//     url(./src/fonts/Amaranth/Amaranth-BoldItalic.ttf) format("truetype");
-// }
 
 :root {
   --color-dondecomer: hsla(339, 100%, 37%, 0.8);
@@ -38,7 +12,7 @@
 
   --ffuente-amaranth: "Amaranth";
   --ffuente-Raleway: "Raleway";
-  --ffuente-BebasNeue: "Bebas Beue";
+  --ffuente-BebasNeue: "Bebas Neue";
   --ffuente-Boogaloo: "Boogaloo";
 
   --tablet-screen: 640px;
@@ -49,6 +23,10 @@
   --big-desktop-screen: 1580px;
 }
 
+
+body{
+  // font-size: 30px;
+}
 // Clase de background
 .donde-comer {
   background-color: var(--color-dondecomer);
@@ -93,7 +71,7 @@
 
 .content {
   background-color: var(--color-backgroundcolor);
-  padding: 0 1rem;
+  padding: 0 1rem 1rem;
   margin-bottom: 2rem;
 }
 img{

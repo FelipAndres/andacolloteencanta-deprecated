@@ -1,9 +1,11 @@
 </div>
+<picture>
+        <img class="footer--svg" src="<?php echo get_template_directory_uri();  ?>/src/images/andacollo-relieve.svg"
+            alt="">
+    </picture>
 <footer>
     <!-- <div class="fondo-blanco"></div> -->
-    <picture>
-        <img class="footer--svg" src="<?php echo get_template_directory_uri();  ?>/src/images/andacollo-relieve.svg" alt="">
-    </picture>
+    
 
     <section class="flex--footer">
         <picture class="flex--center">
@@ -21,28 +23,42 @@
         </div>
 
         <div class="mtb-2 footer-text-center">
-            <h4>DEPARTAMENTO DE CULTURA Y TURISMO</h4>
-            <p>MUNICIPALIDAD DE ANDACOLLO</p>
-            <h4>CASA DEL ENCUENTRO CIUDADANO</h4>
-            <p>URMENETA #599 - ANDACOLLO</p>
-            <h4>FONO: +56 512 33 7900</h4>
-            <p>INFO@ANDACOLLOTEENCATA.CL</p>
+            <div class="footer-item">
+                <h4>DEPARTAMENTO DE CULTURA Y TURISMO</h4>
+                <p>MUNICIPALIDAD DE ANDACOLLO</p>
+            </div>
+            <div class="footer-item">
+                <h4>CASA DEL ENCUENTRO CIUDADANO</h4>
+                <p>URMENETA #599 - ANDACOLLO</p>
+            </div>
+            <div class="footer-item">
+                <h4>FONO: +56 512 33 7900</h4>
+                <p>INFO@ANDACOLLOTEENCATA.CL</p>
+            </div>
         </div>
 
         <div class="mtb-2 footer-text-center">
-            <h3>SITIOS DE INTERÉS</h3>
-            <a href="https://www.andacollochile.cl">
-                <h3>www.andacollochile.cl</h3>
-            </a>
-            <p>MUNICIPALIDAD DE ANDACOLLO</p>
-            <a href="https://www.sernatur.cl">
-                <h3>www.sernatur.cl</h3>
-            </a>
-            <p>SERVICIO NACIONAL DE TURISMO</p>
-            <a href="https://www.artesaniasdechile.cl">
-                <h3>www.artesaniasdechile.cl</h3>
-            </a>
-            <p> ASOCIACIÓN DE ARTESANOS DE CHILE</p>
+            <h3 class="title-sitios-interes">SITIOS DE INTERÉS</h3>
+            <div class="footer-item">
+                <a href="https://www.andacollochile.cl">
+                    <h4>www.andacollochile.cl<h4>
+                </a>
+                <p>MUNICIPALIDAD DE ANDACOLLO</p>
+            </div>
+            <div class="footer-item">
+
+                <a href="https://www.sernatur.cl">
+                    <h4>www.sernatur.cl</h4>
+                </a>
+                <p>SERVICIO NACIONAL DE TURISMO</p>
+            </div>
+
+            <div class="footer-item">
+                <a href="https://www.artesaniasdechile.cl">
+                    <h4>www.artesaniasdechile.cl</h4>
+                </a>
+                <p> ASOCIACIÓN DE ARTESANOS DE CHILE</p>
+            </div>
         </div>
 
         <div class="flex--center footer-img">
@@ -52,12 +68,15 @@
                 alt="">
         </div>
 
-        <div class="footer-text-center">
-            <h2>DEPARTAMENTO DE CULTURA Y TURISMO</h2>
-            <p>MUNICIPALIDAD DE ANDACOLLO © 2021</p>
-            <br>
-            <p>DESARROLLADO POR</p>
-            <p>404Dev & VGC PRODUCCIONES</p>
+        <div class="m-centro footer-text-center">
+            <div class="footer-item">
+            <h4>DEPARTAMENTO DE CULTURA Y TURISMO</h4>
+                <p>MUNICIPALIDAD DE ANDACOLLO © 2021</p>
+            </div>
+            <div class="footer-item">
+                <p>DESARROLLADO POR</p>
+                <p>404Dev & VGC PRODUCCIONES</p>
+            </div>
         </div>
     </section>
 </footer>

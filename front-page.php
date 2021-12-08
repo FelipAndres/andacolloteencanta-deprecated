@@ -48,12 +48,12 @@
         <h2 class="title-section title-section--servicios">Encuentra el servicio que más prefieras</h2>
         <picture class="card card-1">
             <source media="(min-width: 786px )"
-                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Comer-2.jpg">
+                srcset="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Comer-2.jpg">
             <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
             <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
             <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
             <img class="card-img"
-                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Comer-2.jpg"
+                src="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Comer-2.jpg"
                 alt="">
             <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-comer">
             </a>

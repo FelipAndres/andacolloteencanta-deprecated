@@ -4,6 +4,7 @@ Header Styles
 
 */
 .custom-header {
+  font-family: "Raleway";
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -33,7 +34,7 @@ Barra de navegación
   }
   .menu a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
   }
   .mobile-nav-toggle {
     display: block;
