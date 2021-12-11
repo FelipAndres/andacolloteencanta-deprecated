@@ -1,8 +1,9 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const options = { };
 
 module.exports = {
   entry: "./src/index.js",
@@ -43,11 +44,12 @@ module.exports = {
       // ./public directory is being served
       host: "localhost",
       port: 3000,
+      browser: 'C:/Program Files/Firefox Developer Edition/firefox.exe',
       files: ["./**/*.php", "./**/*.css", "./**/*.scss"],
       proxy: "development.local",
     }),
+    new WebpackManifestPlugin(options),
     new CleanWebpackPlugin(),
-    new HtmlPlugin(),
     new MiniCssExtractPlugin({
       filename: "css/style.css",
     }),

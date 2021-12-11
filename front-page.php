@@ -27,13 +27,14 @@
             ?>
         <div class="mySlides <?php echo ($count == 0) ? 'active' : ''; ?> fade">
             <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($slide->ID)); ?>">
-            <span class="slide-content">
+            <div class="slide-content">
                 <a href="<?php echo $enlace_url; ?>">
                     <h1 class="slide-title"><?php echo get_the_title($slide);?></h1>
                     <p class="slide-subtitle"><?php echo the_field('subtitulo_slide', $slide->ID); ?></p>
                 </a>
-            </span>
+            </div>
         </div>
+
         <?php $count++; ?>
         <?php endforeach; ?>
         <!-- Next and previous buttons -->
@@ -94,14 +95,13 @@
             </a>
         </picture>
         <aside class="aside aside--servicios">
-            <p class="aside-title-servicios">¡Visita Andacollo!
-                <br>
+            <picture class="aside-img-servicios"><img class="aside-img "
+                    src="<?php echo get_template_directory_uri();  ?>/assets/images/S.svg" alt=""></picture>
+            <p class="aside-text-servicios">¡Conoce Andacollo!<br>
                 Diversos Servicios
                 que le permitirá
-                una grata estadía en la Comuna
+                una grata estadía en la Comuna.
             </p>
-            <span><img class="aside-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/S.svg"
-                    alt=""></span>
         </aside>
     </div>
 </section>
@@ -154,9 +154,9 @@
             </a>
         </picture>
         <aside class="aside aside--productos">
-            <p class="aside-title-productos">
-                Aquí podrás adquirir productos con identidad local y el trabajo de los
-                habitantes de Andacollo</p>
+            <p class="aside-text-productos">
+                Revisa productos con identidad local y el trabajo de los
+                habitantes de Andacollo.</p>
             <picture>
                 <img class="aside-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/P.svg" alt="">
             </picture>

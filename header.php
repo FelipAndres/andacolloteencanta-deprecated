@@ -47,7 +47,7 @@
         </a>
 
         <!-- Fixed Navbar -->
-        <nav class="nav">
+        <nav aria-label="navegacion-primaria">
             <button class="mobile-nav-toggle" 
                 aria-controls="primary-nav" 
                 aria-expanded="false">

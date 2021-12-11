@@ -1,11 +1,2 @@
-# navbar 
-estilar mas el menu mobile y desktop
-arreglar sombra
-
-
-    $tablet-screen: 640px;
-  $big-tablet-screen: 860px;
-  
-  $desktop-screen: 1024px;
-  $medium-desktop-screen: 1280px;
-  $big-desktop-screen: 1580px;
+** USAR CLAMP PARA UN MINIMO BUENO Y MAXIMO
+** MIN() MAX() 

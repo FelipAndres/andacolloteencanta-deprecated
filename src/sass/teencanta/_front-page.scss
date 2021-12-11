@@ -45,27 +45,72 @@
   margin: 0;
   padding: 0.5rem;
 }
-
-// Asides
+/*
+*
+*
+*   * * ASIDES 
+*
+*
+*/
 .aside {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: .5rem;
+  gap: 1rem;
 }
 .aside > p {
-  display: none;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0px;
+  text-align: center;
 }
 .aside-img {
-  height: 5rem;
-  padding: 1rem;
-}
-
-.aside--productos {
-  background-color: var(--color-productos);
-  justify-content: flex-end;
+  height: 4rem;
+  // padding: 1rem;
+  margin: 0 auto;
 }
 .aside--servicios {
   background-color: var(--color-servicios);
+  
 }
+.aside--productos {
+  background-color: var(--color-productos);
+  
+}
+.aside-text-servicios{
+  align-self: center;
+}
+.aside-text-productos{
+  align-self: center;
+}
+@media screen and (min-width: 640px) {
+  .aside {
+    flex-direction: row;
+    align-content: center;
+  }
+  .aside > p {
+    font-size: 1.25rem ;
+  }
+  .aside-img {
+    height: 5rem;
+    // padding: 1rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px){
+  .aside {
+    flex-direction: column;
+  }
+  .aside-img-servicios{
+    order:2;
+  }
+  .aside-img {
+    height: 12rem;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: var(--tablet-screen)) {
   .grid--card {
     grid-template-columns: repeat(1, minmax(240px, 1fr));
@@ -96,19 +141,19 @@
 }
 @media screen and (min-width: 1280px) {
   .grid--card {
-    grid-template-columns: repeat(4, minmax(240px, 1fr));
-    //grid-template-rows: repeat(4, minmax(170px, 1fr));
+    grid-template-columns: repeat(4, minmax(10rem, 21.875rem));
+    // grid-template-rows: repeat(2, minmax(6.25rem, auto));
   }
   .card-1 {
-    grid-row: 2 / 4;
+    grid-row: 2 / 2;
     grid-column: 2 / 3;
   }
   .card-2 {
-    grid-row: 2 / 4;
+    grid-row: 2 / 2;
     grid-column: 3 / 4;
   }
   .card-3 {
-    grid-row: 2 / 4;
+    grid-row: 2 / 2;
     grid-column: 4 / 5;
   }
   .aside--servicios {
@@ -117,11 +162,11 @@
   }
 
   .card-4 {
-    grid-row: 2 / 4;
+    grid-row: 2 / 2;
     grid-column: 1 / 2;
   }
   .card-5 {
-    grid-row: 2 / 4;
+    grid-row: 2 / 2;
     grid-column: 2 / 3;
   }
   .card-6 {
@@ -136,6 +181,6 @@
 @media screen and (min-width: 1580px) {
   .grid--card {
     grid-template-columns: repeat(4, minmax(240px, 1fr));
-    grid-template-rows: repeat(4, minmax(170px, 1fr));
+    // grid-template-rows: repeat(4, minmax(170px, 1fr));
   }
 }

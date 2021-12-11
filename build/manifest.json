@@ -1,0 +1,12 @@
+{
+  "main.css": "autocss/style.css",
+  "main.js": "autodev.bundle.js",
+  "fonts/amaranth-italic-webfont.woff": "autofonts/amaranth-italic-webfont.woff",
+  "fonts/amaranth-bolditalic-webfont.woff": "autofonts/amaranth-bolditalic-webfont.woff",
+  "fonts/amaranth-regular-webfont.woff": "autofonts/amaranth-regular-webfont.woff",
+  "fonts/amaranth-bold-webfont.woff": "autofonts/amaranth-bold-webfont.woff",
+  "fonts/boogaloo-regular-webfont.woff": "autofonts/boogaloo-regular-webfont.woff",
+  "fonts/bebasneue-regular-webfont.woff": "autofonts/bebasneue-regular-webfont.woff",
+  "images/times-solid.svg": "autoimages/times-solid.svg",
+  "images/bars-solid.svg": "autoimages/bars-solid.svg"
+}
