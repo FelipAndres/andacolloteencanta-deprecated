@@ -16,7 +16,7 @@
     Barra de navegación
 */
 nav {
-  background: linear-gradient(90.28deg, #082b7d 0%, #0465d6 100%);
+  background: var(--color-nav);
   //box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.7);
   // width: 100%;
   height: auto;
@@ -57,10 +57,11 @@ nav {
 .mobile-nav-toggle[aria-expanded="true"] {
   background-image: url("../images/icons/times-solid.svg");
 }
-.mobile-nav-toggle {
-  display: none;
-}
+
 @media screen and (min-width: 768px) {
+  .mobile-nav-toggle {
+    display: none;
+  }
   .menu {
     display: grid;
     gap: 1rem;

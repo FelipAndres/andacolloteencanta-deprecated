@@ -1,4 +1,4 @@
-</div>
+</main>
 <picture>
         <img class="footer--svg" src="<?php echo get_template_directory_uri();  ?>/src/images/andacollo-relieve.svg"
             alt="">

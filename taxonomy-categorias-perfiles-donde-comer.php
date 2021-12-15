@@ -1,43 +1,50 @@
 <?php get_header(); ?>
 
-<section class="position-2-2 grid--12-2">
-  <aside class="aside--left">
-    <div class="cartas-cat">
-      <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
-    </div>
-    <img src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
-  </aside>
-
-  <div class="cartas__container--servicios">
+<section class="grid--categorias">
+    <h1 class="title-cate--comer">¿Dónde Comer?</h1>
+    <aside class="aside--left">
+        <div class="">
+            <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
+        </div>
+        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
+    </aside>
+    <!-- CARTAS -->
     <?php get_template_part('template-parts/section', 'donde-comer'); ?>
-  </div>
-  <div class="paginacion2">
-    <?php get_template_part('template-parts/section', 'paginacion'); ?>
-    <p class="mobile-title-servicios">¿Dónde Comer?</p>
-  </div>
-  <?php if (function_exists('pagination')) pagination(); ?>
-  <aside class="aside--right">
-    <h1>¿Donde Comer?</h1>
-    <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondecomer.svg" alt="">
-  </aside>
-  <div class="border-bottom"></div>
+    <!-- FIN CARTAS -->
+    <?php if (function_exists('pagination')) pagination(); ?>
+    <?php //get_template_part('template-parts/section', 'paginacion'); ?>
+
+    <aside class="aside--right">
+        <h1>¿Donde Comer?</h1>
+        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondecomer.svg" alt="">
+    </aside>
+</section>
+<div class="border-bottom"></div>
+<section class="grid--categorias">
+    <div class="card--descripcion">
+        <h1>Encántese con los Sabores Locales</h1>
+        <p>Buscamos preservar nuestras tradiciones, rescatando nuestra gastronomía tradicional, a través de sabrosos
+            platosD
+            típicos Andacollino así como la comida típica chilena, a través de la preparación de cazuelas, porotos,
+            guatitas,
+            charquicán y diferentes tipos de carnes, además contamos con restaurantes dedicados a la elaboración de
+            platos
+            originales e internacionales, en espacios ideales para la familia y grupos de amigos, y si buscas de gustar
+            platos
+            con preparaciones diferentes impresiónate ver como se cocina el arroz, las carnes y otros ingredientes
+            gracias
+            al
+            sabroso y acogedor sol de Andacollo. Te Invitados a conocer y probar los sabores de la cocina Andacollina.
+        </p>
+        <picture class="collage--servicios">
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-comer.png" alt="">
+        </picture>
+    </div>
+
+    <aside class="aside-right--2">
+        <?php get_template_part('template-parts/section', 'map'); ?>
+        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
+    </aside>
 </section>
 
-<section class="position-3-1 grid--12-2">
-  <h1>Encántese con los Sabores Locales</h1>
-  <p>Buscamos preservar nuestras tradiciones, rescatando nuestra gastronomía tradicional, a través de sabrosos platos
-    típicos Andacollino así como la comida típica chilena, a través de la preparación de cazuelas, porotos, guatitas,
-    charquicán y diferentes tipos de carnes, además contamos con restaurantes dedicados a la elaboración de platos
-    originales e internacionales, en espacios ideales para la familia y grupos de amigos, y si buscas de gustar platos
-    con preparaciones diferentes impresiónate ver como se cocina el arroz, las carnes y otros ingredientes gracias al
-    sabroso y acogedor sol de Andacollo. Te Invitados a conocer y probar los sabores de la cocina Andacollina.</p>
-  <figure class="collage--servicios">
-    <img src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-comer.png" alt="">
-  </figure>
-  <aside class="aside--right--color">
-    <?php get_template_part('template-parts/section', 'map'); ?>
-    <img src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
-  </aside>
-</section>
-</main>
 <?php get_footer(); ?>

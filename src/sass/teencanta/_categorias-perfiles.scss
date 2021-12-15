@@ -1,0 +1,128 @@
+.grid--categorias {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(240px, 1fr));
+  gap: 1rem;
+  > h1 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--ffuente-boogaloo);
+    // Revisar tamaño de letra
+    font-size: 2.7rem;
+    color: var(--color-dondecomer);
+  }
+  .aside--left {
+    display: none;
+  }
+  .aside--right {
+    display: none;
+  }
+}
+
+.paginacion {
+  // display: none;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  gap: .3rem;
+  > a {
+    color:black;
+    text-decoration: none;
+  }
+}
+.paginacion-current {
+  background: var(--color-nav);
+  color: #fff;
+}
+.paginacion-btn {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  //border: 1px solid;
+  //   max-width: max-content;
+  padding: 0.7rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  
+}
+.paginacion-btn:first-child,
+.paginacion-btn:last-child {
+  background-color: #222c3e;
+  color: #fff;
+}
+.paginacion-current {
+  background-color:var(--color-dondecomer);
+}
+.cards--servicios {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  > img {
+    border-radius: 10px 10px 0 0;
+  }
+}
+.cards--servicios:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-info {
+  > a {
+    text-decoration: none;
+  }
+  > h2,
+  p {
+    font-family: Raleway;
+    margin: 0;
+  }
+  > h2 {
+    padding: 1rem 1rem 0 1rem;
+  }
+  > p {
+    text-align: justify;
+    padding: 0 1rem;
+    padding-block: 1rem;
+  }
+}
+.card-btn {
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+  //border: 1px solid;
+  padding: 0.7rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+//  mejorar comentarios 
+// Not dry code :C but more quick this way lmao
+.card--descripcion {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  > h1 {
+    margin: 0;
+    padding: 1rem;
+    line-height: 3rem;
+    text-align: center;
+    font-family: var(--ffuente-boogaloo);
+    // Revisar tamaño de letra
+    font-size: 2.7rem;
+    color: var(--color-dondecomer);
+  }
+  > p {
+    text-align: justify;
+    margin-top: 0;
+    padding: 1rem;
+    padding-top: 0rem;
+  }
+}
+.aside-right--2 {
+  > iframe {
+    margin: 1rem auto;
+  }
+  > img {
+    display: none;
+  }
+}

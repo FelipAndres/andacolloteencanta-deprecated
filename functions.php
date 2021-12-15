@@ -33,13 +33,6 @@ add_action('wp_enqueue_scripts', 'setup_styles_scripts');
 
 
 
-function load_google_fonts()
-{
-    $url ="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Bebas+Neue&family=Boogaloo&family=Raleway:wght@300;400;700&display=swap";
-    wp_enqueue_style('load_google_fonts', $url);
-}
-add_action("wp_enqueue_scripts", "load_google_fonts");
-
 //añadir soporte para logo perosnalizado. https://developer.wordpress.org/themes/functionality/custom-logo/
 add_theme_support("custom-logo");
 //añadir parametros al logo perosnalizado. 
@@ -273,27 +266,31 @@ function pagination($pages = '', $range = 4)
             $pages = 1;
         }
     }
- 
+//  deberia al final de los post "desactivar" el boton ">" porque o si no lleva a un 404
     if(1 != $pages) {   
-        echo "<div class=\"paginacion\">"; //<span>Página ".$paged." de  ".$pages."  </span> 
-        echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
-        //echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
+        echo "<div class=\"paginacion\">"; //<span> "Página ".$paged." de  ".$pages."  </span> 
+        echo "<a class=\"paginacion-btn\" href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+        //echo "<a href='".get_pagenum_link(1)."'>&laquo; Primero</a>";
         
-        //if($paged > 2 && $paged > $range+1 && $showitems < $pages){} 
-        //if($paged > 1 && $showitems < $pages) {}
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) {
+        } 
+        if($paged > 1 && $showitems < $pages) {
+        }
         
  
         for ($i=1; $i <= $pages; $i++)
         {
             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
-                echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
+                echo ($paged == $i)? "<span class=\" paginacion-btn paginacion-current\">".$i."</span>":"<a class=\"paginacion-btn\" href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
             }
         }
-        echo "<a href=\"".get_pagenum_link($paged + 1)."\"> &rsaquo;</a>";
-        // if ($paged < $pages && $showitems < $pages) 
+        echo "<a class=\"paginacion-btn\" href=\"".get_pagenum_link($paged + 1)."\"> &rsaquo;</a>";
+        if ($paged < $pages && $showitems < $pages) {
+        } 
         
-        // if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages){} 
-        // echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
+        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) {
+        }
+        //echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
         echo "</div>\n";
     }
 }

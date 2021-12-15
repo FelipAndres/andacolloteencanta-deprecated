@@ -9,15 +9,16 @@
   --color-backgroundcolor: hsla(0, 0%, 100%, 0.702);
   --color-servicios: rgba(208, 0, 0, 0.8);
   --color-productos: rgba(146, 96, 55, 0.8);
-
+  --color-nav: linear-gradient(90.28deg, #082b7d 0%, #0465d6 100%);
   --ffuente-amaranth: "Amaranth";
   // --ffuente-Raleway: "Raleway";
-  --ffuente-BebasNeue: "Bebas Neue";
-  --ffuente-Boogaloo: "Boogaloo";
+  --ffuente-bebasNeue: "Bebas Neue";
+  --ffuente-boogaloo: "Boogaloo";
 
   --fs-400: clamp(1rem, 10vw + 1rem, 1.25rem);
   --fs-600: 1.25rem;
-  --fs-900: 1.5rem;
+  --fs-900: 1.5rem; 
+  --fs-big: clamp(2.5rem, 100vw + 2.5rem, 3rem); 
 
 
   --tablet-screen: 640px;

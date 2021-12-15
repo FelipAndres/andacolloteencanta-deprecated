@@ -17,29 +17,27 @@ $args = array(
 $query = new WP_Query($args);
 ?>
 
-  <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-    <figure class="cartas--servicios">
-      <div class="texto__container">
-        <h1><?php the_title(); ?></h1>
+<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+<div class="cards--servicios">
+    <?php if (has_post_thumbnail()) : ?>
+    <img class="img--servicios" src="<?php the_post_thumbnail_url("archive-img"); ?>" alt="<?php the_title(); ?>">
+    <?php endif; ?>
+    <div class="card-info">
+        <h2><?php the_title(); ?></h2>
         <?php
           $informacion_contacto = get_field('info_contacto'); // parent group
           $descripcion_corta = $informacion_contacto['descripcion_corta']; // 'descripcion' is your child field
         ?>
-        <p class="extracto__descripcion"><?php echo $descripcion_corta;?></p>
+        <p class="card-extracto"><?php echo $descripcion_corta;?></p>
         <a href="<?php the_permalink(); ?>">
-          <button class="btn__servicios">
-            <label for="Ver productos">Ver Productos</label>
-          </button>
+            <button class="card-btn">
+                <label for="Ver servicios">Ver Servicios</label>
+            </button>
         </a>
-      </div>
-      <?php if (has_post_thumbnail()) : ?>
-        <img class="img--servicios" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-      <?php endif; ?>
-    </figure>
-  <?php endwhile; ?>
-
-<?php wp_link_pages(); ?>
-
+    </div>
+</div>
+<?php endwhile; ?>
 <?php else : ?>
-    Disculpa no hay perfiles que mostrar
+Disculpa no hay perfiles que mostrar
 <?php endif; ?>
+<?php wp_reset_query(); ?>
