@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<section class="grid--categorias">
-    <h1 class="title-cate--comer">¿Dónde Comer?</h1>
+<section class="grid-categorias grid-categorias--servicios">
+    <h1 class="color-categoria--dondecomer">¿Dónde Comer?</h1>
     <aside class="aside--left">
         <div class="">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
@@ -20,27 +20,24 @@
     </aside>
 </section>
 <div class="border-bottom"></div>
-<section class="grid--categorias">
-    <div class="card--descripcion">
-        <h1>Encántese con los Sabores Locales</h1>
-        <p>Buscamos preservar nuestras tradiciones, rescatando nuestra gastronomía tradicional, a través de sabrosos
-            platosD
-            típicos Andacollino así como la comida típica chilena, a través de la preparación de cazuelas, porotos,
-            guatitas,
-            charquicán y diferentes tipos de carnes, además contamos con restaurantes dedicados a la elaboración de
-            platos
-            originales e internacionales, en espacios ideales para la familia y grupos de amigos, y si buscas de gustar
-            platos
-            con preparaciones diferentes impresiónate ver como se cocina el arroz, las carnes y otros ingredientes
-            gracias
-            al
-            sabroso y acogedor sol de Andacollo. Te Invitados a conocer y probar los sabores de la cocina Andacollina.
-        </p>
-        <picture class="collage--servicios">
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-comer.png" alt="">
-        </picture>
-    </div>
-
+<section class="grid-categorias section-info">
+    <h1 class="color-categoria--dondecomer">Encántese con los Sabores Locales</h1>
+    <p>Buscamos preservar nuestras tradiciones, rescatando nuestra gastronomía tradicional, a través de sabrosos
+        platosD
+        típicos Andacollino así como la comida típica chilena, a través de la preparación de cazuelas, porotos,
+        guatitas,
+        charquicán y diferentes tipos de carnes, además contamos con restaurantes dedicados a la elaboración de
+        platos
+        originales e internacionales, en espacios ideales para la familia y grupos de amigos, y si buscas de gustar
+        platos
+        con preparaciones diferentes impresiónate ver como se cocina el arroz, las carnes y otros ingredientes
+        gracias
+        al
+        sabroso y acogedor sol de Andacollo. Te Invitados a conocer y probar los sabores de la cocina Andacollina.
+    </p>
+    <picture class="collage--servicios">
+        <img class="border-categoria--dondecomer" src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-comer.png" alt="">
+    </picture>
     <aside class="aside-right--2">
         <?php get_template_part('template-parts/section', 'map'); ?>
         <img src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">

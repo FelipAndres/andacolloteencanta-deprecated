@@ -29,6 +29,6 @@
     "dev": "npx webpack --config dev.config.js --mode development --watch",
     "webpack:dev": "npx webpack --config dev.config.js --mode development",
     "webpack:prod": "npx webpack --config prod.config.js --mode production",
-    "build": "dir-archiver --src . --dest ../andacolloteencanta.zip --exclude src node_modules vendor .git .vscode assets build .gitignore acf-export-2021-06-10.json composer.json composer.lock dev.config.js funciones-viejas.php hierarchy.txt package.json package-lock.json prod.config.js README.md"
+    "build": "dir-archiver --src . --dest ../andacolloteencanta.zip --exclude src node_modules vendor .git .vscode build .gitignore acf-export-2021-06-10.json composer.json composer.lock dev.config.js funciones-viejas.php hierarchy.txt package.json package-lock.json prod.config.js README.md"
   }
 }

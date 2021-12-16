@@ -1,4 +1,5 @@
-// Config for production build ready for deploy, already minified
+//* Config for production build ready for deploy, already minified
+
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");

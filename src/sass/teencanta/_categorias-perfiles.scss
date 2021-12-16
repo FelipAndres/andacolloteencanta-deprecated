@@ -1,15 +1,59 @@
-.grid--categorias {
+.aside-right--2{display: none;
+visibility: none;}
+
+/*
+
+*/
+.color-categoria--dondecomer {
+  color: var(--color-dondecomer);
+}
+.border-categoria--dondecomer{
+  border: 0.5rem solid var(--color-dondecomer);
+}
+.color-categoria--dondedormir {
+  color: var(--color-dondedormir);
+}
+.border-categoria--dondedormir{
+  border: 0.5rem solid var(--color-dondedormir);
+}
+.color-categoria--quevisitar {
+  color: var(--color-quevisitar);
+}
+.border-categoria--quevisitar{
+  border: 0.5rem solid var(--color-quevisitar);
+}
+.color-categoria--artesania {
+  color: var(--color-artesania);
+}
+.border-categoria--artesania{
+  border: 0.5rem solid var(--color-artesania);
+} 
+.color-categoria--emprendedores {
+  color: var(--color-emprendedor);
+}
+.border-categoria--emprendedores{
+  border: 0.5rem solid var(--color-emprendedor);
+}
+.color-categoria--productores {
+  color: var(--color-productor);
+}
+.border-categoria--productores{
+  border: 0.5rem solid var(--color-productor);
+}
+
+.grid-categorias {
   display: grid;
-  grid-template-columns: repeat(1, minmax(240px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
   > h1 {
-    margin: 0;
-    padding: 1rem;
+    align-self: center;
+    margin: 1rem 0 0 0;
     text-align: center;
     font-family: var(--ffuente-boogaloo);
     // Revisar tamaño de letra
     font-size: 2.7rem;
-    color: var(--color-dondecomer);
   }
   .aside--left {
     display: none;
@@ -18,15 +62,61 @@
     display: none;
   }
 }
-
+@media screen and (min-width: 860px) {
+  .grid-categorias {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: min-content;
+    > h1 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      margin-top: 1.5rem;
+    }
+    p {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+    }
+  }
+  .paginacion {
+    grid-column: 2 / 3;
+    grid-row: auto;
+  }
+  .section-info {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+  }
+  .collage--servicios {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+  .collage--servicios > img {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    
+    border-radius: 10px;
+    height: 18rem;
+  }
+  .section-info {
+    > p {
+      margin: 0 3rem;
+    }
+  }
+  .aside-right--2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1230px) {
+  section * {
+    justify-self: center;
+  }
+}
 .paginacion {
   // display: none;
-  padding: 1rem;
+  // padding: 1rem;
   margin: 0 auto;
   display: flex;
-  gap: .3rem;
+  gap: 0.3rem;
   > a {
-    color:black;
+    color: black;
     text-decoration: none;
   }
 }
@@ -42,9 +132,8 @@
   //   max-width: max-content;
   padding: 0.7rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
   text-decoration: none;
-  
 }
 .paginacion-btn:first-child,
 .paginacion-btn:last-child {
@@ -52,7 +141,7 @@
   color: #fff;
 }
 .paginacion-current {
-  background-color:var(--color-dondecomer);
+  background-color: var(--color-dondecomer);
 }
 .cards--servicios {
   background-color: #fff;
@@ -94,28 +183,24 @@
   margin-bottom: 1rem;
   text-decoration: none;
 }
-//  mejorar comentarios 
+//  mejorar comentarios
 // Not dry code :C but more quick this way lmao
-.card--descripcion {
+.section-info {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   > h1 {
     margin: 0;
-    padding: 1rem;
-    line-height: 3rem;
     text-align: center;
     font-family: var(--ffuente-boogaloo);
     // Revisar tamaño de letra
     font-size: 2.7rem;
-    color: var(--color-dondecomer);
   }
   > p {
     text-align: justify;
     margin-top: 0;
-    padding: 1rem;
-    padding-top: 0rem;
+    padding: 0 1.5rem;
   }
 }
 .aside-right--2 {

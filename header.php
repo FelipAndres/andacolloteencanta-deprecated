@@ -22,46 +22,34 @@
     <a class="skip-link screen-reader-text"
         href="#main"><?php esc_html_e('Continua al contenido', 'andacolloteencanta'); ?></a>
 
-<div class="container">
+    <div class="container">
 
 
-    <header class="custom-header">
-        <a href="<?php echo home_url();?>">
-            <picture>
-                <source media="(min-width: 1280px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
-                <source media="(min-width: 1024px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
-                <source media="(min-width: 786px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-medium.webp">
-                <source media="(min-width: 640px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
-                <source media="(min-width: 512px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
-                <source media="(min-width: 320px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-web-mobile.webp">
-                <img class="header-logo"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/Banner-webp.webp"
-                    alt="Logo de andacollo te encanta">
-            </picture>
-        </a>
+        <header class="custom-header">
+            <a href="<?php echo home_url();?>">
+                <picture>
+                    <source media="(min-width: 320px )"
+                        srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
+                    <img class="header-logo"
+                        src="<?php echo get_template_directory_uri();  ?>/assets/images/Banner-webp.webp"
+                        alt="Logo de andacollo te encanta">
+                </picture>
+            </a>
 
-        <!-- Fixed Navbar -->
-        <nav aria-label="navegacion-primaria">
-            <button class="mobile-nav-toggle" 
-                aria-controls="primary-nav" 
-                aria-expanded="false">
-                <span class="sr-only">Menu</span>
-            </button>
-            <?php wp_nav_menu(
+            <!-- Fixed Navbar -->
+            <nav aria-label="navegacion-primaria">
+                <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                </button>
+                <?php wp_nav_menu(
                 array(
                     'theme_location' => 'top-menu', 
                     'menu_id'        => 'primary-nav',
                     'container'      => 'false',
                     'items_wrap'    => '<ul id="primary-nav" class="menu" data-visible="false">%3$s</ul>')
             );?>
-        </nav>
+            </nav>
 
-    </header>
+        </header>
 
-    <main class="content">
+        <main class="content">

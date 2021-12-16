@@ -1,11 +1,11 @@
-</main>
+    </main>
+</div>
 <picture>
-        <img class="footer--svg" src="<?php echo get_template_directory_uri();  ?>/src/images/andacollo-relieve.svg"
-            alt="">
-    </picture>
+    <img class="footer--svg" src="<?php echo get_template_directory_uri();  ?>/src/images/andacollo-relieve.svg" alt="">
+</picture>
 <footer>
     <!-- <div class="fondo-blanco"></div> -->
-    
+
 
     <section class="flex--footer">
         <picture class="flex--center">
@@ -70,7 +70,7 @@
 
         <div class="m-centro footer-text-center">
             <div class="footer-item">
-            <h4>DEPARTAMENTO DE CULTURA Y TURISMO</h4>
+                <h4>DEPARTAMENTO DE CULTURA Y TURISMO</h4>
                 <p>MUNICIPALIDAD DE ANDACOLLO © 2021</p>
             </div>
             <div class="footer-item">

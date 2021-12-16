@@ -9,7 +9,11 @@
   // row-gap: 0;
   // place-items: center;
   .header-logo {
-    object-fit: fill;
+    object-fit: cover;
+  }
+
+  img {
+    min-height: 10vh;
   }
 }
 /*

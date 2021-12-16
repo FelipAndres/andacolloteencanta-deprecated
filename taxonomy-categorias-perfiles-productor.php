@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<section class="grid--categorias">
-    <h1 class="title-cate--comer">Productores</h1>
+<section class="grid-categorias">
+    <h1 class="color-categoria--productores">Productores</h1>
     <aside class="aside--left">
         <div class="">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
@@ -18,9 +18,8 @@
     </aside>
 </section>
 <div class="border-bottom"></div>
-<section class="grid--categorias">
-    <div class="card--descripcion">
-        <h1>Disfrute el Sabor de Nuestra Tierra</h1>
+<section class="grid-categorias section-info">
+        <h1 class="color-categoria--productores">Disfrute el Sabor de Nuestra Tierra</h1>
         <p>Andacollo cuenta con una amplia zona rural perteneciente a las comunidades agrícolas, entre ellas Caldera y
             Damas, La Jarilla y el Azogue, la comunidad Cuesta el Manzano y el Comité Campesino de la Cortadera. En
             estos lugares podemos observar un paisaje distinto, caracterizado por pequeñas plantaciones de frutas y
@@ -29,9 +28,8 @@
             mermeladas y dulces. Un trayecto de gran belleza natural que conduce al visitante por quebradas, cerros y
             pueblos con tradiciones propias de la zona. </p>
         <picture class="collage--servicios">
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-productor.png" alt="">
+            <img class="border-categoria--productores" src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-productor.png" alt="">
         </picture>
-    </div>
 
     <aside class="aside-right--2">
         <?php get_template_part('template-parts/section', 'map'); ?>

@@ -47,53 +47,57 @@
 
     <div class="grid--card">
         <h2 class="title-section title-section--servicios">Encuentra el servicio que más prefieras</h2>
-        <picture class="card card-1">
-            <source media="(min-width: 786px )"
-                srcset="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Comer-2.jpg">
-            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
-            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
-            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
-            <img class="card-img"
-                src="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Comer-2.jpg"
-                alt="">
-            <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-comer">
-            </a>
-            <div class="card-title donde-comer">
-                <p class="title-card">¿Dónde Comer?</p>
-            </div>
+        <!-- revisar uso de icono en el texto para indicar enlace con css afber before content -->
+        <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-comer">
+            <picture class="card card-1">
+                <source media="(min-width: 786px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Comer-2.jpg">
+                <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+                <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+                <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Comer-2.jpg"
+                    alt="">
 
-        </picture>
-        <picture class="card card-2">
+                <div class="card-title donde-comer">
+                    <p class="title-card">¿Dónde Comer?</p>
+                </div>
 
-            <source media="(min-width: 786px )"
-                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg">
-            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
-            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
-            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
-            <img class="card-img"
-                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg"
-                alt="">
-            <div class="card-title donde-dormir">
-                <p class="title-card">¿Dónde Dormir?</p>
-            </div>
-            <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-dormir">
-            </a>
-        </picture>
-        <picture class="card card-3">
-            <source media="(min-width: 786px )"
-                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg">
-            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
-            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
-            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
-            <img class="card-img"
-                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg"
-                alt="">
-            <div class="card-title que-visitar">
-                <p class="title-card">¿Qué Visitar?</p>
-            </div>
-            <a href="<?php get_site_url();  ?>/categorias-perfiles/que-visitar">
-            </a>
-        </picture>
+            </picture>
+        </a>
+        <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-dormir">
+            <picture class="card card-2">
+
+                <source media="(min-width: 786px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg">
+                <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+                <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+                <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Donde-Dormir-2.jpg"
+                    alt="">
+                <div class="card-title donde-dormir">
+                    <p class="title-card">¿Dónde Dormir?</p>
+                </div>
+            </picture>
+        </a>
+        <a href="<?php get_site_url();  ?>/categorias-perfiles/que-visitar">
+            <picture class="card card-3">
+                <source media="(min-width: 786px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg">
+                <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+                <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+                <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg"
+                    alt="">
+                <div class="card-title que-visitar">
+                    <p class="title-card">¿Qué Visitar?</p>
+                </div>
+
+
+            </picture>
+        </a>
         <aside class="aside aside--servicios">
             <picture class="aside-img-servicios"><img class="aside-img "
                     src="<?php echo get_template_directory_uri();  ?>/assets/images/S.svg" alt=""></picture>
@@ -107,52 +111,56 @@
 </section>
 
 <section class="">
+
     <div class="grid--card">
         <h2 class="title-section title-section--productos">El arte de nuestros productos locales</h2>
-        <picture class="card card-4">
-            <source media="(min-width: 786px )"
-                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg">
-            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
-            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
-            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
-            <img class="card-img"
-                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg"
-                alt="">
-            <div class="card-title artesania">
-                <p class="title-card">Artesanias</p>
-            </div>
-            <a href="<?php get_site_url();  ?>/categorias-perfiles/artesania">
-            </a>
-        </picture>
-        <picture class="card card-5">
-            <source media="(min-width: 786px )"
-                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg">
-            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
-            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
-            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
-            <img class="card-img"
-                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg"
-                alt="">
-            <div class="card-title emprendedor">
-                <p class="title-card">Emprendedores</p>
-            </div>
-            <a href="<?php get_site_url();  ?>/categorias-perfiles/emprendedor"></a>
-        </picture>
-        <picture class="card card-6">
-            <source media="(min-width: 786px )"
-                srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg">
-            <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
-            <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
-            <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
-            <img class="card-img"
-                src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg"
-                alt="">
-            <div class="card-title productor">
-                <p class="title-card">Productores</p>
-            </div>
-            <a href="<?php get_site_url();  ?>/categorias-perfiles/productor">
-            </a>
-        </picture>
+        <a href="<?php get_site_url();  ?>/categorias-perfiles/artesania">
+            <picture class="card card-4">
+                <source media="(min-width: 786px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg">
+                <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+                <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+                <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg"
+                    alt="">
+                <div class="card-title artesania">
+                    <p class="title-card">Artesanias</p>
+                </div>
+
+            </picture>
+        </a>
+        <a href="<?php get_site_url();  ?>/categorias-perfiles/emprendedor">
+            <picture class="card card-5">
+                <source media="(min-width: 786px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg">
+                <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+                <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+                <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg"
+                    alt="">
+                <div class="card-title emprendedor">
+                    <p class="title-card">Emprendedores</p>
+                </div>
+            </picture>
+        </a>
+        <a href="<?php get_site_url();  ?>/categorias-perfiles/productor">
+            <picture class="card card-6">
+                <source media="(min-width: 786px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg">
+                <source media="(min-width: 640px )" srcset="https://dummyimage.com/16:9x600/000/fff">
+                <source media="(min-width: 512px )" srcset="https://dummyimage.com/16:9x400/000/fff">
+                <source media="(min-width: 320px )" srcset="https://dummyimage.com/16:9x300/000/fff">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg"
+                    alt="">
+                <div class="card-title productor">
+                    <p class="title-card">Productores</p>
+                </div>
+
+            </picture>
+        </a>
         <aside class="aside aside--productos">
             <p class="aside-text-productos">
                 Revisa productos con identidad local y el trabajo de los

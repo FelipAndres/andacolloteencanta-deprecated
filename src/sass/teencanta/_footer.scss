@@ -7,7 +7,8 @@ p {
 .footer--svg {
   display: block;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  min-height: 4.5vh;
 }
 footer{
   background-color: #222c3e;
