@@ -14,10 +14,10 @@
   --ffuente-bebasNeue: "Bebas Neue";
   --ffuente-boogaloo: "Boogaloo";
 
-  --fs-400: clamp(1rem, 10vw + 1rem, 1.25rem);
-  --fs-600: 1.25rem;
-  --fs-900: 1.5rem;
-  --fs-big: clamp(2.5rem, 100vw + 2.5rem, 3rem);
+  --fs-mobile: clamp(.8rem, 10vw + .8rem, 1rem);
+  --fs-tablet: clamp( .9rem, 10vw + .9rem, 1rem);
+  --fs-desktop: clamp( 1rem, 10vw + 1rem, 1.25rem);
+  --fs-big-desktop: clamp(1.5rem, 100vw + 2rem, 2.5rem);
 
   --tablet-screen: 640px;
   --big-tablet-screen: 860px;
@@ -51,7 +51,73 @@
   grid-row: 1/2;
 }
 
-@media screen and (min-width: 640px) {
+// moar
+
+/*
+Clases especificas
+*/
+.color-categoria--dondecomer {
+  color: var(--color-dondecomer);
+}
+.bkcolor-categoria--dondecomer {
+  background-color: var(--color-dondecomer);
+}
+.border-categoria--dondecomer {
+  border: 0.5rem solid var(--color-dondecomer);
+}
+
+.color-categoria--dondedormir {
+  color: var(--color-dondedormir);
+}
+.border-categoria--dondedormir {
+  border: 0.5rem solid var(--color-dondedormir);
+}
+.bkcolor-categoria--dondedormir {
+  background-color: var(--color-dondedormir);
+}
+
+.color-categoria--quevisitar {
+  color: var(--color-quevisitar);
+}
+.border-categoria--quevisitar {
+  border: 0.5rem solid var(--color-quevisitar);
+}
+.bkcolor-categoria--quevisitar {
+  background-color: var(--color-quevisitar);
+}
+
+.color-categoria--artesania {
+  color: var(--color-artesania);
+}
+.border-categoria--artesania {
+  border: 0.5rem solid var(--color-artesania);
+}
+.bkcolor-categoria--artesania {
+  background-color: var(--color-artesania);
+}
+
+.color-categoria--emprendedores {
+  color: var(--color-emprendedor);
+}
+.border-categoria--emprendedores {
+  border: 0.5rem solid var(--color-emprendedor);
+}
+.bkcolor-categoria--emprendedores {
+  background-color: var(--color-emprendedor);
+}
+
+.color-categoria--productores {
+  color: var(--color-productor);
+}
+.border-categoria--productores {
+  border: 0.5rem solid var(--color-productor);
+}
+.bkcolor-categoria--productores {
+  background-color: var(--color-productor);
+}
+
+
+@media screen and (min-width: 440px) {
   .container {
     max-width: calc(100vw - 10vw);
     margin: 0 auto;

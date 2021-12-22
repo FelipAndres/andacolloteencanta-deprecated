@@ -25,6 +25,8 @@ nav {
   // width: 100%;
   height: auto;
   padding: 0.5rem 1rem;
+  transform-origin: top center;
+  transition: 3ms all ease-out;
   @media screen and (min-width: 640px) {
     border-radius: 0 0 10px 10px;
   }
@@ -158,3 +160,6 @@ nav {
     }
   }
 }
+
+
+

@@ -1,7 +1,7 @@
     </main>
 </div>
 <picture>
-    <img class="footer--svg" src="<?php echo get_template_directory_uri();  ?>/src/images/andacollo-relieve.svg" alt="">
+    <img class="footer--svg" src="<?php echo get_template_directory_uri();  ?>/assets/images/andacollo-relieve.svg" alt="">
 </picture>
 <footer>
     <!-- <div class="fondo-blanco"></div> -->

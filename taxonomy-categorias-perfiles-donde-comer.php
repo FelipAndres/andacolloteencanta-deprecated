@@ -2,21 +2,25 @@
 
 <section class="grid-categorias grid-categorias--servicios">
     <h1 class="color-categoria--dondecomer">¿Dónde Comer?</h1>
-    <aside class="aside--left">
-        <div class="">
+    <aside class="aside--left bkcolor-categoria--dondecomer">
+        <div class="aside--left-content">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
         </div>
         <img src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
     </aside>
     <!-- CARTAS -->
+    <div class="sub-grid-content">
     <?php get_template_part('template-parts/section', 'donde-comer'); ?>
+    </div>
     <!-- FIN CARTAS -->
     <?php if (function_exists('pagination')) pagination(); ?>
     <?php //get_template_part('template-parts/section', 'paginacion'); ?>
 
     <aside class="aside--right">
         <h1>¿Donde Comer?</h1>
-        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondecomer.svg" alt="">
+        <picture>
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondecomer.svg" alt="">
+        </picture>
     </aside>
 </section>
 <div class="border-bottom"></div>
@@ -36,9 +40,10 @@
         sabroso y acogedor sol de Andacollo. Te Invitados a conocer y probar los sabores de la cocina Andacollina.
     </p>
     <picture class="collage--servicios">
-        <img class="border-categoria--dondecomer" src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-comer.png" alt="">
+        <img class="border-categoria--dondecomer"
+            src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-comer.png" alt="">
     </picture>
-    <aside class="aside-right--2">
+    <aside class="aside-right--2 bkcolor-categoria--dondecomer">
         <?php get_template_part('template-parts/section', 'map'); ?>
         <img src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
     </aside>

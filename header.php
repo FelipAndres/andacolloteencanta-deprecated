@@ -29,7 +29,7 @@
             <a href="<?php echo home_url();?>">
                 <picture>
                     <source media="(min-width: 320px )"
-                        srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
+                        srcset="<?php echo get_template_directory_uri();  ?>/assets/images/header/Banner-webp.webp">
                     <img class="header-logo"
                         src="<?php echo get_template_directory_uri();  ?>/assets/images/Banner-webp.webp"
                         alt="Logo de andacollo te encanta">
