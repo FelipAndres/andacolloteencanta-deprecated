@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="grid-categorias grid-categorias--servicios">
+<section class="grid-categorias grid-categorias--section1">
     <h1 class="color-categoria--dondecomer">¿Dónde Comer?</h1>
     <aside class="aside--left bkcolor-categoria--dondecomer">
         <div class="aside--left-content">
@@ -13,18 +13,18 @@
     <?php get_template_part('template-parts/section', 'donde-comer'); ?>
     </div>
     <!-- FIN CARTAS -->
-    <?php if (function_exists('pagination')) pagination(); ?>
+    <?php if (function_exists('pagination')) { pagination();
+    } ?>
     <?php //get_template_part('template-parts/section', 'paginacion'); ?>
 
     <aside class="aside--right">
-        <h1>¿Donde Comer?</h1>
         <picture>
             <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondecomer.svg" alt="">
         </picture>
     </aside>
 </section>
 <div class="border-bottom"></div>
-<section class="grid-categorias section-info">
+<section class="grid-categorias grid-categorias-section2 section-info">
     <h1 class="color-categoria--dondecomer">Encántese con los Sabores Locales</h1>
     <p>Buscamos preservar nuestras tradiciones, rescatando nuestra gastronomía tradicional, a través de sabrosos
         platosD

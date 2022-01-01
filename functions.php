@@ -28,6 +28,10 @@ function setup_styles_scripts()
         'app', 
         get_template_directory_uri() . '/build/dev.bundle.js', '', '', true
     );
+    wp_enqueue_script( 
+        'Font Awesome 5','https://kit.fontawesome.com/408f0c4a1f.js', '', '', true
+    );
+
 }
 add_action('wp_enqueue_scripts', 'setup_styles_scripts');
 
@@ -77,7 +81,7 @@ add_image_size('post-img', 210, 160, true);
 // Imagen de Single Perfil 
 add_image_size('perfil-img', 291, 194, true);
 // Imagen de Productos Perfil
-add_image_size('productos-img', 210, 157, true);
+add_image_size('productos-img', 640, 360, true);
 // Imagen del Archive de categorias vitrina
 add_image_size('img-carta-noticias', 255, 149, true);
 add_image_size('slide-img', 1440, 750, true);
@@ -312,10 +316,10 @@ function the_breadcrumb()
     $homeLink = get_bloginfo('url');
     if (is_home() || is_front_page()) {
         if ($showOnHome == 1) {
-            echo '<div id="crumbs"><a href="' . $homeLink . '">' . $home . '</a></div>';
+            echo '<div  class="breadcrumbs card-styles" id="crumbs"><a href="' . $homeLink . '">' . $home . '</a></div>';
         }
     } else {
-        echo '<div id="crumbs"><a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
+        echo '<div class="breadcrumbs card-styles" id="crumbs"><a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
         if (is_category()) {
             $thisCat = get_category(get_query_var('cat'), false);
             if ($thisCat->parent != 0) {

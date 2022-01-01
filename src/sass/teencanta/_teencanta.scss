@@ -140,6 +140,12 @@ Clases especificas
   padding: 0 1rem 1rem;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 0;
+  }
+}
+
 img {
   display: block;
 }
