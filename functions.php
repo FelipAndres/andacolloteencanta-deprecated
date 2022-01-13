@@ -325,7 +325,7 @@ function the_breadcrumb()
             if ($thisCat->parent != 0) {
                 echo get_category_parents($thisCat->parent, true, ' ' . $delimiter . ' ');
             }
-            echo $before . 'Archive by category "' . single_cat_title('', false) . '"' . $after;
+            echo $before . 'Archive by category"' . single_cat_title('', false) . '"' . $after;
         } elseif (is_search()) {
             echo $before . 'Search results for "' . get_search_query() . '"' . $after;
         } elseif (is_day()) {
@@ -340,8 +340,9 @@ function the_breadcrumb()
         } elseif (is_single() && !is_attachment()) {
             if (get_post_type() != 'post') {
                 $post_type = get_post_type_object(get_post_type());
-                $slug = $post_type->rewrite;
-                echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a>';
+                //$slug = $post_type->rewrite;
+                $categorias = "categorias";
+                echo '<span href="' . $homeLink . '/' . $categorias . '/">' . $post_type->labels->singular_name . '</span>';
                 if ($showCurrent == 1) {
                     echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
                 }
@@ -399,7 +400,7 @@ function the_breadcrumb()
             echo $before . 'Articles posted by ' . $userdata->display_name . $after;
         } elseif (is_404()) {
             echo $before . 'Error 404' . $after;
-        }
+    } 
         if (get_query_var('paged')) {
             if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author()) {
                 echo ' (';

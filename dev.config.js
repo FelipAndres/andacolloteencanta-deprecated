@@ -44,7 +44,8 @@ module.exports = {
       // ./public directory is being served
       host: "localhost",
       port: 3000,
-      browser: 'C:/Program Files/Firefox Developer Edition/firefox.exe',
+      browser: 'Google Chrome',
+      //browser: 'C:/Program Files/Firefox Developer Edition/firefox.exe',
       files: ["./**/*.php", "./**/*.css", "./**/*.scss"],
       proxy: "development.local",
     }),

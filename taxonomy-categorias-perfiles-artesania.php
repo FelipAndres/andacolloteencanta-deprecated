@@ -1,30 +1,31 @@
 <?php get_header(); ?>
 
-<section class="grid-categorias">
+<section class="grid-categorias grid-categorias--section1">
     <h1 class="color-categoria--artesania">Artesania</h1>
-    <aside class="aside--left">
-        <div class="">
+    <aside class="aside--left bkcolor-categoria--artesania">
+        <div class="aside--left-content">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
         </div>
         <img src="<?php echo get_template_directory_uri();  ?>/assets/images/A.svg" alt="">
     </aside>
     <!-- CARTAS -->
+    <div class="sub-grid-content">
     <?php get_template_part('template-parts/section', 'artesania'); ?>
+    </div>
     <!-- FIN CARTAS -->
-
-    <?php if (function_exists('pagination')) pagination(); ?>
+    <?php if (function_exists('pagination')) { pagination();
+    } ?>
     <?php //get_template_part('template-parts/section', 'paginacion'); ?>
 
-    <?php //if (function_exists('pagination')) pagination(); ?>
-
     <aside class="aside--right">
-        <h1>Artesanos Locales</h1>
-        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-artesania.svg" alt="">
+        <picture>
+            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-artesania.svg" alt="">
+        </picture>
     </aside>
 </section>
 <div class="border-bottom"></div>
-<section class="grid-categorias section-info">
-    <h1 class="color-categoria--artesania">Ruta de la Artesanía</h1>
+<section class="grid-categorias grid-categorias-section2 section-info">
+    <h1 class="color-categoria--artesania">Encántese con los Sabores Locales</h1>
     <p>La principal actividad artesanal la constituye la venta de piedras de metal, miniaturas en bronce, imitando
         las
         herramientas de la pequeña minería y de la gran minería Andacollina. Artesanía religiosa propias de la
@@ -37,11 +38,13 @@
         Greda
         del sector el Toro, quienes rescatan técnicas ancestrales en sus diseños y confecciones. Te invitamos a
         recorrer
-        y conocer este hermoso arte Andacollino.</p>
+        y conocer este hermoso arte Andacollino.
+    </p>
     <picture class="collage--servicios">
-        <img class="border-categoria--artesania" src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-artesania.png" alt="">
+        <img class="border-categoria--artesania"
+            src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-artesania.png" alt="">
     </picture>
-    <aside class="aside-right--2">
+    <aside class="aside-right--2 bkcolor-categoria--artesania">
         <?php get_template_part('template-parts/section', 'map'); ?>
         <img src="<?php echo get_template_directory_uri();  ?>/assets/images/A.svg" alt="">
     </aside>
