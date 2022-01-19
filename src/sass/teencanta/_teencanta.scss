@@ -14,10 +14,10 @@
   --ffuente-bebasNeue: "Bebas Neue";
   --ffuente-boogaloo: "Boogaloo";
 
-  --fs-mobile: clamp(.8rem, 10vw + .8rem, 1rem);
-  --fs-tablet: clamp( .9rem, 10vw + .9rem, 1rem);
-  --fs-desktop: clamp( 1rem, 10vw + 1rem, 1.25rem);
-  --fs-big-desktop: clamp(1.5rem, 100vw + 2rem, 2.5rem);
+  --fs-mobile: clamp();
+  --fs-tablet: clamp( );
+  --fs-desktop: clamp();
+  --fs-big-desktop: clamp();
 
   --tablet-screen: 640px;
   --big-tablet-screen: 860px;
@@ -120,6 +120,13 @@ Clases especificas
 @media screen and (min-width: 440px) {
   .container {
     max-width: calc(100vw - 10vw);
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: calc(100vw - 20vw);
     margin: 0 auto;
     overflow-x: hidden;
   }

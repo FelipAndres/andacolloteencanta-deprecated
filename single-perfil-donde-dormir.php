@@ -10,7 +10,7 @@ Template Post Type: perfil
     } ?>
     <div class="info-perfil">
         <div class="info-perfil--content card-styles">
-            <h1><?php the_title(); ?></h1>
+            <h1 class="donde-dormir"><?php the_title(); ?></h1>
             <picture><img class="" src="<?php the_post_thumbnail_url(); ?>" alt=""></picture>
             <?php
               $informacion_contacto = get_field('info_contacto'); // parent group

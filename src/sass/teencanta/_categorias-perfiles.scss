@@ -44,10 +44,7 @@
     text-decoration: none;
   }
 }
-.paginacion-current {
-  background: var(--color-nav);
-  color: #fff;
-}
+
 .paginacion-btn {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -61,13 +58,14 @@
 }
 .paginacion-btn:first-child,
 .paginacion-btn:last-child {
-  background-color: #222c3e;
+  background: var(--color-nav);
+  // background-color: #222c3e;
   color: #fff;
 }
 .paginacion-current {
-  background-color: var(--color-dondecomer);
+  background-color: hsl(34, 94%, 47%);
+  color: #fff;
 }
-
 /* !
 CARTAS
 */
@@ -87,6 +85,7 @@ CARTAS
 .card-info {
   > a {
     text-decoration: none;
+    
   }
   > h2,
   p {
@@ -101,6 +100,13 @@ CARTAS
     padding: 0 1rem;
     padding-block: 1rem;
   }
+}
+
+.card-info h2{
+  font-size: clamp(1rem, 1.2vw, 1.8rem);
+}
+.card-info p {
+  font-size: clamp(.8rem, 1vw, 1rem);
 }
 .card-btn {
   display: block;
