@@ -221,7 +221,7 @@ button > label {
       // max-height: 15rem;
     }
     .sub-grid-content {
-      align-self: center;
+      align-self: start;
       flex-direction: column;
       // padding-top: 3rem;
       grid-column: 2 / 3;
@@ -254,6 +254,9 @@ button > label {
         margin: 0;
         text-align: center;
       }
+    }
+    .icon-aside--left {
+      max-height: 13rem;
     }
     .aside--right {
       display: flex;

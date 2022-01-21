@@ -10,7 +10,7 @@ Template Post Type: perfil
     } ?>
     <div class="info-perfil">
         <div class="info-perfil--content card-styles">
-            <h1 class="emprendedor"><?php the_title(); ?></h1>
+            <h1 class="que-visitar"><?php the_title(); ?></h1>
             <picture><img class="" src="<?php the_post_thumbnail_url(); ?>" alt=""></picture>
             <?php
               $informacion_contacto = get_field('info_contacto'); // parent group
@@ -22,13 +22,13 @@ Template Post Type: perfil
             ?>
             <div class=""><?php echo $descripcion_larga;?></div>
         </div>
-        <h2>Contacto</h2>
-            <div class="info-contacto card-styles">
-                <p><?php echo $nombre;?></p>
-                <p><?php echo $direccion;?></p>
-                <p><?php echo "+569 " . $numero;?></p>
-                <p><?php echo $email;?></p>
-            </div>
+        <h2 class="titulo-sections-perfil--contacto">Contacto</h2>
+        <div class="info-contacto card-styles">
+            <p><?php echo $nombre;?></p>
+            <p><?php echo $direccion;?></p>
+            <p><?php echo "+569 " . $numero;?></p>
+            <p><?php echo $email;?></p>
+        </div>
         <div class="info-perfil--rrss card-styles">
             <?php
               $rrss_contacto = get_field('rrss'); // parent group
@@ -49,7 +49,7 @@ Template Post Type: perfil
                     src="<?php echo get_template_directory_uri();  ?>/assets/images/whatsapp-brands.svg" alt=""></a>
 
         </div>
-        <h2>Sellos de Calidad</h2>
+        <h2 class="titulo-sections-perfil--sellos">Sellos de Calidad</h2>
         <div class="info-perfil--sellos card-styles">
             <?php
                 $grupo_sellos = get_field('certificaciones');// parent group
@@ -94,7 +94,7 @@ Template Post Type: perfil
         <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondecomer.svg" alt="">
         <h2 class="donde-comer-title"> Servicios</h2>
     </div> -->
-        <h2>Galería de Fotos</h2>
+        <h2 class="titulo-sections-perfil--fotos">Galería de Fotos</h2>
         <div class="galeria--productos card-styles">
 
             <?php

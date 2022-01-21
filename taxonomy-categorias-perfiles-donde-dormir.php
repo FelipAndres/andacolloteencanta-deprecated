@@ -6,7 +6,7 @@
         <div class="aside--left-content">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
         </div>
-        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/H.svg" alt="">
+        <img class="icon-aside--left" src="<?php echo get_template_directory_uri();  ?>/assets/images/H.svg" alt="">
     </aside>
     <!-- CARTAS -->
     <div class="sub-grid-content">

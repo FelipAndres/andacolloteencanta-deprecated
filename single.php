@@ -35,7 +35,7 @@
                 <p><?php echo $bajada_noticia; ?></p>
             </div>
             <div class="container-meta-data--noticia">
-                <div class="categorias-textos"><?php the_category(' - '); ?></div>
+                <div class="categorias-textos"><span>Categorías: </span><?php the_category(' - '); ?></div>
                 <div class="flex-row">
                     <p><strong><?php echo get_the_date("j F, Y"); ?></strong><br> por
                         <?php the_author_meta('display_name', $post->post_author ); ?>
@@ -49,6 +49,10 @@
         </div>
     </div>
 
+    <div class="container-contenido--noticias mt-0">
+        <p><?php the_field('cuerpo_noticia'); ?></p>
+    </div>
+
     <div class="container-img--2">
         <picture class="">
             <?php echo wp_get_attachment_image($img_featured_footer,$img_size_featured_footer); ?>
@@ -60,11 +64,9 @@
         </div>
     </div>
 
-    <div class="container-contenido--noticias">
-        <p><?php the_field('cuerpo_noticia'); ?></p>
-    </div>
 
-    <div class="container-img--3">
+
+    <div class="container-img--3 dp-none">
         <picture class="">
             <?php echo wp_get_attachment_image($imagen_link); ?>
         </picture>
@@ -76,7 +78,7 @@
     </div>
 
 
-    <aside class="aside--noticias-2">
+    <aside class="aside-noticas--footer dp-none">
         <p class="texto-infografia"><?php the_field('infografia_noticia'); ?></p>
         <picture class="flex">
             <!-- <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt=""> -->
@@ -91,6 +93,9 @@
         </picture>
     </aside>
 
+    <a class="justify-flex-end" href="<?php site_url(); ?>/noticias/">
+        <button class="card-btn card-btn--noticias btn-single--noticia"><label for="Volver">Volver</label></button>
+    </a>
 
 </section>
 

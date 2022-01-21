@@ -48,7 +48,7 @@
     <div class="grid--card">
         <h1 class="title-section title-section--servicios">Encuentra el servicio que más prefieras</h1>
         <!-- revisar uso de icono en el texto para indicar enlace con css afber before content -->
-        <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-comer/">
+        <a href="<?php site_url();  ?>/categorias-perfiles/donde-comer/">
             <picture class="card card-1">
                 <source media="(min-width: 786px )"
                     srcset="<?php echo get_template_directory_uri();  ?>/assets/images/cards-cat/Cartilla_Donde-Comer-2.jpg">
@@ -65,7 +65,7 @@
 
             </picture>
         </a>
-        <a href="<?php get_site_url();  ?>/categorias-perfiles/donde-dormir/">
+        <a href="<?php site_url();  ?>/categorias-perfiles/donde-dormir/">
             <picture class="card card-2">
 
                 <source media="(min-width: 786px )"
@@ -81,7 +81,7 @@
                 </div>
             </picture>
         </a>
-        <a href="<?php get_site_url();  ?>/categorias-perfiles/que-visitar/">
+        <a href="<?php site_url();  ?>/categorias-perfiles/que-visitar/">
             <picture class="card card-3">
                 <source media="(min-width: 786px )"
                     srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Que-Visitar-3.jpg">
@@ -114,7 +114,7 @@
 
     <div class="grid--card">
         <h1 class="title-section title-section--productos">El arte de nuestros productos locales</h1>
-        <a href="<?php get_site_url();  ?>/categorias-perfiles/artesania/">
+        <a href="<?php site_url();  ?>/categorias-perfiles/artesania/">
             <picture class="card card-4">
                 <source media="(min-width: 786px )"
                     srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg">
@@ -130,7 +130,7 @@
 
             </picture>
         </a>
-        <a href="<?php get_site_url();  ?>/categorias-perfiles/emprendedor/">
+        <a href="<?php site_url();  ?>/categorias-perfiles/emprendedor/">
             <picture class="card card-5">
                 <source media="(min-width: 786px )"
                     srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg">
@@ -145,7 +145,7 @@
                 </div>
             </picture>
         </a>
-        <a href="<?php get_site_url();  ?>/categorias-perfiles/productor/">
+        <a href="<?php site_url();  ?>/categorias-perfiles/productor/">
             <picture class="card card-6">
                 <source media="(min-width: 786px )"
                     srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg">
