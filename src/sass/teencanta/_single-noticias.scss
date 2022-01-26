@@ -86,6 +86,25 @@
 .justify-flex-end {
   justify-self: flex-end;
   text-decoration: none;
+  
+}
+@media screen and(min-width: var(--big-tablet-screen)) {
+  .justify-flex-end {
+    grid-column: 3 / 4 ;
+    grid-row: 8 / 9;
+  }
+}
+@media screen and(min-width: var(--desktop-screen)) {
+  .justify-flex-end {
+    grid-column: 3 / 4 ;
+    grid-row: 8 / 9;
+  }
+}
+
+@media screen and(min-width: var(--medium-desktop-screen)) {
+  // .justify-flex-end {
+  //   grid-column: 3 / 4;
+  // }
 }
 
 
