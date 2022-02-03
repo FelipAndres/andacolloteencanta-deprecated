@@ -14,9 +14,9 @@
   --ffuente-bebasNeue: "Bebas Neue";
   --ffuente-boogaloo: "Boogaloo";
 
-  --fs-mobile: clamp();
-  --fs-tablet: clamp( );
-  --fs-desktop: clamp();
+  --fs-h1: clamp(1.525rem, 3.125vw, 2rem);
+  --fs-h2: clamp(1.125rem, 2.525vw, 1.825rem);
+  --fs-p: clamp(1rem, 2vw, 1.125rem);
   --fs-big-desktop: clamp();
 
   --tablet-screen: 640px;
@@ -25,6 +25,18 @@
   --desktop-screen: 1024px;
   --medium-desktop-screen: 1280px;
   --big-desktop-screen: 1580px;
+}
+* {
+  font-family: Raleway;
+}
+h1 {
+  // font-size: var(--fs-h1); 
+}
+h2 {
+  // font-size: var(--fs-h2); 
+}
+p {
+  // font-size: var(--fs-p); 
 }
 
 // Clase de background
@@ -147,7 +159,7 @@ Clases especificas
   padding: 0 1rem 1rem;
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .content {
     padding: 0;
   }

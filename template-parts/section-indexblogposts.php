@@ -3,7 +3,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="cards--servicios">
     <?php if (has_post_thumbnail()) : ?>
-    <img class="img--servicios" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+    <img class="img--servicios img--noticias-post" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
     <?php endif; ?>
     <div class="card-info">
         <h2><?php the_title(); ?></h2>

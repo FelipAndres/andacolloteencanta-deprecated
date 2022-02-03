@@ -15,7 +15,6 @@
     text-align: center;
     font-family: var(--ffuente-boogaloo);
     // Revisar tamaño de letra
-    font-size: 2.7rem;
   }
   .aside--left {
     display: none;
@@ -102,12 +101,6 @@ CARTAS
   }
 }
 
-.card-info h2{
-  font-size: clamp(1rem, 1.2vw, 1.8rem);
-}
-.card-info p {
-  font-size: clamp(.8rem, 1vw, 1rem);
-}
 .card-btn {
   display: block;
   background-color: #fff;
@@ -135,7 +128,6 @@ button > label {
     text-align: center;
     font-family: var(--ffuente-boogaloo);
     // Revisar tamaño de letra
-    font-size: 2.7rem;
   }
   > p {
     text-align: justify;
@@ -274,15 +266,21 @@ button > label {
     display: flex;
     .img--servicios {
       object-fit: cover;
-      max-width: 20rem;
+      max-width: 9rem;
       border-radius: 10px 0 0 10px;
     }
+    
   }
+
+  .cards--servicios{
+    .img--noticias-post{
+      max-width: 11rem;
+    }}
 
   .card-info {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .6rem;
     padding: 0.7rem;
     h2,
     p {
