@@ -158,7 +158,7 @@ Template Post Type: perfil
 
             <img class="aside-r-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/E.svg" alt="">
         </aside>
-         <a class="justify-flex-end btn-posicion" href="<?php site_url(); ?>/categorias-perfiles/que-visitar">
+        <a class="btn-posicion" href="<?php site_url(); ?>/categorias-perfiles/que-visitar">
             <button class="card-btn card-btn--noticias btn-single--noticia "><label for="Volver">Volver</label></button>
         </a>
 </section>

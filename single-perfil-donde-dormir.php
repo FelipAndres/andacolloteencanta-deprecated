@@ -49,7 +49,7 @@ Template Post Type: perfil
                     src="<?php echo get_template_directory_uri();  ?>/assets/images/whatsapp-brands.svg" alt=""></a>
 
         </div>
-        <h2 class="titulo-sections-perfil--sellos" >Sellos de Calidad</h2>
+        <h2 class="titulo-sections-perfil--sellos">Sellos de Calidad</h2>
         <div class="info-perfil--sellos card-styles">
             <?php
                 $grupo_sellos = get_field('certificaciones');// parent group
@@ -159,7 +159,7 @@ Template Post Type: perfil
             <img class="aside-r-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
         </aside>
 
-         <a class="justify-flex-end btn-posicion" href="<?php site_url(); ?>/categorias-perfiles/donde-dormir">
+        <a class="btn-posicion" href="<?php site_url(); ?>/categorias-perfiles/donde-dormir">
             <button class="card-btn card-btn--noticias btn-single--noticia "><label for="Volver">Volver</label></button>
         </a>
 </section>

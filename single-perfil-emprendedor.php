@@ -23,12 +23,12 @@ Template Post Type: perfil
             <div class=""><?php echo $descripcion_larga;?></div>
         </div>
         <h2 class="titulo-sections-perfil--contacto">Contacto</h2>
-            <div class="info-contacto card-styles">
-                <p><?php echo $nombre;?></p>
-                <p><?php echo $direccion;?></p>
-                <p><?php echo "+569 " . $numero;?></p>
-                <p><?php echo $email;?></p>
-            </div>
+        <div class="info-contacto card-styles">
+            <p><?php echo $nombre;?></p>
+            <p><?php echo $direccion;?></p>
+            <p><?php echo "+569 " . $numero;?></p>
+            <p><?php echo $email;?></p>
+        </div>
         <div class="info-perfil--rrss card-styles">
             <?php
               $rrss_contacto = get_field('rrss'); // parent group
@@ -159,7 +159,7 @@ Template Post Type: perfil
             <img class="aside-r-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/E.svg" alt="">
         </aside>
 
-         <a class="justify-flex-end btn-posicion" href="<?php site_url(); ?>/categorias-perfiles/emprendedor">
+        <a class="btn-posicion" href="<?php site_url(); ?>/categorias-perfiles/emprendedor">
             <button class="card-btn card-btn--noticias btn-single--noticia "><label for="Volver">Volver</label></button>
         </a>
 </section>

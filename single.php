@@ -18,16 +18,20 @@
             <?php 
                 // $datos__array = get_field('grupo__desarollo');
                 $bajada_noticia = get_field('bajada_noticia');
-                $link_imagen = get_field('link_noticia');
-                $imagen_link = get_field('imagen_link');
-                $pie_de_foto_2 = get_field('Pie_link_complementario');
-                $autor_de_foto_2 = get_field('creditos_link');
-                $pie_de_foto_1 = get_field('Titulo_imagen_complemento');
-                $autor_de_foto_1 = get_field('creditos_foto_complementaria');
+                $imagen_comple_noticia = get_field('imagen_complementaria_noticia');
+                $pie_imagen_comple_noticia = get_field('pie_imagen_complementaria_noticia');
+                $autor_imagen_comple_noticia = get_field('autor_imagen_complementaria_noticia');
 
-                $img_featured_footer = get_field('imagen_noticia_3');
+                $cuerpo_noticia = get_field('cuerpo_noticia');
+                $frase_complementaria =  get_field('frase_complementaria_Página');
+                $imagen_comple_2_noticia =  get_field('imagen_complementaria_2_noticia');
+                $pie_comple_2_noticia =  get_field('pie_imagen_complementaria_2_noticia');
+                $autor_comple_2_noticia =  get_field('autor_foto_complementaria_2_noticia');
+
+
+                /* $img_featured_footer = get_field('imagen_noticia_3');
                 $img_size = 'lead-entrada';
-                $img_size_featured_footer = '';
+                $img_size_featured_footer = ''; */
                 ?>
 
 
@@ -50,7 +54,7 @@
     </div>
 
     <div class="container-contenido--noticias mt-0">
-        <p><?php the_field('cuerpo_noticia'); ?></p>
+        <p><?php echo $cuerpo_noticia; ?></p>
     </div>
 
     <div class="container-img--2">

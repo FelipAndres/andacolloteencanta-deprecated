@@ -30,13 +30,13 @@
   font-family: Raleway;
 }
 h1 {
-  // font-size: var(--fs-h1); 
+  // font-size: var(--fs-h1);
 }
 h2 {
-  // font-size: var(--fs-h2); 
+  // font-size: var(--fs-h2);
 }
 p {
-  // font-size: var(--fs-p); 
+  // font-size: var(--fs-p);
 }
 
 // Clase de background
@@ -127,7 +127,6 @@ Clases especificas
 .bkcolor-categoria--productores {
   background-color: var(--color-productor);
 }
-
 
 @media screen and (min-width: 440px) {
   .container {

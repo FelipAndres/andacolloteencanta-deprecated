@@ -234,22 +234,24 @@
 
 @media screen and(min-width: 860px) {
   .btn-posicion {
-    grid-column: 3 / 4 ;
+    grid-column: 3 / 4;
     grid-row: 8 / 9;
+    justify-self: flex-end;
+    text-decoration: none;
   }
 }
 @media screen and(min-width: 1024px) {
   .btn-posicion {
-    grid-column: 3 / 4 ;
+    grid-column: 3 / 4;
     grid-row: 8 / 9;
   }
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 1280px) {
   .info-perfil--content > picture > img {
     max-height: 17rem;
   }
-  
+
   .info-contacto {
     flex-direction: column;
     align-content: space-around;
