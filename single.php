@@ -59,17 +59,19 @@
 
     <div class="container-img--2">
         <picture class="">
-            <?php echo wp_get_attachment_image($img_featured_footer,$img_size_featured_footer); ?>
+            <?php echo wp_get_attachment_image($imagen_comple_noticia,$img_size_featured_footer); ?>
         </picture>
 
         <div class="pie_de_foto--1">
-            <p><?php echo $pie_de_foto_1 ?></p>
-            <p>Autor: <?php echo $autor_de_foto_1 ?></p>
+            <p><?php echo $pie_imagen_comple_noticia ?></p>
+            <p>Autor: <?php echo $autor_imagen_comple_noticia?></p>
         </div>
     </div>
 
 
-
+    <div class="container-descripcion">
+        <h1>wena</h1>
+    </div>
     <div class="container-img--3 dp-none">
         <picture class="">
             <?php echo wp_get_attachment_image($imagen_link); ?>
