@@ -111,9 +111,9 @@
     grid-row: 8 / 9;
   }
 }
-@media screen and(min-width: 1024px) {
+@media screen and(min-width: 1348px) {
   .section-single--noticia {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, max-content);
   }
   .breadcrumb {

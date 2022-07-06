@@ -27,7 +27,7 @@
   --big-desktop-screen: 1580px;
 }
 * {
-  font-family: Raleway;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1 {
   // font-size: var(--fs-h1);
@@ -135,16 +135,33 @@ Clases especificas
     overflow-x: hidden;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 640px) {
   .container {
     max-width: calc(100vw - 20vw);
     margin: 0 auto;
     overflow-x: hidden;
   }
 }
-@media screen and (min-width: 1580px) {
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: calc(100vw - 25vw);
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+
+//1024 cambia el grid
+
+@media screen and (min-width: 1280px) {
   .container {
     max-width: calc(100vw - 30vw);
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 1580px) {
+  .container {
+    max-width: calc(100vw - 40vw);
     margin: 0 auto;
     overflow-x: hidden;
   }

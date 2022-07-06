@@ -27,10 +27,12 @@ nav {
   padding: 0.5rem 1rem;
   transform-origin: top center;
   transition: 3ms all ease-out;
-  @media screen and (min-width: 640px) {
-    border-radius: 0 0 10px 10px;
-  }
+  border-radius: 0 0 10px 10px;
 }
+  // @media screen and (min-width: 640px) {
+  //   border-radius: 0 0 10px 10px;
+  // }
+// }
 .menu {
   margin: 0;
   padding: 0;
@@ -64,7 +66,7 @@ nav {
   background-image: url("../images/icons/times-solid.svg");
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 859px) {
   .mobile-nav-toggle {
     display: none;
   }

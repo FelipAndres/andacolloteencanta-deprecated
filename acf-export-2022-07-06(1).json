@@ -1,0 +1,1361 @@
+[
+    {
+        "key": "group_605b4431bab35",
+        "title": "Formulario Noticias",
+        "fields": [
+            {
+                "key": "field_605b44dcba9d3",
+                "label": "Bajada o Resumen de la Noticia",
+                "name": "bajada_noticia",
+                "type": "textarea",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí un breve resumen de la noticia en general",
+                "maxlength": 300,
+                "rows": 3,
+                "new_lines": ""
+            },
+            {
+                "key": "field_605b50451c807",
+                "label": "Imagen Complementaria",
+                "name": "imagen_complementaria_noticia",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "15",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_605c8ddfa35e7",
+                "label": "Pie de Imagen Complementaria",
+                "name": "pie_imagen_complementaria_noticia",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 150,
+                "rows": 2,
+                "new_lines": ""
+            },
+            {
+                "key": "field_605c955eeb180",
+                "label": "Autor Imagen Complementaria",
+                "name": "autor_imagen_complementaria_noticia",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí el Autor de la Fotografía",
+                "prepend": "Fuente de Información",
+                "append": "",
+                "maxlength": 40
+            },
+            {
+                "key": "field_605b85eaeacb8",
+                "label": "Cuerpo de la Noticia",
+                "name": "cuerpo_noticia",
+                "type": "textarea",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 1650,
+                "rows": 12,
+                "new_lines": ""
+            },
+            {
+                "key": "field_605b49e0ba9d4",
+                "label": "Frase Complementaria",
+                "name": "frase_complementaria_noticia",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí la información más importante de la noticia",
+                "maxlength": 200,
+                "rows": 2,
+                "new_lines": ""
+            },
+            {
+                "key": "field_605b522314f8e",
+                "label": "Imagen Complementaria 2",
+                "name": "imagen_complementaria_2_noticia",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "15",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_605c9693583f4",
+                "label": "Pie de Imagen Complementaria 2",
+                "name": "pie_imagen_complementaria_2_noticia",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 80,
+                "rows": 2,
+                "new_lines": ""
+            },
+            {
+                "key": "field_605c971584d68",
+                "label": "Autor Foto Complementaria 2",
+                "name": "autor_foto_complementaria_2_noticia",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_605b522314f8e",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí el Autor de la Fotografía",
+                "prepend": "Imagen proporcionada por:",
+                "append": "",
+                "maxlength": 40
+            },
+            {
+                "key": "field_62ba50106470a",
+                "label": "Url Video",
+                "name": "url_video",
+                "type": "oembed",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "width": "",
+                "height": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "format",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Formulario Para Ingreso de Noticias",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_629fa534628e7",
+        "title": "Formulario Páginas",
+        "fields": [
+            {
+                "key": "field_629fa5346925c",
+                "label": "Resumen de la Página",
+                "name": "resumen_pagina",
+                "type": "textarea",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí un breve resumen de la página en general",
+                "maxlength": 300,
+                "rows": 3,
+                "new_lines": ""
+            },
+            {
+                "key": "field_629fa53469282",
+                "label": "Imagen Complementaria",
+                "name": "imagen_complementaria_pagina",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "15",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_629fa5346929f",
+                "label": "Pie de Imagen Complementaria",
+                "name": "pie_imagen_complementaria_pagina",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 150,
+                "rows": 2,
+                "new_lines": ""
+            },
+            {
+                "key": "field_629fa534692c2",
+                "label": "Autor Imagen Complementaria",
+                "name": "autor_imagen_complementaria_pagina",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí el Autor de la Fotografía",
+                "prepend": "Fuente de Información",
+                "append": "",
+                "maxlength": 40
+            },
+            {
+                "key": "field_629fa534692ca",
+                "label": "Cuerpo de la Página",
+                "name": "cuerpo_pagina",
+                "type": "textarea",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 1650,
+                "rows": 12,
+                "new_lines": ""
+            },
+            {
+                "key": "field_629fa534692d1",
+                "label": "Frase Complementaria",
+                "name": "frase_complementaria_pagina",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí la información más importante de la página",
+                "maxlength": 200,
+                "rows": 2,
+                "new_lines": ""
+            },
+            {
+                "key": "field_629fa534692d9",
+                "label": "Imagen Complementaria 2",
+                "name": "imagen_complementaria_2_pagina",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "15",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_629fa534692e0",
+                "label": "Pie de Imagen Complementaria 2",
+                "name": "pie_imagen_complementaria_2_pagina",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 80,
+                "rows": 2,
+                "new_lines": ""
+            },
+            {
+                "key": "field_629fa534692e8",
+                "label": "Autor Foto Complementaria 2",
+                "name": "autor_foto_complementaria_2_pagina",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_629fa534692d9",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ingrese aquí el Autor de la Fotografía",
+                "prepend": "Imagen proporcionada por:",
+                "append": "",
+                "maxlength": 40
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "format",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Formulario Para Ingreso de Noticias",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_605939a77a6f3",
+        "title": "Información Slideshow",
+        "fields": [
+            {
+                "key": "field_605947dd41d5d",
+                "label": "Subtítulo",
+                "name": "subtitulo_slide",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Slogan secundario del Slide debajo del título",
+                "prepend": "",
+                "append": "",
+                "maxlength": 50
+            },
+            {
+                "key": "field_605b2983d2551",
+                "label": "Enlaces de Difusión",
+                "name": "link",
+                "type": "text",
+                "instructions": "Ingresa tu enlace aquí!\r\n(Youtube, Vimeo, Enlace Personalizado, Etc).",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "www.google.com",
+                "placeholder": "https:\/\/www.ejemplo.com",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "slideshow"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Formulario para ingreso de una nueva noticias",
+        "show_in_rest": false
+    },
+    {
+        "key": "group_60593780cccb2",
+        "title": "Perfil Emprendedor",
+        "fields": [
+            {
+                "key": "field_605a342f91d3f",
+                "label": "Información de Contacto",
+                "name": "info_contacto",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_6059ed9fbcdf9",
+                        "label": "Nombre Contacto",
+                        "name": "contacto",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Persona con quien se deben contactar",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_6059dcf8650cf",
+                        "label": "Teléfono:",
+                        "name": "fono",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "35",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Ingrese número de contacto",
+                        "prepend": "+56",
+                        "append": "",
+                        "maxlength": 9
+                    },
+                    {
+                        "key": "field_6059daf0650ce",
+                        "label": "Dirección:",
+                        "name": "direccion",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Dirección de sus instalaciones",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 50
+                    },
+                    {
+                        "key": "field_6059e4687f7d3",
+                        "label": "Email:",
+                        "name": "email",
+                        "type": "email",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "35",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Correo electrónico de contacto",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_605a48af92081",
+                        "label": "Descripción Corta",
+                        "name": "descripcion_corta",
+                        "type": "text",
+                        "instructions": "Describa brevemente su emprendimiento en no más de 155 caracteres.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_60980f66d8009",
+                        "label": "Descripción Larga",
+                        "name": "descripcion_larga",
+                        "type": "textarea",
+                        "instructions": "Descripción de solo 310 carácteres.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Ingrese una descripción de su emprendimiento, sus principales productos y servicios que ofrece.",
+                        "maxlength": 310,
+                        "rows": 3,
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_60c771615ffce",
+                "label": "Certificaciones Turísticas",
+                "name": "certificaciones",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_60c168cf76007",
+                        "label": "Distinciones y Certificaciones del Emprendedor",
+                        "name": "sellos",
+                        "type": "checkbox",
+                        "instructions": "Selecciona uno o varios sellos según corresponda.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Sello 1": "Registro Turístico SERNATUR",
+                            "Sello 2": "Distinción Calidad Turística",
+                            "Sello 3": "Distinción Sustentabilidad",
+                            "Sello 4": "Confianza Turística Covid-19",
+                            "Sello 5": "SIGO Turismo (Sistema Inicial de Gestión Organizacional)",
+                            "Sello 6": "Calidad Internacional ISO 9001"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_605a17335cea9",
+                "label": "Plataformas de Difusión",
+                "name": "plataformas",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_605a2dd7387fd",
+                        "label": "URL Google 360°",
+                        "name": "URL_360",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url"
+                    },
+                    {
+                        "key": "field_605a2f3997d29",
+                        "label": "URL Youtube",
+                        "name": "URL_youtube",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url"
+                    },
+                    {
+                        "key": "field_605a2fea97d2b",
+                        "label": "URL Sitio Web",
+                        "name": "URL_web",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array"
+                    }
+                ]
+            },
+            {
+                "key": "field_605a3285d644b",
+                "label": "Redes Sociales Asociadas",
+                "name": "rrss",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_6059e74d39baa",
+                        "label": "Link Facebook",
+                        "name": "link_facebook",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url"
+                    },
+                    {
+                        "key": "field_6059e7af39bab",
+                        "label": "Link Instagram",
+                        "name": "link_instagram",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url"
+                    },
+                    {
+                        "key": "field_6059fcec75ce7",
+                        "label": "Link Whatsapp",
+                        "name": "link_whatsapp",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url"
+                    },
+                    {
+                        "key": "field_609825fb5b79e",
+                        "label": "Link Email",
+                        "name": "link_email",
+                        "type": "link",
+                        "instructions": "Para agregar tu Email debes ante poner: mailto:correo@ejemplo.cl",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url"
+                    }
+                ]
+            },
+            {
+                "key": "field_605a3333d644c",
+                "label": "Oferta de Productos o Servicios",
+                "name": "productos_servicios",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_605a065f60803",
+                        "label": "Imagen Producto N° 1:",
+                        "name": "producto_1",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "uploadedTo",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_605a071d60804",
+                        "label": "Nombre Producto N° 1:",
+                        "name": "nombre_producto_1",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a065f60803",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Producto",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_605a09515b973",
+                        "label": "Descripción del Producto",
+                        "name": "descripcion_producto_1",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a065f60803",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Principales detalles del producto (dimensiones, materialidad, etc.",
+                        "maxlength": 80,
+                        "rows": 2,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_605a4e9fed9c1",
+                        "label": "Imagen Producto N° 2:",
+                        "name": "producto_2",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "uploadedTo",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_605a4eb1ed9c2",
+                        "label": "Nombre del Producto:",
+                        "name": "nombre_producto_2",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Producto",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_605a4ed4ed9c3",
+                        "label": "Descripción del Producto",
+                        "name": "descripcion_producto_2",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Principales detalles del producto (dimensiones, materialidad, etc.",
+                        "maxlength": 80,
+                        "rows": 2,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_605a4f5e6160b",
+                        "label": "Imagen  Producto N° 3:",
+                        "name": "producto_3",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_605a4f876160f",
+                        "label": "Nombre del Producto:",
+                        "name": "nombre_producto_3",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Producto",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_605a4ff661615",
+                        "label": "Descripción del Producto",
+                        "name": "descripcion_producto_3",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Principales detalles del producto (dimensiones, materialidad, etc.",
+                        "maxlength": 80,
+                        "rows": 2,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_605a4f736160c",
+                        "label": "Imagen Producto N° 4:",
+                        "name": "producto_4",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_605a4f9c61610",
+                        "label": "Nombre del Producto:",
+                        "name": "nombre_producto_4",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Producto",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_605a4fff61616",
+                        "label": "Descripción del Producto",
+                        "name": "descripcion_producto_4",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": 80,
+                        "rows": 2,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_605a4f786160d",
+                        "label": "Imagen Producto N° 5:",
+                        "name": "producto_5",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_605a4fa961611",
+                        "label": "Nombre del Producto:",
+                        "name": "nombre_producto_5",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Producto",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_605a502161617",
+                        "label": "Descripción del Producto",
+                        "name": "descripcion_producto_5",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": 80,
+                        "rows": 2,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_605a4f7d6160e",
+                        "label": "Imagen Producto N° 6:",
+                        "name": "producto_6",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_605a4fb261612",
+                        "label": "Nombre del Producto:",
+                        "name": "nombre_producto_6",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Producto",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_605a502961618",
+                        "label": "Descripción del Producto",
+                        "name": "descripcion_producto_6",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_605a4e9fed9c1",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": 80,
+                        "rows": 2,
+                        "new_lines": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "perfil"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Formulario para ingreso de un nuevo perfil",
+        "show_in_rest": false
+    }
+]
