@@ -49,13 +49,16 @@
         <h1 class="title-section title-section--servicios">Encuentra el servicio que más prefieras</h1>
         <!-- revisar uso de icono en el texto para indicar enlace con css afber before content -->
         <a href="<?php site_url();  ?>/categorias-perfiles/donde-comer/">
-        <h1><?php console_log(get_template_directory_uri()) ?></h1>
+            <h1><?php console_log(get_template_directory_uri()) ?></h1>
             <picture class="card card-1">
                 <source media="(min-width: 860px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Comer-2.jpg">
-                <source media="(min-width: 640px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Donde_Comer.jpg">
-                <source media="(min-width: 512px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Donde_Comer.jpg">
-                <source media="(min-width: 320px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileDonde_Comer.jpg">
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Donde-Comer-2.jpg">
+                <source media="(min-width: 640px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Donde_Comer.jpg">
+                <source media="(min-width: 512px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Donde_Comer.jpg">
+                <source media="(min-width: 320px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileDonde_Comer.jpg">
                 <img class="card-img"
                     src="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileDonde_Comer.jpg"
                     alt="">
@@ -70,10 +73,13 @@
             <picture class="card card-2">
 
                 <source media="(min-width: 860px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Donde-Dormir-2.jpg">
-                <source media="(min-width: 640px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Donde_Dormir.jpg">
-                <source media="(min-width: 512px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Donde_Dormir.jpg">
-                <source media="(min-width: 320px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileDonde_Dormir.jpg">
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Donde-Dormir-2.jpg">
+                <source media="(min-width: 640px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Donde_Dormir.jpg">
+                <source media="(min-width: 512px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Donde_Dormir.jpg">
+                <source media="(min-width: 320px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileDonde_Dormir.jpg">
                 <img class="card-img"
                     src="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileDonde_Dormir.jpg"
                     alt="">
@@ -85,10 +91,13 @@
         <a href="<?php site_url();  ?>/categorias-perfiles/que-visitar/">
             <picture class="card card-3">
                 <source media="(min-width: 860px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/cards-cat/Cartilla_Que-Visitar-3.jpg">
-                <source media="(min-width: 640px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Que_Visitar.jpg">
-                <source media="(min-width: 512px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Que_Visitar.jpg">
-                <source media="(min-width: 320px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileQue_Visitar.jpg">
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Que-Visitar-3.jpg">
+                <source media="(min-width: 640px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Que_Visitar.jpg">
+                <source media="(min-width: 512px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Que_Visitar.jpg">
+                <source media="(min-width: 320px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileQue_Visitar.jpg">
                 <img class="card-img"
                     src="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileQue_Visitar.jpg"
                     alt="">
@@ -99,7 +108,7 @@
         </a>
         <aside class="aside aside--servicios">
             <picture class="aside-img-servicios"><img class="aside-img "
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/S.svg" alt=""></picture>
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/letras/S.svg" alt=""></picture>
             <p class="aside-text-servicios">¡Conoce Andacollo!<br>
                 Diversos Servicios
                 que le permitirá
@@ -116,12 +125,15 @@
         <a href="<?php site_url();  ?>/categorias-perfiles/artesania/">
             <picture class="card card-4">
                 <source media="(min-width: 860px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg">
-                <source media="(min-width: 640px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Artesanos.jpg">
-                <source media="(min-width: 512px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Artesanos.jpg">
-                <source media="(min-width: 320px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileArtesanos.jpg">
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Artesanos-2.jpg">
+                <source media="(min-width: 640px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Artesanos.jpg">
+                <source media="(min-width: 512px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Artesanos.jpg">
+                <source media="(min-width: 320px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileArtesanos.jpg">
                 <img class="card-img"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Artesanos-2.jpg"
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Artesanos-2.jpg"
                     alt="">
                 <div class="card-title artesania">
                     <p class="title-card">Artesanias</p>
@@ -132,12 +144,15 @@
         <a href="<?php site_url();  ?>/categorias-perfiles/emprendedor/">
             <picture class="card card-5">
                 <source media="(min-width: 860px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg">
-                <source media="(min-width: 640px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Emprendedor.jpg">
-                <source media="(min-width: 512px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Emprendedor.jpg">
-                <source media="(min-width: 320px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileEmprendedor.jpg">
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Emprendedor.jpg">
+                <source media="(min-width: 640px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Emprendedor.jpg">
+                <source media="(min-width: 512px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Emprendedor.jpg">
+                <source media="(min-width: 320px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileEmprendedor.jpg">
                 <img class="card-img"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Emprendedor.jpg"
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Emprendedor.jpg"
                     alt="">
                 <div class="card-title emprendedor">
                     <p class="title-card">Emprendedores</p>
@@ -147,12 +162,15 @@
         <a href="<?php site_url();  ?>/categorias-perfiles/productor/">
             <picture class="card card-6">
                 <source media="(min-width: 860px )"
-                    srcset="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg">
-                <source media="(min-width: 640px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Productor.jpg">
-                <source media="(min-width: 512px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Productor.jpg">
-                <source media="(min-width: 320px )" srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileProductor.jpg">
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Productores-2.jpg">
+                <source media="(min-width: 640px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-l/mobile-l-Productor.jpg">
+                <source media="(min-width: 512px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile-m/mobile-m-Productor.jpg">
+                <source media="(min-width: 320px )"
+                    srcset="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/mobile/mobileProductor.jpg">
                 <img class="card-img"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/categorias/Cartilla_Productores-2.jpg"
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/btn-cat/Cartilla_Productores-2.jpg"
                     alt="">
                 <div class="card-title productor">
                     <p class="title-card">Productores</p>
@@ -165,7 +183,8 @@
                 Revisa productos con identidad local y el trabajo de los
                 habitantes de Andacollo.</p>
             <picture>
-                <img class="aside-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/P.svg" alt="">
+                <img class="aside-img" src="<?php echo get_template_directory_uri();  ?>/src/images/letras/P.svg"
+                    alt="">
             </picture>
         </aside>
     </div>

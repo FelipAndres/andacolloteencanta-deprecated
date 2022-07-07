@@ -39,14 +39,14 @@ Template Post Type: perfil
             ?>
 
             <a href="<?php echo $facebook; ?>"><img class="info-perfil--icons"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/facebook-brands.svg" alt=""></a>
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/icons/facebook-brands.svg" alt=""></a>
             <a href="<?php echo $instagram; ?>"><img class="info-perfil--icons"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/instagram-brands.svg" alt=""></a>
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/icons/instagram-brands.svg" alt=""></a>
             <a href="<?php echo $email; ?>"><img class="info-perfil--icons"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/envelope-solid.svg" alt=""
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/icons/envelope-solid.svg" alt=""
                     target="_blank"></a>
             <a href="<?php echo $whatsapp; ?>"><img class="info-perfil--icons"
-                    src="<?php echo get_template_directory_uri();  ?>/assets/images/whatsapp-brands.svg" alt=""></a>
+                    src="<?php echo get_template_directory_uri();  ?>/src/images/icons/whatsapp-brands.svg" alt=""></a>
 
         </div>
         <h2 class="titulo-sections-perfil--sellos">Sellos de Calidad</h2>
@@ -57,32 +57,32 @@ Template Post Type: perfil
                 $sellos = $grupo_sellos["sellos"];
                 // console_log($sellos);
             if($sellos && in_array('Sello 1', $sellos) ) {?>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/sellos/registro_turístico.svg"
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/sellos/registro_turistico.svg"
                 alt="sello registro turistico">
             <?php
             }
             if($sellos && in_array('Sello 2', $sellos) ) {?>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/sellos/sello_calidad_turistica.svg"
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/sellos/sello_calidad_turistica.svg"
                 alt="sello calidad turistica">
             <?php
             }
             if($sellos && in_array('Sello 3', $sellos) ) {?>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/sellos/sello_distinción_sustentabilidad.svg"
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/sellos/sello_distinción_sustentabilidad.svg"
                 alt="sello distincion de sustentabilidad">
             <?php
             }
             if($sellos && in_array('Sello 4', $sellos) ) {?>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/sellos/sello_confianza.svg"
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/sellos/sello_confianza.svg"
                 alt="sello de confianza">
             <?php
             }
             if($sellos && in_array('Sello 5', $sellos) ) {?>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/sellos/sello_sigo_turismo.svg"
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/sellos/sello_sigo_turismo.svg"
                 alt="Sello Sistema de Gestion Organizacional">
             <?php
             }
             if($sellos && in_array('Sello 6', $sellos) ) {?>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/sellos/sello_iso_9001.svg"
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/sellos/sello_iso_9001.svg"
                 alt="Sello Calidad Internacional ISO 9001">
             <?php
             }
@@ -91,7 +91,7 @@ Template Post Type: perfil
 
         <!-- <div class="icono--servicio">
 
-        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondecomer.svg" alt="">
+        <img src="<?php echo get_template_directory_uri();  ?>/src/images/icono-dondecomer.svg" alt="">
         <h2 class="donde-comer-title"> Servicios</h2>
     </div> -->
         <h2 class="titulo-sections-perfil--fotos">Galería de Fotos</h2>
@@ -156,7 +156,7 @@ Template Post Type: perfil
         <aside class="aside--right donde-comer">
             <h1>Servicio de Alimentación</h1>
 
-            <img class="aside-r-img" src="<?php echo get_template_directory_uri();  ?>/assets/images/R.svg" alt="">
+            <img class="aside-r-img" src="<?php echo get_template_directory_uri();  ?>/src/images/R.svg" alt="">
         </aside>
         <a class="btn-posicion" href="<?php site_url(); ?>/categorias-perfiles/donde-comer">
             <button class="card-btn card-btn--noticias btn-single--noticia "><label for="Volver">Volver</label></button>

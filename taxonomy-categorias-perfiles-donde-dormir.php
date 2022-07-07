@@ -6,7 +6,7 @@
         <div class="aside--left-content">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
         </div>
-        <img class="icon-aside--left" src="<?php echo get_template_directory_uri();  ?>/assets/images/H.svg" alt="">
+        <img class="icon-aside--left" src="<?php echo get_template_directory_uri();  ?>/src/images/letras/H.svg" alt="">
     </aside>
     <!-- CARTAS -->
     <div class="sub-grid-content">
@@ -19,7 +19,7 @@
 
     <aside class="aside--right">
         <picture>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-dondedormir.svg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/icons/icono-dondedormir.svg" alt="">
         </picture>
     </aside>
 </section>
@@ -37,11 +37,11 @@
     </p>
     <picture class="collage--servicios">
         <img class="border-categoria--dondedormir"
-            src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-dormir.png" alt="">
+            src="<?php echo get_template_directory_uri();  ?>/src/images/collage-cat/collage-dormir.png" alt="">
     </picture>
     <aside class="aside-right--2 bkcolor-categoria--dondedormir">
         <?php get_template_part('template-parts/section', 'map'); ?>
-        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/H.svg" alt="">
+        <img src="<?php echo get_template_directory_uri();  ?>/src/images/letras/H.svg" alt="">
     </aside>
 </section>
 

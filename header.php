@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <link rel="icon" href="<?php echo get_template_directory_uri();  ?>/assets/images/favicon.png" type="png"
+    <link rel="icon" href="<?php echo get_template_directory_uri();  ?>/src/images/favicon.png" type="png"
         sizes="32x32">
     <title>Andacollo te encanta</title>
 
@@ -29,9 +29,9 @@
             <a href="<?php echo home_url();?>">
                 <picture>
                     <source media="(min-width: 320px )"
-                        srcset="<?php echo get_template_directory_uri();  ?>/assets/images/header/Banner-webp.webp">
+                        srcset="<?php echo get_template_directory_uri();  ?>/src/images/header/Banner-webp.webp">
                     <img class="header-logo"
-                        src="<?php echo get_template_directory_uri();  ?>/assets/images/Banner-webp.webp"
+                        src="<?php echo get_template_directory_uri();  ?>/src/images/Banner-webp.webp"
                         alt="Logo de andacollo te encanta">
                 </picture>
             </a>

@@ -6,7 +6,7 @@
         <div class="aside--left-content">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
         </div>
-        <img class="icon-aside--left" src="<?php echo get_template_directory_uri();  ?>/assets/images/E.svg" alt="">
+        <img class="icon-aside--left" src="<?php echo get_template_directory_uri();  ?>/src/images/letras/E.svg" alt="">
     </aside>
     <!-- CARTAS -->
     <div class="sub-grid-content">
@@ -19,7 +19,7 @@
 
     <aside class="aside--right">
         <picture>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-emprendedor.svg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/icons/icono-emprendedor.svg" alt="">
         </picture>
     </aside>
 </section>
@@ -34,11 +34,11 @@
     </p>
     <picture class="collage--servicios">
         <img class="border-categoria--emprendedores"
-            src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-emprendedor.png" alt="">
+            src="<?php echo get_template_directory_uri();  ?>/src/images/collage-cat/collage-emprendedor.png" alt="">
     </picture>
     <aside class="aside-right--2 bkcolor-categoria--emprendedores">
         <?php get_template_part('template-parts/section', 'map'); ?>
-        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/E.svg" alt="">
+        <img src="<?php echo get_template_directory_uri();  ?>/src/letras/images/E.svg" alt="">
     </aside>
 </section>
 

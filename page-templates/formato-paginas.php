@@ -48,7 +48,7 @@
                     </p>
                     <picture>
                         <img class="descripcion-n"
-                            src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt="">
+                            src="<?php echo get_template_directory_uri();  ?>/src/images/letras/N.svg" alt="">
                     </picture>
                 </div>
             </div>

@@ -6,7 +6,7 @@
         <div class="aside--left-content">
             <?php get_template_part('template-parts/section', 'menu-categorias'); ?>
         </div>
-        <img class="icon-aside--left" src="<?php echo get_template_directory_uri();  ?>/assets/images/A.svg" alt="">
+        <img class="icon-aside--left" src="<?php echo get_template_directory_uri();  ?>/src/images/letras/A.svg" alt="">
     </aside>
     <!-- CARTAS -->
     <div class="sub-grid-content">
@@ -19,7 +19,7 @@
 
     <aside class="aside--right">
         <picture>
-            <img src="<?php echo get_template_directory_uri();  ?>/assets/images/icono-artesania.svg" alt="">
+            <img src="<?php echo get_template_directory_uri();  ?>/src/images/icons/icono-artesania.svg" alt="">
         </picture>
     </aside>
 </section>
@@ -42,11 +42,11 @@
     </p>
     <picture class="collage--servicios">
         <img class="border-categoria--artesania"
-            src="<?php echo get_template_directory_uri();  ?>/assets/images/collage-artesania.png" alt="">
+            src="<?php echo get_template_directory_uri();  ?>/src/images/collage-cat/collage-artesania.png" alt="">
     </picture>
     <aside class="aside-right--2 bkcolor-categoria--artesania">
         <?php get_template_part('template-parts/section', 'map'); ?>
-        <img src="<?php echo get_template_directory_uri();  ?>/assets/images/A.svg" alt="">
+        <img src="<?php echo get_template_directory_uri();  ?>/src/images/letras/A.svg" alt="">
     </aside>
 </section>
 

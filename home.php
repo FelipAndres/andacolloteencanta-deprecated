@@ -13,7 +13,7 @@
         <p class="aside-title">Conoce aquí las novedades que
             ofrece nuestra comuna de Andacollo</p>
         <picture>
-            <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/assets/images/N.svg" alt="">
+            <img class="aside--n" src="<?php echo get_template_directory_uri();  ?>/src/images/letras/N.svg" alt="">
         </picture>
     </aside>
 
