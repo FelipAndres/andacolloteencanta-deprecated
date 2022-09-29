@@ -255,7 +255,7 @@ function special_nav_class($classes, $item)
 }add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
 
 
-function pagination($pages = '', $range = 4)
+function pagination($pages = '', $range = 3)
 {
     $showitems = ($range * 2)+1;
  
@@ -272,9 +272,10 @@ function pagination($pages = '', $range = 4)
     }
 //  deberia al final de los post "desactivar" el boton ">" porque o si no lleva a un 404
     if(1 != $pages) {   
-        echo "<div class=\"paginacion\">"; //<span> "Página ".$paged." de  ".$pages."  </span> 
+        echo "<div class=\"paginacion\">";
         echo "<a class=\"paginacion-btn\" href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
         //echo "<a href='".get_pagenum_link(1)."'>&laquo; Primero</a>";
+        
         
         if($paged > 2 && $paged > $range+1 && $showitems < $pages) {
         } 
@@ -296,6 +297,7 @@ function pagination($pages = '', $range = 4)
         }
         //echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
         echo "</div>\n";
+        echo "<span style=\"font-size: .8rem; color:#808080; text-align:center;\">Página $paged de $pages </span>"; 
     }
 }
 
