@@ -70,6 +70,32 @@
         </div>
     </div>
 
+    <div class="container-complementario-bottom">
+        <picture class="img-noticias--1">
+            <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+        </picture>
+
+        <div class="texto-descripcion">
+            <aside class="title-noticia--single">
+                <h1>Uis eleifend cursus pulvinar. Donec sed congue ante. Aenean laoreet magna in porta rutrum. Morbi
+                    eleifend et enim ut lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel
+                    accum.</h1>
+            </aside>
+
+
+            <div class="container-meta-data--noticia">
+                <!-- <div class="categorias-textos"><span>Categorías: </span><?php the_category(' - '); ?></div> -->
+                <picture>
+                    <img class="descripcion-n"
+                        src="<?php echo get_template_directory_uri();  ?>/src/images/letras/N.svg" alt="">
+                </picture>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     <a class="justify-flex-end" href="<?php site_url(); ?>/noticias/">
         <button class="card-btn card-btn--noticias btn-single--noticia"><label for="Volver">Volver</label></button>
     </a>

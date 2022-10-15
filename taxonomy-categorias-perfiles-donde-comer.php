@@ -13,8 +13,7 @@
     <?php get_template_part('template-parts/section', 'donde-comer'); ?>
     </div>
     <!-- FIN CARTAS -->
-    <?php if (function_exists('pagination')) { pagination();
-    } ?>
+    <?php if (function_exists('pagination')) { pagination(); } ?>
     <?php //get_template_part('template-parts/section', 'paginacion'); ?>
 
     <aside class="aside--right">
@@ -27,7 +26,7 @@
 <section class="grid-categorias grid-categorias-section2 section-info">
     <h1 class="color-categoria--dondecomer">Encántese con los Sabores Locales</h1>
     <p>Buscamos preservar nuestras tradiciones, rescatando nuestra gastronomía tradicional, a través de sabrosos
-        platosD
+        platos
         típicos Andacollino así como la comida típica chilena, a través de la preparación de cazuelas, porotos,
         guatitas,
         charquicán y diferentes tipos de carnes, además contamos con restaurantes dedicados a la elaboración de
