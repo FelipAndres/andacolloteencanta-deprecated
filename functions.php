@@ -296,8 +296,8 @@ function pagination($pages = '', $range = 3)
         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) {
         }
         //echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
+        //echo "<h6 style=\"font-size: .8rem; color:#808080; vertical-align:baseline;\">Página $paged de $pages </h6>"; 
         echo "</div>\n";
-        echo "<span style=\"font-size: .8rem; color:#808080; text-align:center;\">Página $paged de $pages </span>"; 
     }
 }
 
