@@ -21,7 +21,7 @@
                 <a href="https://www.facebook.com/Andacolloteencanta"><img class="rrss-icon"
                         src="<?php echo get_template_directory_uri();  ?>/src/images/icons/facebook-brands-w.svg"
                         alt=""></a>
-                <a href="/#"><img class="rrss-icon"
+                <a href="https://www.instagram.com/teencanta.cl"><img class="rrss-icon"
                         src="<?php echo get_template_directory_uri();  ?>/src/images/icons/instagram-brands-w.svg"
                         alt=""></a>
             </div>

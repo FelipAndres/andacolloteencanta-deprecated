@@ -88,23 +88,33 @@
 }
 .info-perfil--rrss {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   //padding-top: 0.5rem;
   flex-wrap: wrap;
-  gap: .7rem;
+  gap: 1rem;
   padding: 1rem;
 }
-
+.flex-rrss{
+  display: flex;
+  gap: 1rem;
+}
 .info-perfil--sellos {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
+  gap: .7rem;
+  align-items: center;
+}
+.flex-sellos{
+  display: flex;
+  gap: 1rem;
   align-items: center;
   > img {
-    padding: 0.5rem;
-    width: 4rem;
+    width: 3rem;
     height: min-content;
   }
 }
@@ -113,7 +123,7 @@
   // display: inline-block;
   //   flex-grow: 2;
   height: auto;
-  width: 2rem;
+  width: 2.5rem;
 }
 .info-perfil--icons > * {
   flex-basis: 3rem;
@@ -123,7 +133,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
   justify-content: center;
-  gap: 1rem;
+  gap: .8rem;
+  padding: .7rem;
 }
 .aside--right,
 .aside-r-img {

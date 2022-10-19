@@ -29,8 +29,13 @@ function setup_styles_scripts()
         get_template_directory_uri() . '/build/dev.bundle.js', '', '', true
     );
     wp_enqueue_script( 
+        'fslightbox', 
+        get_template_directory_uri() . '/src/js/fslightbox.js', '', '', true
+    );
+    wp_enqueue_script( 
         'Font Awesome 5','https://kit.fontawesome.com/408f0c4a1f.js', '', '', true
     );
+
 
 }
 add_action('wp_enqueue_scripts', 'setup_styles_scripts');
@@ -438,3 +443,15 @@ function meks_remove_wp_archives()
         $wp_query->set_404(); //set to 404 not found page
     }
 }
+
+// Fix Warning ob_end_flush(): failed to send buffer of zlib output compression (1)
+/**
+ * Proper ob_end_flush() for all levels
+ *
+ * This replaces the WordPress `wp_ob_end_flush_all()` function
+ * with a replacement that doesn't cause PHP notices.
+ */
+remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+add_action( 'shutdown', function() {
+   while ( @ob_end_flush() );
+} );

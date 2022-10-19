@@ -28,7 +28,7 @@
                 $cuerpo_pagina = get_field('cuerpo_pagina');
                 $frase_complementaria = get_field('frase_complementaria_pagina');
                 $imagen_complementaria_2 = get_field('imagen_complementaria_2_pagina');
-                $pie_imagen_complementaria_2 = get_field('pie_complementaria_2_pagina');
+                $pie_imagen_complementaria_2 = get_field('pie_imagen_complementaria_2_pagina');
                 $autor_imagen_complementaria_2 = get_field('autor_imagen_complementaria_2_pagina');
 
                 /* $img_featured_footer = get_field('imagen_noticia_3');
@@ -65,41 +65,28 @@
         </picture>
 
         <div class="pie_de_foto--1">
-            <p><?php echo $pie_imagen_complementaria ?></p>
-            <p>Autor: <?php echo $autor_imagen_complementaria?></p>
+            <figcaption><?php echo $pie_imagen_complementaria ?></figcaption>
+            <figcaption>Autor: <?php echo $autor_imagen_complementaria?></figcaption>
         </div>
     </div>
 
     <div class="container-complementario-bottom">
-        <picture class="img-noticias--1">
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-        </picture>
+        <picture class="img-noticias--2">
+            <?php echo wp_get_attachment_image($imagen_complementaria_2, $img_size_featured_footer); ?>
+        <div class="pie_de_foto--3">
+            <figcaption><?php echo $pie_imagen_complementaria_2 ?></figcaption>
+            <figcaption>Autor: <?php echo $autor_imagen_complementaria_2 ?></figcaption>
+        </div>
+    </picture>
 
         <div class="texto-descripcion">
             <aside class="title-noticia--single">
-                <h1>Uis eleifend cursus pulvinar. Donec sed congue ante. Aenean laoreet magna in porta rutrum. Morbi
-                    eleifend et enim ut lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel
-                    accum.</h1>
+                <h3><?php echo $frase_complementaria ?></h3>
             </aside>
 
-
-            <div class="container-meta-data--noticia">
-                <!-- <div class="categorias-textos"><span>Categorías: </span><?php the_category(' - '); ?></div> -->
-                <picture>
-                    <img class="descripcion-n"
-                        src="<?php echo get_template_directory_uri();  ?>/src/images/letras/N.svg" alt="">
-                </picture>
-            </div>
         </div>
     </div>
 </div>
-
-
-
-    <a class="justify-flex-end" href="<?php site_url(); ?>/noticias/">
-        <button class="card-btn card-btn--noticias btn-single--noticia"><label for="Volver">Volver</label></button>
-    </a>
-
 </section>
 
 </main>

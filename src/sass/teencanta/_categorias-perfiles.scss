@@ -14,7 +14,7 @@
     margin: 1rem 0 0 0;
     text-align: center;
     font-family: var(--ffuente-boogaloo);
-    // Revisar tamaño de letra
+    font-size: 3rem;
   }
   .aside--left {
     display: none;
@@ -132,7 +132,7 @@ button > label {
   > p {
     text-align: justify;
     margin-top: 0;
-    padding: 0 1.5rem;
+    //padding: 0 1.5rem;
   }
 }
 .aside-right--2 {
@@ -180,7 +180,7 @@ button > label {
   }
   .section-info {
     > p {
-      margin: 0 3rem;
+      //margin: 0 3rem;
     }
   }
   .aside-right--2 {
@@ -266,7 +266,8 @@ button > label {
     display: flex;
     .img--servicios {
       object-fit: cover;
-      max-width: 9rem;
+      object-position: center;
+      max-width: 15rem;
       border-radius: 10px 0 0 10px;
     }
     
